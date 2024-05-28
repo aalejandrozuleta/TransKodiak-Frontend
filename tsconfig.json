@@ -18,10 +18,37 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"],
+    "baseUrl": "./",
+    
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@core/*": ["src/app/core/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@styles/*": ["src/styles/*"],
+      "@i18n/*": ["src/assets/i18n/*"],
+      "@icons/": ["src/assets/icons/*"],
+      "@imagenes/*": ["src/assets/imagenes/*"],
+      "@static/*": ["src/assets/static/*"],
+      "@constants/" : ["src/core/constants/*"],
+      "@enums/*": ["src/enums/*"],
+      "@models/*": ["src/models/*"],
+      "@interceptor/*": ["src/core/interceptor/*"],
+      "@guards/*":["src/core/guards/*"],
+      "@services/*":["src/core/services/*"],
+      "@utils/*" :["src/core/utils/*"],
+      "@components/*" : ["src/shared/components/*"],
+      "@directives/*" : ["src/shared/directives/*"],
+      "@animate/*":["src/styles/animate/*"],
+      "@fonts/*":["src/styles/fonts/*"],
+      "@functions/*":["src/styles/functions/*"],
+      "@inherence/*":["src/styles/inherence/*"],
+      "@vendors/*":["src/styles/vendors/*"],
+      "@colors/*" : ["src/styles/colors/*"],
+      "@feature/*": ["src/features/*"],
+      "@pipes/*": ["src/shared/pipes/*"],
+      "@mixins/*":["src/styles/mixins/*"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

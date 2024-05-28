@@ -1,0 +1,10 @@
+@mixin buttonStyle($width: 200px, $height: 30px, $border-radius: 5%, $background: "background"){
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+
+  @extend %flexCenter;
+  cursor: pointer;
+  color: map-get($buttonColors, "text");
+  background-color: map-get($buttonColors, $background);
+}

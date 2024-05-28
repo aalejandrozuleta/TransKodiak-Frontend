@@ -1,0 +1,9 @@
+@mixin for-size($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (max-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  } @else {
+    @warn "No se encontró el breakpoint '#{$size}' en la lista de breakpoints.";
+  }
+}
