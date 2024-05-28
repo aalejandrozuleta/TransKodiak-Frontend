@@ -13,15 +13,15 @@ export class NavBarComponent {
 
   optionsMenu: MenuItem[] = [
     {
-      name: 'Home',
-      link: '/home'
+      name: 'Servicios',
+      link: '/service'
     },
     {
-      name: 'About',
+      name: 'Nosotros',
       link: '/about'
     },
     {
-      name: 'Register',
+      name: 'Acceder',
       link: '/register'
     }
   ];

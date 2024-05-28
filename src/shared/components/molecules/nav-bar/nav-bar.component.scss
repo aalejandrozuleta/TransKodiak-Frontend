@@ -9,13 +9,41 @@
     display: grid;
     grid-template-columns: repeat(3, 20%);
     justify-content: end;
-    
+
     .listMenu {
       @extend %gridCenter;
       a {
         text-decoration: none;
-        color: map-get($nav , "link" );
+        color: map-get($nav, "link");
+        position: relative;
+        background: none;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: color;
+
+        &:focus,
+        &:hover {
+          color: #fff;
+        }
+
+        &:focus:after,
+        &:hover:after {
+          width: 100%;
+          left: 0%;
+        }
+
+        &:after {
+          content: "";
+          pointer-events: none;
+          bottom: -2px;
+          left: 50%;
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          background-color: #fff;
+          transition: width, left, cubic-bezier(0.25, 0.8, 0.25, 1), 400ms ;
+        }
       }
     }
-  }
+}
 }

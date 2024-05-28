@@ -5,10 +5,12 @@
   @extend %totalSize;
   @extend %flexCenter;
   justify-content: start;
-  padding-left:30px;
+  padding: 5px 0 0 30px;
+
   img {
-    width: 20%;
-    height: 60%;
+    width: 15%;
+    height: 55%;
+    cursor: pointer;
     object-fit: cover;
   }
 }
