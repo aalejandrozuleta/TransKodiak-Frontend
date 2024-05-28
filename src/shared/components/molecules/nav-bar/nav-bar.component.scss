@@ -1,0 +1,21 @@
+@import "inherence/_totalSize";
+@import "inherence/_gridCenter";
+@import "colors/_navegationColor";
+
+#navBar {
+  @extend %totalSize;
+  #menu {
+    @extend %totalSize;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: end;
+    
+    .listMenu {
+      @extend %gridCenter;
+      a {
+        text-decoration: none;
+        color: map-get($nav , "link" );
+      }
+    }
+  }
+}

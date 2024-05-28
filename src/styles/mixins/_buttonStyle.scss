@@ -1,7 +1,12 @@
+@import "inherence/_flexCenter";
+@import "colors/_buttonColor";
+
+
 @mixin buttonStyle($width: 200px, $height: 30px, $border-radius: 5%, $background: "background"){
   width: $width;
   height: $height;
   border-radius: $border-radius;
+  border: none;
 
   @extend %flexCenter;
   cursor: pointer;

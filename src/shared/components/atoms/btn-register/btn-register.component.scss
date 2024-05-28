@@ -1,0 +1,19 @@
+@import "mixins/_buttonStyle";
+@import "inherence/_totalSize";
+@import "inherence/_flexCenter";
+@import "colors/_navegationColor";
+
+#blockBtnRegister{
+  @extend %totalSize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #btnRegister {
+    @include buttonStyle($width: 40%, $height: 45%, $border-radius: 5%, $background: 'secondary');
+    a {
+      text-decoration: none;
+      color: map-get($nav, "btnColor" );
+    }
+  }
+}

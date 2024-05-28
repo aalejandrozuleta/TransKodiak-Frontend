@@ -22,22 +22,16 @@
     "baseUrl": "./",
     
     "paths": {
-      "@assets/*": ["src/assets/*"],
-      "@core/*": ["src/app/core/*"],
-      "@shared/*": ["src/app/shared/*"],
-      "@styles/*": ["src/styles/*"],
       "@i18n/*": ["src/assets/i18n/*"],
-      "@icons/": ["src/assets/icons/*"],
+      "@icons/*": ["src/assets/icons/*"],
       "@imagenes/*": ["src/assets/imagenes/*"],
       "@static/*": ["src/assets/static/*"],
       "@constants/" : ["src/core/constants/*"],
-      "@enums/*": ["src/enums/*"],
-      "@models/*": ["src/models/*"],
+      "@enums/*": ["src/core/enums/*"],
       "@interceptor/*": ["src/core/interceptor/*"],
       "@guards/*":["src/core/guards/*"],
       "@services/*":["src/core/services/*"],
       "@utils/*" :["src/core/utils/*"],
-      "@components/*" : ["src/shared/components/*"],
       "@directives/*" : ["src/shared/directives/*"],
       "@animate/*":["src/styles/animate/*"],
       "@fonts/*":["src/styles/fonts/*"],
@@ -48,6 +42,10 @@
       "@feature/*": ["src/features/*"],
       "@pipes/*": ["src/shared/pipes/*"],
       "@mixins/*":["src/styles/mixins/*"],
+      "@molecules/*" : ["src/shared/components/molecules/*"],    
+      "@atoms/*": ["src/shared/components/atoms/*"],
+      "@organisms/*": ["src/shared/components/organisms/*"],
+      "@models/*" : ["src/core/models/*"]
     }
   },
   "angularCompilerOptions": {
