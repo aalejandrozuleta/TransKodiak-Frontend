@@ -1,0 +1,12 @@
+@import 'inherence/_totalSize';
+
+#blockImgWaver {
+  @extend %totalSize;
+
+  img {
+    position: relative;
+    left: 30%;
+    height: 100%;
+    margin-top: 90px;
+  }
+}

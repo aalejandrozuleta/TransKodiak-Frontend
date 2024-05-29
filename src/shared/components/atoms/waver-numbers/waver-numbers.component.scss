@@ -1,0 +1,38 @@
+@import "colors/_defaultColor";
+@import "inherence/gridCenter";
+
+.numberSpan {
+  width: 100%;
+  height: 30px;
+  gap: 0 10px;
+  display: grid;
+  grid-template-areas: "colorBox content";
+  margin: 10px 0;
+}
+
+#span0 {
+  grid-template-columns: 1% 99%;
+  text-align: start;
+}
+#span1 {
+  grid-template-columns: 99% 1%;
+  grid-template-areas: "content colorBox";
+  text-align: end;
+}
+
+.colorBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: map-get($primary, "one");
+  margin: 0 auto;
+}
+
+.content {
+  grid-area: content;
+  margin: auto 0;
+
+  &:hover {
+    text-shadow: 2px 2px 4px map-get($primary, 'two' );
+  }
+}

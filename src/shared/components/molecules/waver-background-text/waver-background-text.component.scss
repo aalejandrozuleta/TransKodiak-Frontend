@@ -1,0 +1,20 @@
+@import 'colors/_defaultColor';
+@import 'inherence/flexCenter';
+
+#blockWaver {
+  width: 100%;
+  height: 500px;
+  background-color: map-get($primary , 'one' );
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 78%);
+  position: absolute;
+
+  #nameCompanyWaver {
+    position: relative;
+    top: 15%;
+    font-size: 70px;
+    font-weight: bold;
+    color: map-get($default , 'one' );
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
