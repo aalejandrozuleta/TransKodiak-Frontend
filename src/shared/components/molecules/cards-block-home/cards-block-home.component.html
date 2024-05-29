@@ -1,0 +1,4 @@
+<article *ngFor="let item of cardsInformation; let i = index" class="blockCards" [id]="'blockCards'+ i">
+  <app-title-cards-home [titleArray]="item.title"></app-title-cards-home>
+  <app-text-cards-home [textArray]="item.description"></app-text-cards-home>
+</article>

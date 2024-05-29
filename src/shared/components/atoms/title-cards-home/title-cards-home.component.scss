@@ -1,0 +1,9 @@
+@import 'colors/_defaultColor';
+
+.titleCardsHome {
+  text-align: center;
+  // padding-left: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: map-get($secundary, 'two' ) ;
+}

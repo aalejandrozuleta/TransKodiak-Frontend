@@ -1,0 +1,9 @@
+@import 'inherence/_gridCenter';
+
+#blockCards{
+  margin: 80px auto;
+  @extend %gridCenter;
+  place-content: center;
+  // grid-template-columns: repeat(3,30%);
+  grid-template-columns: repeat(3,20%);
+}
