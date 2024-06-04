@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './notification-company.component.scss'
 })
 export class NotificationCompanyComponent {
-
+  notificationImg:string = "../../../../assets/icons/notification.png"
 }

@@ -1,5 +1,5 @@
+import { BtnOptionsNavVehicleComponent } from '@molecules/btn-options-nav-vehicle/btn-options-nav-vehicle.component';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NavBarVehicleCompanyComponent } from './nav-bar-vehicle-company.component';
 
 describe('NavBarVehicleCompanyComponent', () => {
@@ -8,10 +8,9 @@ describe('NavBarVehicleCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavBarVehicleCompanyComponent]
-    })
-    .compileComponents();
-    
+      imports: [NavBarVehicleCompanyComponent, BtnOptionsNavVehicleComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NavBarVehicleCompanyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

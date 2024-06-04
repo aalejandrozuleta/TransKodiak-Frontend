@@ -11,7 +11,6 @@
     @include buttonStyle($width: 170px, $height:45px, $border-radius:10px);
     display: grid;
     grid-template-columns: 30% auto;
-    // gap: 0 20px;
 
     &:hover {
       box-shadow: 0px 0px 20px  darken(map-get($buttonColors , 'background' ),10%);

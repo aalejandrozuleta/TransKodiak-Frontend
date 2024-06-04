@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './night-mode.component.scss'
 })
 export class NightModeComponent {
-
+  moonImg:string = '../../../../assets/icons/moon.png';
 }
