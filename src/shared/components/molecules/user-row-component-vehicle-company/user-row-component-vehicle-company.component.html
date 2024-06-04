@@ -1,0 +1,8 @@
+<tr>
+  <td><app-check-component-vehicle-company [checked]="user.checked"></app-check-component-vehicle-company></td>
+  <td><app-user-avatar-component-vehicle-company [avatar]="user.avatarSrc"></app-user-avatar-component-vehicle-company></td>
+  <td>{{ user.name }}</td>
+  <td>{{ user.email }}</td>
+  <td>{{ user.date }}</td>
+  <td><button (click)="onDelete(user.id)">Eliminar</button></td>
+</tr>
