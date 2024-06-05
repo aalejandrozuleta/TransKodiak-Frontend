@@ -7,9 +7,10 @@
 
   img {
     width: 30%;
-    height: 100%;
-    object-fit: cover;
+    height: 90%;
+    object-fit: fill;
     margin: 0 auto;
     border-radius: 10px;
+    padding-left: 80px;
   }
 }

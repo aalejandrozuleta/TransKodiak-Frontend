@@ -1,7 +1,27 @@
-*{
-  width: 100%;
-}
+@import 'inherence/flexCenter';
 
-.vehicle-company-panel{
-  display: flex;
+#templateTotal {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "aside navBar"
+  "aside welcome"
+  "aside table";
+
+  aside {
+    grid-area: aside;
+  }
+
+  #navBar {
+    grid-area: navBar;
+  }
+
+  #welcome {
+    grid-area: welcome;
+  }
+
+  .vehicle-company-panel {
+    grid-area: table;
+  }
 }
