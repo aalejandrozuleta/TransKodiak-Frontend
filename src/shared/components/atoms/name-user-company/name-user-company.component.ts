@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-name-user-company',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './name-user-company.component.scss'
 })
 export class NameUserCompanyComponent {
-  nameUser:string = 'Alejandro';
+  @Input() nameUser:string = '';
 }

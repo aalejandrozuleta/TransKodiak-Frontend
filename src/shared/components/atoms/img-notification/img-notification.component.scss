@@ -1,0 +1,13 @@
+@import 'inherence/totalSize';
+@import 'inherence/flexCenter';
+
+.blockImgNotifications {
+  @extend %totalSize;
+  @extend %flexCenter;
+
+  img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+  }
+}

@@ -1,3 +1,6 @@
 <figure id="blockOptions">
-  <img [src]="notificationImg" alt="error">
+  <img [src]="notificationImg" alt="error" (click)="onClick()">
 </figure>
+
+<app-block-notifications *ngIf="showBlockNotifications"></app-block-notifications>
+

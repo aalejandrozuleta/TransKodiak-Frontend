@@ -1,3 +1,4 @@
+import { informationUserVehicle } from '@models/information-user-vehicle';
 import { Component } from '@angular/core';
 import { ImageUserCompanyComponent } from '@atoms/image-user-company/image-user-company.component';
 import { NameUserCompanyComponent } from '@atoms/name-user-company/name-user-company.component';
@@ -14,4 +15,12 @@ import { TypeCompanyComponent } from '@atoms/type-company/type-company.component
   templateUrl: './information-user-nav-vehicle.component.html',
   styleUrl: './information-user-nav-vehicle.component.scss',
 })
-export class InformationUserNavVehicleComponent {}
+export class InformationUserNavVehicleComponent {
+  dataInformation: informationUserVehicle[] = [
+    {
+      imgUser: '../../../../assets/static/avatar.png',
+      nameUser: 'Alejandro',
+      typeCompany: 'empresa vehicular',
+    }
+  ];
+}

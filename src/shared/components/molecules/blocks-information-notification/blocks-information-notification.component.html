@@ -1,0 +1,10 @@
+<article class="blockNotification" *ngFor="let item of notifications">
+  <app-img-notification [imgPerson]="item.imgPerson"></app-img-notification>
+  <div class="userInformation">
+    <app-name-user-notification [namUser]="item.namUser" ></app-name-user-notification>
+    <app-type-travel-notification [typeTravel]="item.typeTravel" ></app-type-travel-notification>
+  </div>
+  <div class="optionsUser">
+    <app-options-notification [options]="item.iconOption"  ></app-options-notification>
+  </div>
+</article>

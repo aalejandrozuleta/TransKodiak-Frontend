@@ -1,0 +1,19 @@
+@import 'inherence/flexCenter';
+@import 'inherence/totalSize';
+@import 'colors/defaultColor';
+
+.blockNotification {
+  background-color: map-get($default , 'one' );
+  height: 60px;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
+  margin: 10px;
+  border-radius: 10px;
+
+  .userInformation {
+    @extend %flexCenter;
+    @extend %totalSize;
+    flex-direction: column;
+  }
+}
