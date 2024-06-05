@@ -45,7 +45,8 @@
       "@molecules/*" : ["src/shared/components/molecules/*"],    
       "@atoms/*": ["src/shared/components/atoms/*"],
       "@organisms/*": ["src/shared/components/organisms/*"],
-      "@models/*" : ["src/core/models/*"]
+      "@models/*" : ["src/core/models/*"],
+      "@templates/*": ["src/shared/components/templates/*"]
     }
   },
   "angularCompilerOptions": {

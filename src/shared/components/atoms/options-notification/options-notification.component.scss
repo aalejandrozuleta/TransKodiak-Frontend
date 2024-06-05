@@ -1,0 +1,21 @@
+@import 'inherence/totalSize';
+@import 'inherence/flexCenter';
+
+#optionsUserNotifications {
+  @extend %totalSize;
+  display: grid;
+  grid-template-columns: repeat(3,20%);
+  grid-template-rows: 1fr;
+  place-content: center;
+  gap: 10px;
+
+  .defaultBlockOptions {
+    @extend %totalSize;
+
+    img {
+      @extend %totalSize;
+      object-fit: contain;
+      cursor: pointer;
+    }
+  }
+}

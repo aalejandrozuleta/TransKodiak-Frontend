@@ -1,0 +1,19 @@
+#informationUser {
+  height: 100%;
+  display: grid;
+  grid-template-areas: 'img name' 'img type';
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr;
+
+  #imgUser {
+    grid-area: img / img;
+  }
+
+  #nameUser {
+    grid-area: name;
+  }
+
+  #typeCompany {
+    grid-area: type;
+  }
+}

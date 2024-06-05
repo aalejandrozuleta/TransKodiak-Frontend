@@ -1,0 +1,25 @@
+@import 'inherence/_flexCenter';
+@import 'inherence/_totalSize';
+@import 'colors/defaultColor';
+#blockSearch {
+  @extend %totalSize;
+  @extend %flexCenter;
+
+  #searchCompany {
+    height: 50%;
+    width: 300px;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    color: map-get($default, 'one');
+    outline: none;
+
+    &::placeholder {
+      color: map-get($default, 'one');
+
+      &:focus {
+        border: none;
+      } 
+    }
+  }
+}

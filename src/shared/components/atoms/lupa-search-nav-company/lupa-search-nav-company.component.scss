@@ -1,0 +1,12 @@
+@import 'inherence/_flexCenter';
+
+#blockLupa {
+  width: 60px;
+  height: 100%;
+  @extend %flexCenter;
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+}

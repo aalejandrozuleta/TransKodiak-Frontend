@@ -1,0 +1,7 @@
+@import 'inherence/totalSize';
+
+#nameUser {
+  @extend %totalSize;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

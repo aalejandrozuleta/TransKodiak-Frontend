@@ -1,0 +1,10 @@
+@import 'colors/_defaultColor';
+
+#blockSearch {
+  width: 60%;
+  height: 100%;
+  background-color: map-get($primary, 'one' );
+  display: flex;
+  border-radius: 10px;
+  border: none;
+}
