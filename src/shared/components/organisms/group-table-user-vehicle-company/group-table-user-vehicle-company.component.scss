@@ -1,13 +1,40 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+// @import "colors/defaultColor";
+@import "inherence/_flexCenter";
 
-thead {
-  background-color: #f0f0f0;
+table {
+  padding-bottom: 5px;
+  font-size: 13px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 75%;
+  height: auto;
+  border: rgb(236, 236, 236) 1px solid;
+  border-radius: 20px 20px 20px 20px;
 }
 
 th, td {
-  padding: 10px;
+  padding-left: 35px;
   text-align: left;
+  padding-top: 18px;
+}
+
+.items-table{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: #06141B;
+  height: 50px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 20px 20px 0 0 ;
+}
+
+.item-user{
+  padding-right: 280px;
+}
+.item-placa{
+  padding-right: 80px;
+}
+.item-correo{
+  padding-right: 140px;
 }

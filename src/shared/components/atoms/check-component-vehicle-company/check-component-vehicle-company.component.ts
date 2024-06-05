@@ -9,10 +9,11 @@
    styleUrl: './check-component-vehicle-company.component.scss'
  })
  export class CheckComponentVehicleCompanyComponent {
-   @Input() checked!: boolean;
-   @Output() checkedChange = new EventEmitter<boolean>();
-   toggleChecked() {
-     this.checked = !this.checked;
-     this.checkedChange.emit(this.checked);
-   }
+  @Input() checked!: boolean;
+  @Output() checkedChange = new EventEmitter<boolean>();
+
+  toggleChecked() {
+    this.checked = !this.checked;
+    this.checkedChange.emit(this.checked);
+  }
  }

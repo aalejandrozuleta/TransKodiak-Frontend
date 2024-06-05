@@ -1,15 +1,17 @@
 <table>
-  <thead>
-    <tr>
-      <th>Usuarios</th>
-      <th>Avatar</th>
-      <th>Nombre Completo</th>
-      <th>Correo</th>
+  <div>
+    <div class="items-table">
+      <th class="item-user">Transportadores</th> 
+      <th class="item-placa">Placa</th>
+      <th class="item-correo">Correo</th>
       <th>Date</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <app-user-row-component-vehicle-company *ngFor="let user of users" [user]="user"></app-user-row-component-vehicle-company>
-  </tbody>
-</table>1
+    </div>
+  </div>
+
+
+      <app-user-row-component-vehicle-company 
+      *ngFor="let user of users"
+        [user]="user" 
+        (deleteUser)="handleDeleteUser($event)">
+      </app-user-row-component-vehicle-company>
+</table>

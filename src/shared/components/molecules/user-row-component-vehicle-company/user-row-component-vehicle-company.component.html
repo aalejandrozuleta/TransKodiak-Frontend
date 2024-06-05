@@ -1,8 +1,10 @@
-<tr>
-  <td><app-check-component-vehicle-company [checked]="user.checked"></app-check-component-vehicle-company></td>
-  <td><app-user-avatar-component-vehicle-company [avatar]="user.avatarSrc"></app-user-avatar-component-vehicle-company></td>
-  <td>{{ user.name }}</td>
-  <td>{{ user.email }}</td>
-  <td>{{ user.date }}</td>
-  <td><button (click)="onDelete(user.id)">Eliminar</button></td>
-</tr>
+<section class="row-table">
+  <td><app-check-component-vehicle-company [checked]="user.isChecked" (checkedChange)="user.isChecked = $event"></app-check-component-vehicle-company></td>
+  <td><app-user-avatar-component-vehicle-company [avatar]="user.avatar"></app-user-avatar-component-vehicle-company></td>
+  <td class="item-name" >{{ user.name }}</td>
+  <td class="item-placa" >{{ user.placa }}</td>
+  <td class="item-email" >{{ user.email }}</td>
+  <td class="item-date" >{{ user.date }}</td>
+  <img [src]="delete" (click)="deleteUserHandler(user.id)" alt="Eliminar">
+  <!-- <td><button (click)="deleteUserHandler(user.id)">Eliminar</button></td> -->
+</section>

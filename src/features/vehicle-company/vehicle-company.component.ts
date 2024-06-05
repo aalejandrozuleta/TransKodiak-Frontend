@@ -1,4 +1,4 @@
-import { User } from './../../core/models/user-table-vehicle-company';
+import { userTableVehicle } from './../../core/models/user-table-vehicle-company';
 import { GroupTableUserVehicleCompanyComponent } from 'src/shared/components/organisms/group-table-user-vehicle-company/group-table-user-vehicle-company.component';
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
