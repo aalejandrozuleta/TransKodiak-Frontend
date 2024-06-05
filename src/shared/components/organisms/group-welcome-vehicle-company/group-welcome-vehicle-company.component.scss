@@ -1,0 +1,8 @@
+@import 'colors/_defaultColor';
+
+.content-bienvenida {
+  width: 700px;
+  margin-top: 20px;
+  background-color: map-get($primary , 'one');
+  border-radius: 10px;
+}

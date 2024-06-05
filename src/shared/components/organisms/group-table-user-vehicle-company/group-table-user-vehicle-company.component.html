@@ -1,0 +1,17 @@
+<table>
+  <div>
+    <div class="items-table">
+      <th class="item-user">Transportadores</th> 
+      <th class="item-placa">Placa</th>
+      <th class="item-correo">Correo</th>
+      <th>Date</th>
+    </div>
+  </div>
+
+
+      <app-user-row-component-vehicle-company 
+      *ngFor="let user of users"
+        [user]="user" 
+        (deleteUser)="handleDeleteUser($event)">
+      </app-user-row-component-vehicle-company>
+</table>

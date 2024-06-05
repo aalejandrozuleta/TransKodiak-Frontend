@@ -1,0 +1,16 @@
+.item-avatar{
+  padding-right:15px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-size: cover;
+  background-position: center;
+}

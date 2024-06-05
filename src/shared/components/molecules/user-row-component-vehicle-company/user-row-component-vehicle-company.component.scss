@@ -1,0 +1,23 @@
+ .row-table{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center; 
+  border-bottom: rgb(236, 236, 236) 1px solid;
+}
+.item-name{
+  width: 310px;
+}
+.item-placa{
+  width: 120px;
+}
+.item-email{
+  width: 250px;
+}
+.item-date{
+  width: 100px;
+}
+img{
+  width: 21px;
+  height: 21px;
+}
