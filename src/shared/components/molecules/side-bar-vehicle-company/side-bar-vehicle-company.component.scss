@@ -1,0 +1,10 @@
+.side-bar {
+    width: 130px; /* Ajusta el ancho según sea necesario */
+    height: 97vh; /* Altura de la pantalla completa */
+    background-color: #1a1a1a; /* Color de fondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0; /* Espaciado superior e inferior */
+  }
