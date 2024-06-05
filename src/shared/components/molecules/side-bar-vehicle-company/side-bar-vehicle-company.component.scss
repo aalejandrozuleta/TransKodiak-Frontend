@@ -1,10 +1,12 @@
+@import 'colors/defaultColor';
+
 .side-bar {
-    width: 130px; /* Ajusta el ancho según sea necesario */
-    height: 97vh; /* Altura de la pantalla completa */
-    background-color: #1a1a1a; /* Color de fondo */
+    width: 130px; 
+    height: 97vh; 
+    background-color: map-get($primary, 'one'); 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0; /* Espaciado superior e inferior */
+    padding: 10px 0; 
   }
