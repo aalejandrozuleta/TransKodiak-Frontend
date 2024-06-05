@@ -20,47 +20,47 @@ export class GroupTableUserVehicleCompanyComponent {
   users:userTableVehicle[] = [
    {
       avatar: '../../../../assets/imagenes/empresario.png',
-      name: 'Nombre del usuario',
-      email: 'correo@ejemplo.com',
-      date: 'Fecha',
-      id: 2,
-      placa: 'safasfsafaf',
-      isChecked: true
-    },
-    {
-      avatar: '../../../../assets/imagenes/empresario.png',
-      name: 'Nombre del usuario',
-      email: 'correo@ejemplo.com',
-      date: 'Fecha',
+      name: 'Wilton Cesar',
+      email: 'wilinton07@ejemplo.com',
+      date: '20/02/2024',
       id: 1,
-      placa: 'safasfsafaf',
+      placa: 'AFK - 123',
       isChecked: true
     },
     {
       avatar: '../../../../assets/imagenes/empresario.png',
-      name: 'Nombre del usuario',
-      email: 'correo@ejemplo.com',
-      date: 'Fecha',
+      name: 'Nicolas Mateo',
+      email: 'matonico@ejemplo.com',
+      date: '23/04/2024',
+      id: 2,
+      placa: 'AGH - 567',
+      isChecked: true
+    },
+    {
+      avatar: '../../../../assets/imagenes/empresario.png',
+      name: 'Armando Casas',
+      email: 'casasaaa@ejemplo.com',
+      date: '25/08/2023',
       id: 3,
-      placa: 'safasfsafaf',
+      placa: 'ERG - 890',
       isChecked: true
     },
     {
       avatar: '../../../../assets/imagenes/empresario.png',
-      name: 'Sofia',
-      email: 'correo@ejemplo.com',
-      date: 'Fecha',
+      name: 'Sofia Ramirez',
+      email: 'sofiaaa@ejemplo.com',
+      date: '25/09/2023',
       id: 4,
-      placa: 'safasfsafaf',
+      placa: 'ERG - 898',
       isChecked: true
     },
     {
       avatar: '../../../../assets/imagenes/empresario.png',
-      name: 'Catalina',
+      name: 'Catalina Osorio',
       email: 'cata@ejemplo.com',
-      date: 'Fecha',
+      date: '12/07/2023',
       id: 5,
-      placa: 'perrppp',
+      placa: 'ERG - 897',
       isChecked: true
     },
   ];

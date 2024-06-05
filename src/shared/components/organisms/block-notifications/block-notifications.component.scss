@@ -3,10 +3,10 @@
 .modalNotifications {
   width: 25vw;
   height: 80vh;
-  background-color: map-get($secundary , 'one' );
+  background-color: map-get($default , 'two' );
   z-index: 1;
   position: absolute;
-  top: 20%;
+  top: 15%;
   right: 20%;
   margin: auto 10px;
   border-radius: 20px;
