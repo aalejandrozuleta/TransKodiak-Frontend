@@ -2,10 +2,9 @@ import { Injectable } from '@angular/core';
 import { userTableVehicle } from '@models/user-table-vehicle-company';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserVehicleCompanyService {
-
   private users: userTableVehicle[] = [
     {
       avatar: '../../../../assets/imagenes/empresario.png',
@@ -14,7 +13,7 @@ export class UserVehicleCompanyService {
       date: '20/02/2024',
       id: 1,
       placa: 'AFK - 123',
-      isChecked: true
+      isChecked: true,
     },
     {
       avatar: '../../../../assets/imagenes/empresario.png',
@@ -23,7 +22,7 @@ export class UserVehicleCompanyService {
       date: '23/04/2024',
       id: 2,
       placa: 'AGH - 567',
-      isChecked: true
+      isChecked: true,
     },
     {
       avatar: '../../../../assets/imagenes/empresario.png',
@@ -32,7 +31,7 @@ export class UserVehicleCompanyService {
       date: '25/08/2023',
       id: 3,
       placa: 'ERG - 890',
-      isChecked: true
+      isChecked: true,
     },
     {
       avatar: '../../../../assets/imagenes/empresario.png',
@@ -41,7 +40,7 @@ export class UserVehicleCompanyService {
       date: '25/09/2023',
       id: 4,
       placa: 'ERG - 898',
-      isChecked: true
+      isChecked: true,
     },
     {
       avatar: '../../../../assets/imagenes/empresario.png',
@@ -50,17 +49,22 @@ export class UserVehicleCompanyService {
       date: '12/07/2023',
       id: 5,
       placa: 'ERG - 897',
-      isChecked: true
+      isChecked: true,
     },
   ];
+  private copyUsers: userTableVehicle[] = [...this.users];
 
-  constructor() { }
+  constructor() {}
 
   getUsers() {
     return this.users;
   }
 
-  setUsers(users: userTableVehicle[]) {
-    this.users = users;
+  setUsers(user: userTableVehicle[]) {
+    this.users = user;
+  }
+
+  resetUsers() {
+    this.users = [...this.copyUsers]; 
   }
 }
