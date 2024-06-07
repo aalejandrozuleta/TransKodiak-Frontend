@@ -11,6 +11,7 @@
 
       <app-user-row-component-vehicle-company 
       *ngFor="let user of users"
-        [user]="user" >
+        [user]="user" 
+        (deleteUser)="deleteUser($event)">
       </app-user-row-component-vehicle-company>
 </table>
