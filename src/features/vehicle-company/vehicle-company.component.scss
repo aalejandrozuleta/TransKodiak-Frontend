@@ -7,6 +7,7 @@
   grid-template-areas: 
   "aside navBar"
   "aside welcome"
+  "aside navOptions"
   "aside table";
 
   aside {
@@ -19,6 +20,10 @@
 
   #welcome {
     grid-area: welcome;
+  }
+
+  #navOptions {
+    grid-area: navOptions;
   }
 
   .vehicle-company-panel {

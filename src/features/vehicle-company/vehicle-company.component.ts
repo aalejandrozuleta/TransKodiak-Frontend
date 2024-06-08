@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GroupWelcomeVehicleCompanyComponent } from 'src/shared/components/organisms/group-welcome-vehicle-company/group-welcome-vehicle-company.component';
 import { GroupTableUserVehicleCompanyComponent } from '@organisms/group-table-user-vehicle-company/group-table-user-vehicle-company.component';
-
-
+import { NavOptionsTableVehicleComponent } from '@organisms/nav-options-table-vehicle/nav-options-table-vehicle.component';
 
 @Component({
   selector: 'app-vehicle-company',
@@ -16,6 +15,7 @@ import { GroupTableUserVehicleCompanyComponent } from '@organisms/group-table-us
     CompleteSideBarComponent,
     GroupWelcomeVehicleCompanyComponent,
     GroupTableUserVehicleCompanyComponent,
+    NavOptionsTableVehicleComponent,
   ],
 
   templateUrl: './vehicle-company.component.html',

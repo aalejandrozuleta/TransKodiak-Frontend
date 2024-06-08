@@ -1,12 +1,12 @@
 @import 'colors/_defaultColor';
+@import 'inherence/flexCenter';
 
 #blockSearch {
+  @extend %flexCenter;
   margin-left: 95px;
   width: 60%;
-  height: 35px;
+  height: 100%;
   background-color: map-get($primary, 'one' );
-  display: flex;
   border-radius: 10px;
   border: none;
-  align-items: center;
 }
