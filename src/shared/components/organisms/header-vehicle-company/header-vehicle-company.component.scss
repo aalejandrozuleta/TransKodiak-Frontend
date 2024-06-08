@@ -1,0 +1,49 @@
+@import "inherence/_totalSize";
+@import "inherence/_gridCenter";
+@import "colors/_navegationColor";
+
+#navBar {
+  @extend %totalSize;
+  #menu {
+    @extend %totalSize;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: end;
+
+    .listMenu {
+      @extend %gridCenter;
+      a {
+        text-decoration: none;
+        color: map-get($nav, "btnColor");
+        position: relative;
+        background: none;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: color;
+
+        &:focus,
+        &:hover {
+          color: #1A517C;
+        }
+
+        &:focus:after,
+        &:hover:after {
+          width: 100%;
+          left: 0%;
+        }
+
+        &:after {
+          content: "";
+          pointer-events: none;
+          bottom: -2px;
+          left: 50%;
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          background-color: #1A517C;
+          transition: width, left, cubic-bezier(0.25, 0.8, 0.25, 1), 400ms;
+        }
+      }
+    }
+  }
+}
