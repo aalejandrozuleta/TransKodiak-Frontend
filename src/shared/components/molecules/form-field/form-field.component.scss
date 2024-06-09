@@ -1,0 +1,10 @@
+@import "inherence/_flexCenter";
+
+.form-field {
+  margin-bottom: 1.5rem;
+  width: 450px;
+  height: 55px;
+}
+.container-all{
+  @extend %flexCenter;
+}
