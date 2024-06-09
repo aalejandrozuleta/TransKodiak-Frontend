@@ -1,3 +1,4 @@
+import { CompleteHeaderFormVehicleComponent } from '@organisms/complete-header-form-vehicle/complete-header-form-vehicle.component';
 import { CompleteSideBarComponent } from '@organisms/complete-side-bar/complete-side-bar.component';
 import { NavBarVehicleCompanyComponent } from '@templates/nav-bar-vehicle-company/nav-bar-vehicle-company.component';
 import { Component } from '@angular/core';
@@ -16,6 +17,7 @@ import { GroupTableUserVehicleCompanyComponent } from '@organisms/group-table-us
     CompleteSideBarComponent,
     GroupWelcomeVehicleCompanyComponent,
     GroupTableUserVehicleCompanyComponent,
+    CompleteHeaderFormVehicleComponent
   ],
 
   templateUrl: './vehicle-company.component.html',
