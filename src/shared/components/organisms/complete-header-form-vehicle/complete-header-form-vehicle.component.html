@@ -1,0 +1,16 @@
+<div class="container-all">
+  <app-header-form-create-vehicle class="header-form"
+  title="Crear Vehiculo" 
+  subtitle="Crea un vehiculo de tu empresa." 
+  (close)="handleClose()">
+</app-header-form-create-vehicle>
+
+<form>
+    <app-form-field label="Tipo de Vehiculo" id="tipo-vehiculo" type="text" placeholder="Tipo"></app-form-field>
+    <app-form-field label="Nit" id="nit" type="text" placeholder="Nit"></app-form-field>
+    <app-form-field label="Placa" id="placa" type="text" placeholder="Placa"></app-form-field>
+    <app-form-field label="Capacidad" id="capacidad" type="text" placeholder="Capacidad"></app-form-field>
+    <app-form-field label="Descripcion" id="descripcion" type="text" placeholder="Descripcion"></app-form-field>
+    <app-form-buttons></app-form-buttons>
+  </form>
+</div>
