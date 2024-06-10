@@ -1,10 +1,9 @@
 import { userTableVehicle } from './../../../../core/models/user-table-vehicle-company';
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CheckComponentVehicleCompanyComponent } from '@atoms/check-component-vehicle-company/check-component-vehicle-company.component';
 import { UserRowComponentVehicleCompanyComponent } from '@molecules/user-row-component-vehicle-company/user-row-component-vehicle-company.component';
-import { AdministrationUserVehicleCompanyService } from '@services/administration-user-vehicle-company.service';
-import { UserVehicleCompanyService } from '@services/user-vehicle-company.service';
+import { SeekerVehicleCompanyService } from '@services/seeker-vehicle-company.service';
 
 @Component({
   selector: 'app-group-table-user-vehicle-company',
@@ -12,28 +11,21 @@ import { UserVehicleCompanyService } from '@services/user-vehicle-company.servic
   imports: [
     UserRowComponentVehicleCompanyComponent,
     CommonModule,
-    CheckComponentVehicleCompanyComponent
+    CheckComponentVehicleCompanyComponent,
   ],
   templateUrl: './group-table-user-vehicle-company.component.html',
-  styleUrls: ['./group-table-user-vehicle-company.component.scss']
+  styleUrls: ['./group-table-user-vehicle-company.component.scss'],
 })
 export class GroupTableUserVehicleCompanyComponent implements OnInit {
-
   public users: userTableVehicle[] = [];
 
   constructor(
-    private userVehicleCompanyService: UserVehicleCompanyService,
-    private administrationUserVehicleCompanyService: AdministrationUserVehicleCompanyService
+    private SeekerVehicleCompanyService: SeekerVehicleCompanyService
   ) {}
 
-  ngOnInit(): void {
-    this.userVehicleCompanyService.getTransporters().subscribe(res => {
-      this.users = res;
-    })
+  ngOnInit() {
+    this.SeekerVehicleCompanyService.filteredDates.subscribe((data) => {
+      this.users = data;
+    });
   }
-
-/*   deleteUser(userId: number) {
-    this.administrationUserVehicleCompanyService.deleteUser(userId);
-    this.users = this.userVehicleCompanyService.getTransporters();
-  } */
 }
