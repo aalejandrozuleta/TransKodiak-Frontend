@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { userTableVehicle } from '@models/user-table-vehicle-company';
+import { AdministrationUserVehicleCompanyService } from './administration-user-vehicle-company.service';
 
 @Injectable({
   providedIn: 'root',
