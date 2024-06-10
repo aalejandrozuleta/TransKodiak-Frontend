@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-button-next',
@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button-next.component.scss'
 })
 export class ButtonNextComponent {
-  @Input() text: string = 'Next';
+  text: string = 'Siguiente';
 }
