@@ -10,9 +10,10 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrl: './button-modal-vehicle-company.component.scss'
 })
 export class ButtonModalVehicleCompanyComponent {
-  constructor(public dialog: MatDialog) {}
 
-  openDialog(): void {
-    this.dialog.open(CompleteHeaderFormVehicleComponent);
+  showModal = false;
+
+  onClick() {
+    this.showModal = !this.showModal;
   }
 }
