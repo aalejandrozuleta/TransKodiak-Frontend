@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './button-delete-modal-vehicle-company.component.scss'
 })
 export class ButtonDeleteModalVehicleCompanyComponent {
-
-}
+  img = '../../../../assets/imagenes/borrar.png';
+} 

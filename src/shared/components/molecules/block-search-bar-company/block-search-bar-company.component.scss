@@ -2,7 +2,8 @@
 @import 'inherence/flexCenter';
 
 #blockSearch {
-  @extend %flexCenter;
+  display: grid;
+  grid-template-columns: 10% auto;
   width: 60%;
   height: 30px;
   background-color: map-get($primary, 'one' );

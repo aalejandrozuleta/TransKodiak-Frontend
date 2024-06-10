@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './button-modal-vehicle-company.component.scss'
 })
 export class ButtonModalVehicleCompanyComponent {
-
+  img = '../../../../assets/imagenes/agregar-usuario (1).png';
 }

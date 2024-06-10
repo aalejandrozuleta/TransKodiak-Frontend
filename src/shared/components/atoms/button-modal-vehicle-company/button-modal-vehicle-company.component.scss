@@ -1,13 +1,5 @@
-button{
-  width: 48px;
-  height: 30px;
-  border-radius: 6px;
-  border: 1px solid #253745;
-  background-color: #fff;
-  margin-right: 5px;
-  
-  img{
-    width: 18px;
-  }
-}
+@import 'inherence/_buttonStyleHeaderVehicleCompany';
 
+.btnOptionsMenuNav {
+  @extend %buttonStyleHeaderVehicleCompany;
+}

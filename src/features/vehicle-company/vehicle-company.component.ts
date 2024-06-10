@@ -26,6 +26,6 @@ import { CreateModalTransporter } from '@organisms/create-modal-transporter/crea
   styleUrl: './vehicle-company.component.scss',
 })
 export class VehicleCompanyComponent {
-  // @Input() users!: User[];
+  
 }
  
