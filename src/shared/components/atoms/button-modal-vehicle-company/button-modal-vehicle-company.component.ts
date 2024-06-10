@@ -1,4 +1,6 @@
+import { CompleteHeaderFormVehicleComponent } from '@organisms/complete-header-form-vehicle/complete-header-form-vehicle.component';
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-button-modal-vehicle-company',
@@ -8,5 +10,9 @@ import { Component } from '@angular/core';
   styleUrl: './button-modal-vehicle-company.component.scss'
 })
 export class ButtonModalVehicleCompanyComponent {
+  constructor(public dialog: MatDialog) {}
 
+  openDialog(): void {
+    this.dialog.open(CompleteHeaderFormVehicleComponent);
+  }
 }
