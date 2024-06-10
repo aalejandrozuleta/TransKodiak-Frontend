@@ -6,13 +6,12 @@
   @extend %flexCenter;
 
   #searchCompany {
-    height: 20%;
-    width: 300px;
+    width: 200px;
     border: none;
-    padding: 5px;
     background-color: transparent;
     color: map-get($default, 'one');
     outline: none;
+    font-size: 12px;
 
     &::placeholder {
       color: map-get($default, 'one');

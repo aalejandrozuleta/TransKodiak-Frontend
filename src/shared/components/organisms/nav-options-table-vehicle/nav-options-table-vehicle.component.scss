@@ -1,6 +1,10 @@
+@import "inherence/_flexCenter";
+
 #navOptionsVehicle {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(2,50%);
-  background-color: red;
+  @extend %flexCenter;
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
