@@ -11,7 +11,7 @@ export class UserVehicleCompanyService {
 
   getTransporters() {
     return this.http.get<userTableVehicle[]>(
-      'http://localhost:8000/transporters'
+      'http://localhost:8000/transporter'
     );
   }
 
