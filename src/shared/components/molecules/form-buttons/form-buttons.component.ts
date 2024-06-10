@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ButtonCancelComponent } from '@atoms/button-cancel/button-cancel.component';
 import { ButtonNextComponent } from '@atoms/button-next/button-next.component';
 import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/create-modal-vehicle.component';
-// import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-form-buttons',
@@ -14,9 +13,4 @@ import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/cre
 })
 export class FormButtonsComponent {
 
-  // constructor(public dialog: MatDialog) {}
-
-  // openDialog(): void {
-  //   this.dialog.open(CreateModalVehicleComponent);
-  // }
 }
