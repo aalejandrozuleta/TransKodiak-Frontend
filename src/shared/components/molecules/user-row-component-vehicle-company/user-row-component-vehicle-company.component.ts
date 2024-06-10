@@ -2,7 +2,6 @@ import { CheckComponentVehicleCompanyComponent } from 'src/shared/components/ato
 import { userTableVehicle } from './../../../../core/models/user-table-vehicle-company';
 import { CommonModule } from '@angular/common';
 import { Component, Input, EventEmitter, Output } from '@angular/core';
-import { ButtonDeleteVehicleCompanyComponent } from '@atoms/button-delete-vehicle-company/button-delete-vehicle-company.component';
 import { UserAvatarComponentVehicleCompanyComponent } from '@atoms/user-avatar-component-vehicle-company/user-avatar-component-vehicle-company.component';
 
 @Component({
@@ -10,7 +9,6 @@ import { UserAvatarComponentVehicleCompanyComponent } from '@atoms/user-avatar-c
   standalone: true,
   imports: [
     CommonModule,
-    ButtonDeleteVehicleCompanyComponent,
     UserAvatarComponentVehicleCompanyComponent,
     CheckComponentVehicleCompanyComponent
   ],

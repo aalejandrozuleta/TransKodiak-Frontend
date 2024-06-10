@@ -3,9 +3,8 @@
 
 #blockSearch {
   @extend %flexCenter;
-  margin-left: 95px;
   width: 60%;
-  height: 100%;
+  height: 30px;
   background-color: map-get($primary, 'one' );
   border-radius: 10px;
   border: none;
