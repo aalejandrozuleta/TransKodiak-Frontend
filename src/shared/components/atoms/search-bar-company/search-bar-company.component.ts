@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SeekerVehicleCompanyService } from '@services/seeker-vehicle-company.service';
+//import { SeekerVehicleCompanyService } from '@services/seeker-vehicle-company.service';
 
 
 @Component({
@@ -13,9 +13,9 @@ import { SeekerVehicleCompanyService } from '@services/seeker-vehicle-company.se
 export class SearchBarCompanyComponent {
   searchValue: string = '';
 
-  constructor(private SeekerVehicleCompanyService: SeekerVehicleCompanyService) {}
+  //constructor(private SeekerVehicleCompanyService: SeekerVehicleCompanyService) {}
 
-  onSearchChange() {
-    this.SeekerVehicleCompanyService.getFilteredUsers(this.searchValue);
-  }
+  // onSearchChange() {
+  //   this.SeekerVehicleCompanyService.getFilteredUsers(this.searchValue);
+  // }
 }

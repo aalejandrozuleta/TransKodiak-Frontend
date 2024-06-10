@@ -19,19 +19,21 @@ import { UserVehicleCompanyService } from '@services/user-vehicle-company.servic
 })
 export class GroupTableUserVehicleCompanyComponent implements OnInit {
 
-  users: userTableVehicle[] = [];
+  public users: userTableVehicle[] = [];
 
   constructor(
     private userVehicleCompanyService: UserVehicleCompanyService,
     private administrationUserVehicleCompanyService: AdministrationUserVehicleCompanyService
   ) {}
 
-  ngOnInit() {
-    this.users = this.userVehicleCompanyService.getUsers();
+  ngOnInit(): void {
+    this.userVehicleCompanyService.getTransporters().subscribe(res => {
+      this.users = res;
+    })
   }
 
-  deleteUser(userId: number) {
+/*   deleteUser(userId: number) {
     this.administrationUserVehicleCompanyService.deleteUser(userId);
-    this.users = this.userVehicleCompanyService.getUsers();
-  }
+    this.users = this.userVehicleCompanyService.getTransporters();
+  } */
 }
