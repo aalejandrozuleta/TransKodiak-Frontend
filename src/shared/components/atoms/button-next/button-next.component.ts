@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+// import { MatDialog } from '@angular/material/dialog';
 import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/create-modal-vehicle.component';
 
 @Component({
@@ -13,10 +13,10 @@ import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/cre
 export class ButtonNextComponent {
   text: string = 'Siguiente';
 
-  constructor(public dialog: MatDialog) {}
+  // constructor(public dialog: MatDialog) {}
 
-  openDialog1(): void {
-    this.dialog.open(CreateModalVehicleComponent);
-  }
+  // openDialog1(): void {
+  //   this.dialog.open(CreateModalVehicleComponent);
+  // }
 
 }
