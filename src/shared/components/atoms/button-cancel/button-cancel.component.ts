@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-button-cancel',
@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button-cancel.component.scss'
 })
 export class ButtonCancelComponent {
-  @Input() text: string = 'Cancel';
+  text: string = 'Cancel';
 }
