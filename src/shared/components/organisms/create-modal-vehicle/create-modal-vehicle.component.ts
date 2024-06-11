@@ -17,10 +17,5 @@ import { HeaderFormCreateVehicleComponent } from '@molecules/form-header-vehicle
   styleUrls: ['./create-modal-vehicle.component.scss']
 })
 export class CreateModalVehicleComponent {
-  @Output() close = new EventEmitter<void>();
   text: string = 'Guardar';
-
-  handleClose() {
-    this.close.emit();
-  }
 }

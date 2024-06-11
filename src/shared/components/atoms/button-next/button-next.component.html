@@ -1,5 +1,5 @@
-<button (click)="onClick()">
+<button (click)="openModal()">
   {{ text }}
 </button>
 
-<app-create-modal-vehicle *ngIf="showModal" (close)="handleClose()"></app-create-modal-vehicle>
+<app-create-modal-vehicle *ngIf="modal"></app-create-modal-vehicle>
