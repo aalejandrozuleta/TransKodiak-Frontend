@@ -16,7 +16,4 @@ import { HeaderFormCreateVehicleComponent } from '@molecules/form-header-vehicle
   styleUrls: ['./complete-header-form-vehicle.component.scss']
 })
 export class CompleteHeaderFormVehicleComponent {
-  handleClose() {
-    console.log('Cerrar modal'); // Aquí puedes añadir la lógica para cerrar el modal
-  }
 }

@@ -1,1 +1,5 @@
-<button class="btn-next">{{ text }}</button>
+<button (click)="openModal()" class="btn-next">
+  {{ text }}
+</button>
+
+<app-create-modal-vehicle *ngIf="modal"></app-create-modal-vehicle>

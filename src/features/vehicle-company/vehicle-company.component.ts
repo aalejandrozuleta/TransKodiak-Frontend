@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { GroupWelcomeVehicleCompanyComponent } from 'src/shared/components/organisms/group-welcome-vehicle-company/group-welcome-vehicle-company.component';
 import { GroupTableUserVehicleCompanyComponent } from '@organisms/group-table-user-vehicle-company/group-table-user-vehicle-company.component';
 import { NavOptionsTableVehicleComponent } from '@organisms/nav-options-table-vehicle/nav-options-table-vehicle.component';
-import { CreateModalTransporter } from '@organisms/create-modal-transporter/create-modal-transporter.component';
 
 @Component({
   selector: 'app-vehicle-company',
@@ -18,8 +17,7 @@ import { CreateModalTransporter } from '@organisms/create-modal-transporter/crea
     GroupWelcomeVehicleCompanyComponent,
     GroupTableUserVehicleCompanyComponent,
     NavOptionsTableVehicleComponent,
-    CompleteHeaderFormVehicleComponent,
-    CreateModalTransporter
+    CompleteHeaderFormVehicleComponent
   ],
 
   templateUrl: './vehicle-company.component.html',

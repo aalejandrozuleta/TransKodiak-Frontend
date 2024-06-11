@@ -7,12 +7,14 @@ import { SeekerVehicleCompanyService } from '@services/seeker-vehicle-company.se
   standalone: true,
   imports: [FormsModule],
   templateUrl: './search-bar-company.component.html',
-  styleUrl: './search-bar-company.component.scss'
+  styleUrl: './search-bar-company.component.scss',
 })
 export class SearchBarCompanyComponent {
   searchValue: string = '';
 
-  constructor(private SeekerVehicleCompanyService: SeekerVehicleCompanyService) {}
+  constructor(
+    private SeekerVehicleCompanyService: SeekerVehicleCompanyService
+  ) {}
 
   onSearchChange() {
     this.SeekerVehicleCompanyService.getFilteredUsers(this.searchValue);

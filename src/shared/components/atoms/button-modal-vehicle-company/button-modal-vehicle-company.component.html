@@ -1,3 +1,5 @@
-<button class="btnOptionsMenuNav">
-  <img [src]="img" alt="">
+<button (click)="openModal()" class="btnOptionsMenuNav">
+  <img [src]="img" alt="error">
 </button>
+
+<app-complete-header-form-vehicle *ngIf="showModal"></app-complete-header-form-vehicle>
