@@ -1,16 +1,27 @@
 <table>
   <div>
     <div class="items-table">
-      <th class="item-user">Transportadores</th> 
+      <th class="item-user">Transportadores</th>
       <th class="item-placa">Placa</th>
       <th class="item-correo">Correo</th>
       <th>Date</th>
     </div>
   </div>
 
-
-      <app-user-row-component-vehicle-company 
-      *ngFor="let user of users"
-        [user]="user" >
+  <tbody>
+    <ng-container *ngIf="!isEmptyState; else emptyState">
+      <app-user-row-component-vehicle-company
+        *ngFor="let user of users"
+        [user]="user">
       </app-user-row-component-vehicle-company>
+    </ng-container>
+    <ng-template #emptyState>
+      <tr>
+        <td colspan="4">
+          <app-empty-state></app-empty-state>
+        </td>
+      </tr>
+    </ng-template>
+  </tbody>
+
 </table>
