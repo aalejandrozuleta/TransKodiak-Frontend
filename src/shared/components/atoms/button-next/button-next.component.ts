@@ -14,7 +14,6 @@ import { Subscription } from 'rxjs';
 export class ButtonNextComponent implements OnInit, OnDestroy {
   modal = false;
   text: string = 'Siguiente';
-
   private subscription: Subscription = Subscription.EMPTY;
 
   constructor(private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService) {}
@@ -33,5 +32,3 @@ export class ButtonNextComponent implements OnInit, OnDestroy {
     this.ModalsCreateVehicleTransporterService.next();
   }
 }
-
-
