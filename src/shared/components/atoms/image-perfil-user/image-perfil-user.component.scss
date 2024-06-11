@@ -1,0 +1,22 @@
+@import 'inherence/flexCenter';
+@import 'colors/defaultColor';
+
+#imagePerfilUser {
+  position: relative;
+  width: 35%;
+  height: 90%;
+  background-color: map-get($terciary, 'two' );
+  margin: 0 auto;
+  bottom: 50%;
+  @extend %flexCenter;
+  border-radius: 60px;
+
+  img {
+    background-color: map-get($primary, 'one' );
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 60px;
+  }
+}

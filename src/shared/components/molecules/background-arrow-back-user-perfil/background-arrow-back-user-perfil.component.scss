@@ -1,0 +1,5 @@
+@import 'inherence/totalSize';
+
+#backgroundPerfil {
+  @extend %totalSize;
+}

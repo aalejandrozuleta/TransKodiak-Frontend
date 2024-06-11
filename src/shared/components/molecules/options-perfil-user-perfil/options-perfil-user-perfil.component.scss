@@ -1,0 +1,14 @@
+@import 'inherence/totalSize';
+@import 'inherence/flexCenter';
+
+#blockOptionsuser {
+  @extend %totalSize;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,20%);
+  margin: 0 20px;
+
+  .options {
+    display: grid;
+  }
+}

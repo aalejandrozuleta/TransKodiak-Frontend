@@ -1,0 +1,31 @@
+@import 'colors/defaultColor';
+
+#blockUserSettingsOptions {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  width: 350px;
+  height: 100vh;
+  background-color: map-get($default , 'one' );
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'background' 'nameUser' 'options' 'footer';
+  grid-template-rows: 25% 20% 50% 5%;
+
+  #background {
+    grid-area: background;
+  }
+
+  #nameUser {
+    grid-area: nameUser;
+  }
+
+  #options {
+    grid-area: options;
+  }
+
+  #footer {
+    grid-area: footer;
+  }
+}

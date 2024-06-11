@@ -1,0 +1,13 @@
+<section id="blockOptionsuser">
+  <div *ngFor="let item of optionsMenu">
+    <app-btns-options-perfil-user
+      class="options"
+      [imgOptions]="item.imgOptions"
+      [nameAction]="item.nameAction"
+      [imgArrow]="item.imgArrow"
+      [className]="item.className"
+      [action]="item.action"
+  
+    ></app-btns-options-perfil-user>
+  </div>
+</section>

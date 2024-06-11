@@ -1,0 +1,20 @@
+@import "inherence/flexCenter";
+@import 'colors/defaultColor';
+
+#nameUser {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  bottom: 40%;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 25%; 
+    height: 3px; 
+    background-color: map-get($primary, 'one' );
+    margin: 2px auto; 
+    border-radius: 20px;
+  }
+}

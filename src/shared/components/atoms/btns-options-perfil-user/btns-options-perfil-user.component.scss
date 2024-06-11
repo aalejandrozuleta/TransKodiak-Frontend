@@ -1,0 +1,52 @@
+@import 'colors/defaultColor';
+@import 'colors/buttonColor';
+
+.blockOptions {
+  width: 90%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 100%;
+  background-color: map-get($primary , 'one' );
+  margin: auto auto;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .nameAction {
+    margin: auto 0;
+    color: map-get($buttonColors , 'text' );
+    text-transform: capitalize;
+  }
+
+  .imgOptions {
+    width: 40%;
+    height: 40%;
+    margin: auto auto;
+    object-fit: contain;
+    filter: invert(100%);
+  }
+
+  .imgArrow {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.btnDisable {
+  background-color: transparent;
+
+  .imgOptions {
+    width: 90%;
+    height: 90%;
+    filter: invert(0%);
+  }
+  .nameAction {
+    color: #000;
+  }
+
+  .imgArrow {
+    margin: auto auto;
+    width: 50%;
+    height: 100%;
+  }
+}
