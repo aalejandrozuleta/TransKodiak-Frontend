@@ -15,4 +15,9 @@ export class UserVehicleCompanyService {
     );
   }
 
+  deleteUser(id: number) {
+    return this.http.delete(`http://localhost:8000/transporter/${id}`);
+  }
+  
+
 }

@@ -3,6 +3,7 @@ import { userTableVehicle } from './../../../../core/models/user-table-vehicle-c
 import { CommonModule } from '@angular/common';
 import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { UserAvatarComponentVehicleCompanyComponent } from '@atoms/user-avatar-component-vehicle-company/user-avatar-component-vehicle-company.component';
+import { AdministrationUserVehicleCompanyService } from '@services/administration-user-vehicle-company.service';
 
 @Component({
   selector: 'app-user-row-component-vehicle-company',
@@ -10,17 +11,18 @@ import { UserAvatarComponentVehicleCompanyComponent } from '@atoms/user-avatar-c
   imports: [
     CommonModule,
     UserAvatarComponentVehicleCompanyComponent,
-    CheckComponentVehicleCompanyComponent
+    CheckComponentVehicleCompanyComponent,
   ],
   templateUrl: './user-row-component-vehicle-company.component.html',
-  styleUrls: ['./user-row-component-vehicle-company.component.scss'] 
+  styleUrls: ['./user-row-component-vehicle-company.component.scss'],
 })
 export class UserRowComponentVehicleCompanyComponent {
   delete = '../../../../assets/imagenes/borrar.png';
   @Input() user!: userTableVehicle;
-  @Output() deleteUser = new EventEmitter<number>();
+
+  constructor (private AdministrationUserVehicleCompanyService:AdministrationUserVehicleCompanyService){}
 
   deleteUserHandler(id: number) {
-    this.deleteUser.emit(id);
+    this.AdministrationUserVehicleCompanyService.deleteUser(id);
   }
 }
