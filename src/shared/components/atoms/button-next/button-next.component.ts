@@ -5,11 +5,21 @@ import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/cre
 @Component({
   selector: 'app-button-next',
   standalone: true,
-  imports: [CreateModalVehicleComponent],
+  imports: [CommonModule, CreateModalVehicleComponent],
   templateUrl: './button-next.component.html',
-  styleUrl: './button-next.component.scss'
+  styleUrls: ['./button-next.component.scss']
 })
 export class ButtonNextComponent {
   text: string = 'Siguiente';
 
+  
+  showModal = false;
+
+  onClick() {
+    this.showModal = !this.showModal;
+  }
+
+  handleClose() {
+    this.showModal = false;
+  }
 }

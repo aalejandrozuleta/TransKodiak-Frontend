@@ -2,5 +2,4 @@
   <img src="../../../../assets/imagenes/agregar-usuario (1).png" alt="error">
 </button>
 
-
-<app-button-modal-vehicle-company *NgIf="showModal"></app-button-modal-vehicle-company>
+<app-complete-header-form-vehicle *ngIf="showModal" (close)="handleClose()"></app-complete-header-form-vehicle>

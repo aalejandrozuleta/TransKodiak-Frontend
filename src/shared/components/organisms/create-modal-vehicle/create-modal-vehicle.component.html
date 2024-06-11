@@ -1,8 +1,8 @@
 <div class="container-all">
   <app-header-form-create-vehicle class="header-form"
     title="Transportador" 
-    subtitle="Asigna un transportador a tu vehículo." 
-    >
+    subtitle="Asigna el Transportador." 
+    (close)="handleClose()">
   </app-header-form-create-vehicle>
 
   <form>
@@ -10,12 +10,6 @@
     <app-form-field label="Email" id="nit" type="text" placeholder="Email"></app-form-field>
     <app-form-field label="Teléfono" id="placa" type="text" placeholder="Teléfono"></app-form-field>
     <app-form-field label="Licencia" id="placa" type="text" placeholder="Licencia"></app-form-field>
-    <!-- <app-form-field label="Capacidad" id="capacidad" type="text" placeholder="Capacidad"></app-form-field> -->
-    <!-- <app-form-buttons></app-form-buttons>  -->
-     
-    <button>
-      {{ text }}
-    </button>
-    
+    <button> {{ text }} </button>
   </form>
 </div>
