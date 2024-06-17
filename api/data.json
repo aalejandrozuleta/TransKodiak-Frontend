@@ -45,6 +45,15 @@
       "placa": "ERG - 897",
       "isChecked": true
     }
-
+  ],
+  "vehicle": [
+    {
+      "id": "8765",
+      "license_plate": "ABC123",
+      "description": "Camión de carga pesada",
+      "capacity": 5000,
+      "loadType": "General",
+      "stateVehicle": "Activo"
+    }
   ]
 }

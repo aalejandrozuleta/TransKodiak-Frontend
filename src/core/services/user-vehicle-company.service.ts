@@ -1,7 +1,9 @@
+import { registerVehicle } from './../models/registerVehicle';
 import { userTransporterCreate } from './../models/userTransporter';
 import { Injectable } from '@angular/core';
 import { userTableVehicle } from '@models/user-table-vehicle-company';
 import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root',
@@ -21,5 +23,9 @@ export class UserVehicleCompanyService {
 
   createUserTransporter(user: userTransporterCreate) {
     return this.http.post('http://localhost:8000/transporter', user);
+  }
+
+  createVehicle(vehicle:registerVehicle){
+    return this.http.post('http://localhost:8000/vehicle', vehicle);
   }
 }
