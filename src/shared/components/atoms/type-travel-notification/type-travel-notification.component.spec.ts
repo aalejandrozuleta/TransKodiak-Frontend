@@ -8,10 +8,9 @@ describe('TypeTravelNotificationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TypeTravelNotificationComponent]
-    })
-    .compileComponents();
-    
+      imports: [TypeTravelNotificationComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(TypeTravelNotificationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

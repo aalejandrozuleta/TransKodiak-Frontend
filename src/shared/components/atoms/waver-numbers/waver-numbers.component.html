@@ -1,6 +1,10 @@
-<div *ngFor="let item of numbers; let i = index" [id]='"span" + i' class="numberSpan"  >
-  <div class="colorBox"></div> 
+<div
+  *ngFor="let item of numbers; let i = index"
+  [id]="'span' + i"
+  class="numberSpan"
+>
+  <div class="colorBox"></div>
   <span class="content">
-    {{item}}
+    {{ item }}
   </span>
 </div>

@@ -7,13 +7,13 @@ import { HeaderFormCreateVehicleComponent } from '@molecules/form-header-vehicle
 @Component({
   selector: 'app-complete-header-form-vehicle',
   standalone: true,
-  imports: [CommonModule, 
+  imports: [
+    CommonModule,
     HeaderFormCreateVehicleComponent,
     FormFieldComponent,
-    FormButtonsComponent
+    FormButtonsComponent,
   ],
   templateUrl: './complete-header-form-vehicle.component.html',
-  styleUrls: ['./complete-header-form-vehicle.component.scss']
+  styleUrls: ['./complete-header-form-vehicle.component.scss'],
 })
-export class CompleteHeaderFormVehicleComponent {
-}
+export class CompleteHeaderFormVehicleComponent {}

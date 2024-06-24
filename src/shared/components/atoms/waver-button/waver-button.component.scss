@@ -1,19 +1,19 @@
-@import "mixins/_buttonStyle";
-@import "inherence/_flexCenter";
-@import "inherence/_totalSize";
-@import "inherence/_gridCenter";
-@import "colors/_buttonColor";
+@import 'mixins/_buttonStyle';
+@import 'inherence/_flexCenter';
+@import 'inherence/_totalSize';
+@import 'inherence/_gridCenter';
+@import 'colors/_buttonColor';
 
 #blockButton {
   @extend %totalSize;
   @extend %flexCenter;
   #buttonWaver {
-    @include buttonStyle($width: 170px, $height:45px, $border-radius:10px);
+    @include buttonStyle($width: 170px, $height: 45px, $border-radius: 10px);
     display: grid;
     grid-template-columns: 30% auto;
 
     &:hover {
-      box-shadow: 0px 0px 20px  darken(map-get($buttonColors , 'background' ),10%);
+      box-shadow: 0px 0px 20px darken(map-get($buttonColors, 'background'), 10%);
     }
     img {
       height: 50%;

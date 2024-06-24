@@ -8,10 +8,9 @@ describe('WaverImageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WaverImageComponent]
-    })
-    .compileComponents();
-    
+      imports: [WaverImageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(WaverImageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

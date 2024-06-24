@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './footer-perfil-user.component.html',
-  styleUrl: './footer-perfil-user.component.scss'
+  styleUrl: './footer-perfil-user.component.scss',
 })
-export class FooterPerfilUserComponent {
-
-}
+export class FooterPerfilUserComponent {}

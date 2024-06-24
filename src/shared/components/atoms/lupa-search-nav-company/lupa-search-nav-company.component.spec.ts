@@ -8,10 +8,9 @@ describe('LupaSearchNavCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LupaSearchNavCompanyComponent]
-    })
-    .compileComponents();
-    
+      imports: [LupaSearchNavCompanyComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(LupaSearchNavCompanyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

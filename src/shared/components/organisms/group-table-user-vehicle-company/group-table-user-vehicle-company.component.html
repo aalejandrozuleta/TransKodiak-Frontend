@@ -13,7 +13,8 @@
     <ng-container *ngIf="!isEmptyState; else emptyState">
       <app-user-row-component-vehicle-company
         *ngFor="let user of users"
-        [user]="user">
+        [user]="user"
+      >
       </app-user-row-component-vehicle-company>
     </ng-container>
     <ng-template #emptyState>
@@ -24,5 +25,4 @@
       </tr>
     </ng-template>
   </tbody>
-
 </table>

@@ -8,10 +8,9 @@ describe('RowBackUserPerfilComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RowBackUserPerfilComponent]
-    })
-    .compileComponents();
-    
+      imports: [RowBackUserPerfilComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(RowBackUserPerfilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

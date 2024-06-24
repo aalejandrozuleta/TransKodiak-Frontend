@@ -1,9 +1,9 @@
 @import 'colors/defaultColor';
 @import 'inherence/totalSize';
 
-#backgroundOptionsUser{
+#backgroundOptionsUser {
   @extend %totalSize;
-  background-color: map-get($primary, 'one' );
+  background-color: map-get($primary, 'one');
   margin: 10px;
   border-radius: 10px;
 }

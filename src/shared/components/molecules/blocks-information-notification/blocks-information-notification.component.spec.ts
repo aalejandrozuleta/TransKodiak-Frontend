@@ -8,10 +8,9 @@ describe('BlocksInformationNotificationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BlocksInformationNotificationComponent]
-    })
-    .compileComponents();
-    
+      imports: [BlocksInformationNotificationComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(BlocksInformationNotificationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,12 +1,12 @@
-@import "colors/_defaultColor";
-@import "inherence/gridCenter";
+@import 'colors/_defaultColor';
+@import 'inherence/gridCenter';
 
 .numberSpan {
   width: 100%;
   height: 30px;
   gap: 0 10px;
   display: grid;
-  grid-template-areas: "colorBox content";
+  grid-template-areas: 'colorBox content';
   margin: 10px 0;
 }
 
@@ -16,7 +16,7 @@
 }
 #span1 {
   grid-template-columns: 99% 1%;
-  grid-template-areas: "content colorBox";
+  grid-template-areas: 'content colorBox';
   text-align: end;
 }
 
@@ -24,7 +24,7 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-color: map-get($primary, "one");
+  background-color: map-get($primary, 'one');
   margin: 0 auto;
 }
 
@@ -33,6 +33,6 @@
   margin: auto 0;
 
   &:hover {
-    text-shadow: 2px 2px 4px map-get($primary, 'two' );
+    text-shadow: 2px 2px 4px map-get($primary, 'two');
   }
 }

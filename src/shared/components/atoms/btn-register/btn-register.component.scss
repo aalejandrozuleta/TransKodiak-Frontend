@@ -1,25 +1,29 @@
-@import "mixins/_buttonStyle";
-@import "inherence/_totalSize";
-@import "inherence/_flexCenter";
-@import "colors/_navegationColor";
+@import 'mixins/_buttonStyle';
+@import 'inherence/_totalSize';
+@import 'inherence/_flexCenter';
+@import 'colors/_navegationColor';
 
-#blockBtnRegister{
+#blockBtnRegister {
   @extend %totalSize;
   @extend %flexCenter;
 
-
   #btnRegister {
-    @include buttonStyle($width: 40%, $height: 50%, $border-radius: 10px, $background: 'secondary');
-    // 
-    
-    &:hover{
-      box-shadow: 0px 0px 10px map-get($buttonColors , "secondary" );
-      background-color: map-get($buttonColors, "hover" );
+    @include buttonStyle(
+      $width: 40%,
+      $height: 50%,
+      $border-radius: 10px,
+      $background: 'secondary'
+    );
+    //
+
+    &:hover {
+      box-shadow: 0px 0px 10px map-get($buttonColors, 'secondary');
+      background-color: map-get($buttonColors, 'hover');
     }
-  
+
     a {
       text-decoration: none;
-      color: map-get($nav, "btnColor" );
+      color: map-get($nav, 'btnColor');
     }
   }
 }

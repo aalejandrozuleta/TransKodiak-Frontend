@@ -1,6 +1,6 @@
-@import "inherence/_totalSize";
-@import "inherence/_gridCenter";
-@import "colors/_navegationColor";
+@import 'inherence/_totalSize';
+@import 'inherence/_gridCenter';
+@import 'colors/_navegationColor';
 
 #navBar {
   @extend %totalSize;
@@ -14,7 +14,7 @@
       @extend %gridCenter;
       a {
         text-decoration: none;
-        color: map-get($nav, "link");
+        color: map-get($nav, 'link');
         position: relative;
         background: none;
         transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -33,7 +33,7 @@
         }
 
         &:after {
-          content: "";
+          content: '';
           pointer-events: none;
           bottom: -2px;
           left: 50%;
@@ -41,9 +41,9 @@
           width: 0%;
           height: 2px;
           background-color: #fff;
-          transition: width, left, cubic-bezier(0.25, 0.8, 0.25, 1), 400ms ;
+          transition: width, left, cubic-bezier(0.25, 0.8, 0.25, 1), 400ms;
         }
       }
     }
-}
+  }
 }

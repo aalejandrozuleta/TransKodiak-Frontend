@@ -8,10 +8,9 @@ describe('ImageNameUserPerfilComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImageNameUserPerfilComponent]
-    })
-    .compileComponents();
-    
+      imports: [ImageNameUserPerfilComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ImageNameUserPerfilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

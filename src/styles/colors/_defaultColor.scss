@@ -1,27 +1,26 @@
 $default: (
   one: #ffff,
-  two: #000000
+  two: #000000,
 );
 
-$primary:(
-  one: #06141B,
-  two: #11212D
+$primary: (
+  one: #06141b,
+  two: #11212d,
 );
 
-$secundary:(
-    one: #11212D,
-    two: #1A517C
+$secundary: (
+  one: #11212d,
+  two: #1a517c,
 );
 
-$terciary:(
-    one: #253745,
-    two: #4A5C6A
+$terciary: (
+  one: #253745,
+  two: #4a5c6a,
 );
 
-$state:(
-  success:#41A229,
-  warning: #CBC53B,
-  error: #6C0A00,
-  info: #1B3F5B
+$state: (
+  success: #41a229,
+  warning: #cbc53b,
+  error: #6c0a00,
+  info: #1b3f5b,
 );
-

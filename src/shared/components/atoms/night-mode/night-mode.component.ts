@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './night-mode.component.html',
-  styleUrl: './night-mode.component.scss'
+  styleUrl: './night-mode.component.scss',
 })
 export class NightModeComponent {
-  moonImg:string = '../../../../assets/icons/moon.png';
+  moonImg: string = '../../../../assets/icons/moon.png';
 }

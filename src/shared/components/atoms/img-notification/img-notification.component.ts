@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './img-notification.component.scss',
 })
 export class ImgNotificationComponent {
-  @Input() imgPerson = '' ;
+  @Input() imgPerson = '';
 }

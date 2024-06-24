@@ -4,11 +4,11 @@
   display: grid;
   grid-template-columns: 130px 1fr;
   grid-template-rows: auto auto auto;
-  grid-template-areas: 
-  "aside navBar"
-  "aside welcome"
-  "aside navOptions"
-  "aside table";
+  grid-template-areas:
+    'aside navBar'
+    'aside welcome'
+    'aside navOptions'
+    'aside table';
 
   aside {
     grid-area: aside;
@@ -29,5 +29,4 @@
   .vehicle-company-panel {
     grid-area: table;
   }
-  
 }

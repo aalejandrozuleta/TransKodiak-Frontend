@@ -5,10 +5,8 @@ import { BlockWelcomeVehicleCompanyComponent } from 'src/shared/components/molec
 @Component({
   selector: 'app-group-welcome-vehicle-company',
   standalone: true,
-  imports: [ CommonModule, 
-    BlockWelcomeVehicleCompanyComponent 
-  ],
+  imports: [CommonModule, BlockWelcomeVehicleCompanyComponent],
   templateUrl: './group-welcome-vehicle-company.component.html',
-  styleUrl: './group-welcome-vehicle-company.component.scss'
+  styleUrl: './group-welcome-vehicle-company.component.scss',
 })
 export class GroupWelcomeVehicleCompanyComponent {}

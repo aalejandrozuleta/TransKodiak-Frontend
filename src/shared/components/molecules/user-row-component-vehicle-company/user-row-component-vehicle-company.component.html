@@ -1,13 +1,19 @@
 <section class="row-table">
-  <td class="item-avatar" ><app-user-avatar-component-vehicle-company [avatar]="user.avatar"></app-user-avatar-component-vehicle-company></td>
-  <td class="item-name" >{{ user.name }}</td>
+  <td class="item-avatar">
+    <app-user-avatar-component-vehicle-company
+      [avatar]="user.avatar"
+    ></app-user-avatar-component-vehicle-company>
+  </td>
+  <td class="item-name">{{ user.name }}</td>
   <td class="item-placa">{{ user.placa }}</td>
   <td class="item-email">{{ user.email }}</td>
-  <td class="item-date" >{{ user.date }}</td>
-  <img [src]="editar" alt="editar">
-  <img (click)="openModalVehicle()" [src]="asignar" alt="asignar">
-  <img [src]="delete" (click)="deleteUserHandler(user.id)" alt="Eliminar">
+  <td class="item-date">{{ user.date }}</td>
+  <img [src]="editar" alt="editar" />
+  <img (click)="openModalVehicle()" [src]="asignar" alt="asignar" />
+  <img [src]="delete" (click)="deleteUserHandler(user.id)" alt="Eliminar" />
   <!-- <td><button (click)="deleteUserHandler(user.id)">Eliminar</button></td> -->
 </section>
 
-<app-complete-header-form-vehicle *ngIf="showModal1"></app-complete-header-form-vehicle>
+<app-complete-header-form-vehicle
+  *ngIf="showModal1"
+></app-complete-header-form-vehicle>

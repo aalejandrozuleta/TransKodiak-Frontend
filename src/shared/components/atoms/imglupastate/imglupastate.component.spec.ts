@@ -8,10 +8,9 @@ describe('ImglupastateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImglupastateComponent]
-    })
-    .compileComponents();
-    
+      imports: [ImglupastateComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ImglupastateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './name-perfil-user.component.html',
-  styleUrl: './name-perfil-user.component.scss'
+  styleUrl: './name-perfil-user.component.scss',
 })
 export class NamePerfilUserComponent {
-  nameUser:string = 'TransTruck'
+  nameUser: string = 'TransTruck';
 }

@@ -8,10 +8,9 @@ describe('SubtitleCreateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SubtitleCreateComponent]
-    })
-    .compileComponents();
-    
+      imports: [SubtitleCreateComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(SubtitleCreateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

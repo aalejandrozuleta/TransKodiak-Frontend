@@ -1,26 +1,26 @@
- .row-table{
+.row-table {
   width: 100%;
   height: 60px;
   display: flex;
-  align-items: center; 
+  align-items: center;
   border-bottom: rgb(236, 236, 236) 1px solid;
 }
-.item-name{
+.item-name {
   width: 310px;
 }
-.item-avatar{
+.item-avatar {
   padding-left: 20px;
 }
-.item-placa{
+.item-placa {
   width: 120px;
 }
-.item-email{
+.item-email {
   width: 240px;
 }
-.item-date{
+.item-date {
   width: 120px;
 }
-img{
+img {
   width: 21px;
   height: 21px;
   cursor: pointer;

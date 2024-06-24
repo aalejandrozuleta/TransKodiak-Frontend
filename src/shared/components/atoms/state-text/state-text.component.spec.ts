@@ -8,10 +8,9 @@ describe('StateTextComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StateTextComponent]
-    })
-    .compileComponents();
-    
+      imports: [StateTextComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(StateTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

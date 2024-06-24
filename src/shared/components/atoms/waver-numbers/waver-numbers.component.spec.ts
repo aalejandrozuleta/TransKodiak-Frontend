@@ -8,10 +8,9 @@ describe('WaverNumbersComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WaverNumbersComponent]
-    })
-    .compileComponents();
-    
+      imports: [WaverNumbersComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(WaverNumbersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

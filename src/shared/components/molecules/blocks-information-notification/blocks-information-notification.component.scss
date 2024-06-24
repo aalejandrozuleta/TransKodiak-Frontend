@@ -3,7 +3,7 @@
 @import 'colors/defaultColor';
 
 .blockNotification {
-  background-color: map-get($default , 'one' );
+  background-color: map-get($default, 'one');
   height: 60px;
   display: grid;
   grid-template-columns: 20% 50% 30%;

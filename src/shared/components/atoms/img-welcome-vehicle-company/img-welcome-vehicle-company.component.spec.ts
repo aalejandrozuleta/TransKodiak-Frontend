@@ -8,10 +8,9 @@ describe('ImgWelcomeVehicleCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImgWelcomeVehicleCompanyComponent]
-    })
-    .compileComponents();
-    
+      imports: [ImgWelcomeVehicleCompanyComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ImgWelcomeVehicleCompanyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

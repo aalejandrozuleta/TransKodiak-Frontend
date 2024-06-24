@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './no-copy.component.html',
-  styleUrl: './no-copy.component.scss'
+  styleUrl: './no-copy.component.scss',
 })
-export class NoCopyComponent {
-
-}
+export class NoCopyComponent {}

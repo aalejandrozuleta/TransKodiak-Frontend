@@ -13,12 +13,9 @@ import { WaverComponent } from 'src/shared/components/templates/waver/waver.comp
     WaverComponent,
     InformationHomeComponent,
     GroupCardsHomeComponent,
-    CompleteHeaderFormVehicleComponent
+    CompleteHeaderFormVehicleComponent,
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
-export class HomeComponent {
-
-  
-}
+export class HomeComponent {}

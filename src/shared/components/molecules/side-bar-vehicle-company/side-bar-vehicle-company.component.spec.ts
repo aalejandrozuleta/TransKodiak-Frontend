@@ -8,10 +8,9 @@ describe('SideBarVehicleCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SideBarVehicleCompanyComponent]
-    })
-    .compileComponents();
-    
+      imports: [SideBarVehicleCompanyComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(SideBarVehicleCompanyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

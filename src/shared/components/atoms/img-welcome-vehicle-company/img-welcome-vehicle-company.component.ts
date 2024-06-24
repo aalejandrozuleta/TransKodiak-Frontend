@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './img-welcome-vehicle-company.component.html',
-  styleUrl: './img-welcome-vehicle-company.component.scss'
+  styleUrl: './img-welcome-vehicle-company.component.scss',
 })
 export class ImgWelcomeVehicleCompanyComponent {
-  imgWelcome:string = '../../../../assets/imagenes/welcome.png';
+  imgWelcome: string = '../../../../assets/imagenes/welcome.png';
 }

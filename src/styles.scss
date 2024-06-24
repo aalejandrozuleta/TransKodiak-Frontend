@@ -1,13 +1,12 @@
 // ? Default
 // * Fonts
-@import "fonts/_fontStyle";
+@import 'fonts/_fontStyle';
 
 // * Mixins
-@import "mixins/_buttonStyle";
-@import "mixins/_responsive";
-
+@import 'mixins/_buttonStyle';
+@import 'mixins/_responsive';
 
 // * Vendors
-@import "vendors/_breakPoints";
-@import "vendors/_resetStyle";
+@import 'vendors/_breakPoints';
+@import 'vendors/_resetStyle';
 //?

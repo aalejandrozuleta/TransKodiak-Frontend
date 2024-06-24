@@ -8,10 +8,9 @@ describe('BlockSearchBarCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BlockSearchBarCompanyComponent]
-    })
-    .compileComponents();
-    
+      imports: [BlockSearchBarCompanyComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(BlockSearchBarCompanyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

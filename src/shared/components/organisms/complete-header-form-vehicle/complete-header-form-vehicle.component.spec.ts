@@ -8,10 +8,9 @@ describe('CompleteHeaderFormVehicleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CompleteHeaderFormVehicleComponent]
-    })
-    .compileComponents();
-    
+      imports: [CompleteHeaderFormVehicleComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CompleteHeaderFormVehicleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

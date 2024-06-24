@@ -8,10 +8,9 @@ describe('GroupCardsHomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GroupCardsHomeComponent]
-    })
-    .compileComponents();
-    
+      imports: [GroupCardsHomeComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GroupCardsHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

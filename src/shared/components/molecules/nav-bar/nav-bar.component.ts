@@ -7,23 +7,21 @@ import { MenuItem } from '@models/menu-item';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrl: './nav-bar.component.scss',
 })
 export class NavBarComponent {
-
   optionsMenu: MenuItem[] = [
     {
       name: 'Servicios',
-      link: '/service'
+      link: '/service',
     },
     {
       name: 'Nosotros',
-      link: '/about'
+      link: '/about',
     },
     {
       name: 'Acceder',
-      link: '/register'
-    }
+      link: '/register',
+    },
   ];
-  
 }

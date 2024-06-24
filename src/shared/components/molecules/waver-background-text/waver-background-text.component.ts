@@ -5,8 +5,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './waver-background-text.component.html',
-  styleUrl: './waver-background-text.component.scss'
+  styleUrl: './waver-background-text.component.scss',
 })
-export class WaverBackgroundTextComponent {
-  
-}
+export class WaverBackgroundTextComponent {}

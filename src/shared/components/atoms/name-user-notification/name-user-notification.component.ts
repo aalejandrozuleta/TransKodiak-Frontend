@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './name-user-notification.component.html',
-  styleUrl: './name-user-notification.component.scss'
+  styleUrl: './name-user-notification.component.scss',
 })
 export class NameUserNotificationComponent {
   @Input() namUser: string = '';

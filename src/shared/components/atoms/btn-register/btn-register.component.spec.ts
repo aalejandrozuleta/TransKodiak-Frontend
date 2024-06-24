@@ -8,10 +8,9 @@ describe('BtnRegisterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BtnRegisterComponent]
-    })
-    .compileComponents();
-    
+      imports: [BtnRegisterComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(BtnRegisterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -8,10 +8,9 @@ describe('NightModeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NightModeComponent]
-    })
-    .compileComponents();
-    
+      imports: [NightModeComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NightModeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

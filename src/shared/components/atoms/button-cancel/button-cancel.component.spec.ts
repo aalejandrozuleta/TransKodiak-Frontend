@@ -8,10 +8,9 @@ describe('ButtonCancelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonCancelComponent]
-    })
-    .compileComponents();
-    
+      imports: [ButtonCancelComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ButtonCancelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

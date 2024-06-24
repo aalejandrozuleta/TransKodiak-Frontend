@@ -1,11 +1,11 @@
-@import "inherence/_gridCenter";
-@import "colors/_navegationColor";
+@import 'inherence/_gridCenter';
+@import 'colors/_navegationColor';
 
 header {
   display: grid;
   grid-template-columns: repeat(2, 40%) 20%;
-  grid-template-rows:80px;
-  background-color: map-get($header , "backgroundTop");
+  grid-template-rows: 80px;
+  background-color: map-get($header, 'backgroundTop');
   top: 0;
   position: sticky;
   z-index: 2;

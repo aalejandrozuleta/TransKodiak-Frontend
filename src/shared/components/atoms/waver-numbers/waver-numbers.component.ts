@@ -6,11 +6,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './waver-numbers.component.html',
-  styleUrl: './waver-numbers.component.scss'
+  styleUrl: './waver-numbers.component.scss',
 })
 export class WaverNumbersComponent {
-  numbers:string[] = [
-    '+ 57 300 200 04 19',
-    '+ 57 300 200 04 19'
-  ];
+  numbers: string[] = ['+ 57 300 200 04 19', '+ 57 300 200 04 19'];
 }

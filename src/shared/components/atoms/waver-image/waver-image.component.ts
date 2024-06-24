@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './waver-image.component.html',
-  styleUrl: './waver-image.component.scss'
+  styleUrl: './waver-image.component.scss',
 })
 export class WaverImageComponent {
-  imgWaver:string = '../../../../assets/imagenes/camion-waver.png';
+  imgWaver: string = '../../../../assets/imagenes/camion-waver.png';
 }

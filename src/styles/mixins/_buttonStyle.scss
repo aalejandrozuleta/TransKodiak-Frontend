@@ -1,8 +1,12 @@
-@import "inherence/_flexCenter";
-@import "colors/_buttonColor";
+@import 'inherence/_flexCenter';
+@import 'colors/_buttonColor';
 
-
-@mixin buttonStyle($width: 200px, $height: 30px, $border-radius: 5%, $background: "background"){
+@mixin buttonStyle(
+  $width: 200px,
+  $height: 30px,
+  $border-radius: 5%,
+  $background: 'background'
+) {
   width: $width;
   height: $height;
   border-radius: $border-radius;
@@ -10,6 +14,6 @@
 
   @extend %flexCenter;
   cursor: pointer;
-  color: map-get($buttonColors, "text");
+  color: map-get($buttonColors, 'text');
   background-color: map-get($buttonColors, $background);
 }

@@ -9,8 +9,9 @@ import { BehaviorSubject } from 'rxjs';
 export class SeekerVehicleCompanyService {
   dates: userTableVehicle[] = [];
   datesCopy: userTableVehicle[] = [];
-  filteredDates: BehaviorSubject<userTableVehicle[]> = new BehaviorSubject<userTableVehicle[]>([]);
-
+  filteredDates: BehaviorSubject<userTableVehicle[]> = new BehaviorSubject<
+    userTableVehicle[]
+  >([]);
 
   constructor(private userVehicleCompanyService: UserVehicleCompanyService) {
     this.userVehicleCompanyService.getTransporters().subscribe((data) => {
@@ -25,7 +26,7 @@ export class SeekerVehicleCompanyService {
     let filteredDates: userTableVehicle[] = [];
     if (search) {
       filteredDates = this.datesCopy.filter((user) =>
-        user.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+        user.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()),
       );
     } else {
       // Cuando el buscador está vacío, restablecemos los datos a su estado original

@@ -8,10 +8,9 @@ describe('NavOptionsTableVehicleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavOptionsTableVehicleComponent]
-    })
-    .compileComponents();
-    
+      imports: [NavOptionsTableVehicleComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NavOptionsTableVehicleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

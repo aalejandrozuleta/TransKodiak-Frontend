@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './form-label.component.html',
-  styleUrl: './form-label.component.scss'
+  styleUrl: './form-label.component.scss',
 })
 export class FormLabelComponent {
   @Input() text: string = '';

@@ -15,10 +15,10 @@ import { EquisCloseComponent } from '@atoms/equis-close/equis-close.component';
     ButtonCancelComponent,
     SubtittleCreateVehicleComponent,
     TitleCreateVehicleComponent,
-    EquisCloseComponent
+    EquisCloseComponent,
   ],
   templateUrl: './form-header-vehicle-company.component.html',
-  styleUrls: ['./form-header-vehicle-company.component.scss']
+  styleUrls: ['./form-header-vehicle-company.component.scss'],
 })
 export class HeaderFormCreateVehicleComponent {
   @Input() title: string = '';

@@ -5,10 +5,8 @@ import { SideBarVehicleCompanyComponent } from '@molecules/side-bar-vehicle-comp
 @Component({
   selector: 'app-complete-side-bar',
   standalone: true,
-  imports: [CommonModule,SideBarVehicleCompanyComponent],
+  imports: [CommonModule, SideBarVehicleCompanyComponent],
   templateUrl: './complete-side-bar.component.html',
-  styleUrl: './complete-side-bar.component.scss'
+  styleUrl: './complete-side-bar.component.scss',
 })
-export class CompleteSideBarComponent {
-
-}
+export class CompleteSideBarComponent {}

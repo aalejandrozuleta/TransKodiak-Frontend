@@ -8,10 +8,9 @@ describe('FormLabelComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormLabelComponent]
-    })
-    .compileComponents();
-    
+      imports: [FormLabelComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(FormLabelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

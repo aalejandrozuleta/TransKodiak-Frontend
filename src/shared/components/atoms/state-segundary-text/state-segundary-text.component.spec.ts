@@ -8,10 +8,9 @@ describe('StateSegundaryTextComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StateSegundaryTextComponent]
-    })
-    .compileComponents();
-    
+      imports: [StateSegundaryTextComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(StateSegundaryTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -17,13 +17,10 @@ import { NavOptionsTableVehicleComponent } from '@organisms/nav-options-table-ve
     GroupWelcomeVehicleCompanyComponent,
     GroupTableUserVehicleCompanyComponent,
     NavOptionsTableVehicleComponent,
-    CompleteHeaderFormVehicleComponent
+    CompleteHeaderFormVehicleComponent,
   ],
 
   templateUrl: './vehicle-company.component.html',
   styleUrl: './vehicle-company.component.scss',
 })
-export class VehicleCompanyComponent {
-  
-}
- 
+export class VehicleCompanyComponent {}

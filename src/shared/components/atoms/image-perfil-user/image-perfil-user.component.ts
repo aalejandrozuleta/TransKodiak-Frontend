@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './image-perfil-user.component.html',
-  styleUrl: './image-perfil-user.component.scss'
+  styleUrl: './image-perfil-user.component.scss',
 })
 export class ImagePerfilUserComponent {
-  imgUser = '../../../../assets/icons/logo-company.png'
+  imgUser = '../../../../assets/icons/logo-company.png';
 }

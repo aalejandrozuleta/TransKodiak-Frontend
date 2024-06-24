@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './button-delete-modal-vehicle-company.component.html',
-  styleUrl: './button-delete-modal-vehicle-company.component.scss'
+  styleUrl: './button-delete-modal-vehicle-company.component.scss',
 })
 export class ButtonDeleteModalVehicleCompanyComponent {
   img = '../../../../assets/imagenes/borrar.png';
-} 
+}

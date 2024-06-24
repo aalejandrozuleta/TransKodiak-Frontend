@@ -8,10 +8,9 @@ describe('WaverButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WaverButtonComponent]
-    })
-    .compileComponents();
-    
+      imports: [WaverButtonComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(WaverButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

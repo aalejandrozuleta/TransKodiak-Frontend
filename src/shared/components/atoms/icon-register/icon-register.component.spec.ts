@@ -8,10 +8,9 @@ describe('IconRegisterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IconRegisterComponent]
-    })
-    .compileComponents();
-    
+      imports: [IconRegisterComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(IconRegisterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

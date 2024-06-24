@@ -7,14 +7,14 @@
   display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 100%;
-  background-color: map-get($primary , 'one' );
+  background-color: map-get($primary, 'one');
   margin: auto auto;
   border-radius: 10px;
   cursor: pointer;
 
   .nameAction {
     margin: auto 0;
-    color: map-get($buttonColors , 'text' );
+    color: map-get($buttonColors, 'text');
     text-transform: capitalize;
   }
 

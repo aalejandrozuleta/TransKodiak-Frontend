@@ -4,7 +4,6 @@ import { BackgroundArrowBackUserPerfilComponent } from '@molecules/background-ar
 import { ImageNameUserPerfilComponent } from '@molecules/image-name-user-perfil/image-name-user-perfil.component';
 import { OptionsPerfilUserPerfilComponent } from '@molecules/options-perfil-user-perfil/options-perfil-user-perfil.component';
 
-
 @Component({
   selector: 'app-user-perfil-options',
   standalone: true,
@@ -12,7 +11,7 @@ import { OptionsPerfilUserPerfilComponent } from '@molecules/options-perfil-user
     ImageNameUserPerfilComponent,
     OptionsPerfilUserPerfilComponent,
     FooterPerfilUserComponent,
-    BackgroundArrowBackUserPerfilComponent
+    BackgroundArrowBackUserPerfilComponent,
   ],
   templateUrl: './user-perfil-options.component.html',
   styleUrl: './user-perfil-options.component.scss',

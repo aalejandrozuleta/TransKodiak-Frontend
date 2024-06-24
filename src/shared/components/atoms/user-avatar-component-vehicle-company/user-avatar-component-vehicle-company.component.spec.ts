@@ -8,11 +8,12 @@ describe('UserAvatarComponentVehicleCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UserAvatarComponentVehicleCompanyComponent]
-    })
-    .compileComponents();
-    
-    fixture = TestBed.createComponent(UserAvatarComponentVehicleCompanyComponent);
+      imports: [UserAvatarComponentVehicleCompanyComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(
+      UserAvatarComponentVehicleCompanyComponent,
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

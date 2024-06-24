@@ -8,10 +8,9 @@ describe('BtnsOptionsPerfilUserComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BtnsOptionsPerfilUserComponent]
-    })
-    .compileComponents();
-    
+      imports: [BtnsOptionsPerfilUserComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(BtnsOptionsPerfilUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

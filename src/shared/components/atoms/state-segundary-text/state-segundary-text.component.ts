@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './state-segundary-text.component.html',
-  styleUrl: './state-segundary-text.component.scss'
+  styleUrl: './state-segundary-text.component.scss',
 })
 export class StateSegundaryTextComponent {
   @Input() text: string = '';

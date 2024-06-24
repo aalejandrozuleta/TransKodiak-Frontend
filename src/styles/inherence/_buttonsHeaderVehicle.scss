@@ -12,7 +12,7 @@
     height: 25px;
     width: 25px;
     padding: 11px;
-    background-color: map-get($secundary, "one");
+    background-color: map-get($secundary, 'one');
     border-radius: 50%;
     cursor: pointer;
   }

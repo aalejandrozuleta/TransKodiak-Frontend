@@ -1,6 +1,6 @@
-@import "mixins/_buttonStyle";
+@import 'mixins/_buttonStyle';
 
-.block-welcome-vehicle-company{
+.block-welcome-vehicle-company {
   @extend %flexCenter;
   height: 180px;
   display: flex;

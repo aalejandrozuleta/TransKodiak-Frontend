@@ -8,10 +8,9 @@ describe('ButtonDeleteModalVehicleCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonDeleteModalVehicleCompanyComponent]
-    })
-    .compileComponents();
-    
+      imports: [ButtonDeleteModalVehicleCompanyComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ButtonDeleteModalVehicleCompanyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

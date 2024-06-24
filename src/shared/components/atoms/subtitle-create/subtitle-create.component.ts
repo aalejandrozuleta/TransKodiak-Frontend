@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './subtitle-create.component.html',
-  styleUrl: './subtitle-create.component.scss'
+  styleUrl: './subtitle-create.component.scss',
 })
 export class SubtittleCreateVehicleComponent {
-  @Input() subtitle: string= '';
+  @Input() subtitle: string = '';
 }

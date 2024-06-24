@@ -13,7 +13,7 @@ export class SearchBarCompanyComponent {
   searchValue: string = '';
 
   constructor(
-    private SeekerVehicleCompanyService: SeekerVehicleCompanyService
+    private SeekerVehicleCompanyService: SeekerVehicleCompanyService,
   ) {}
 
   onSearchChange() {

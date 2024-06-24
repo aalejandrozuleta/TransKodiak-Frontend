@@ -20,9 +20,11 @@ export class ImageUserCompanyComponent implements OnInit, OnDestroy {
   constructor(private userOptionsPerfilService: UserOptionsPerfilService) {}
 
   ngOnInit() {
-    this.subscription = this.userOptionsPerfilService.modalStatus$.subscribe(status => {
-      this.modal = status;
-    });
+    this.subscription = this.userOptionsPerfilService.modalStatus$.subscribe(
+      (status) => {
+        this.modal = status;
+      },
+    );
   }
 
   ngOnDestroy() {

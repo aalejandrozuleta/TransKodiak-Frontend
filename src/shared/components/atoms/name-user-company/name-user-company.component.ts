@@ -5,8 +5,8 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './name-user-company.component.html',
-  styleUrl: './name-user-company.component.scss'
+  styleUrl: './name-user-company.component.scss',
 })
 export class NameUserCompanyComponent {
-  @Input() nameUser:string = '';
+  @Input() nameUser: string = '';
 }

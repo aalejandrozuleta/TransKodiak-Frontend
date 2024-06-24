@@ -3,14 +3,13 @@ import { ButtonDeleteModalVehicleCompanyComponent } from '@atoms/button-delete-m
 import { ButtonModalVehicleCompanyComponent } from '@atoms/button-modal-vehicle-company/button-modal-vehicle-company.component';
 import { BlockSearchBarCompanyComponent } from '@molecules/block-search-bar-company/block-search-bar-company.component';
 
-
 @Component({
   selector: 'app-nav-options-table-vehicle',
   standalone: true,
   imports: [
     BlockSearchBarCompanyComponent,
     ButtonModalVehicleCompanyComponent,
-    ButtonDeleteModalVehicleCompanyComponent
+    ButtonDeleteModalVehicleCompanyComponent,
   ],
   templateUrl: './nav-options-table-vehicle.component.html',
   styleUrl: './nav-options-table-vehicle.component.scss',

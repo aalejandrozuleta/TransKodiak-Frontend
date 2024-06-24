@@ -5,7 +5,7 @@
   @extend %totalSize;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(5,20%);
+  grid-template-rows: repeat(5, 20%);
   margin: 0 20px;
 
   .options {

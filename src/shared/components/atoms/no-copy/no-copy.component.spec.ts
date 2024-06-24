@@ -8,10 +8,9 @@ describe('NoCopyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NoCopyComponent]
-    })
-    .compileComponents();
-    
+      imports: [NoCopyComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NoCopyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

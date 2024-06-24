@@ -4,7 +4,7 @@
 #optionsUserNotifications {
   @extend %totalSize;
   display: grid;
-  grid-template-columns: repeat(3,20%);
+  grid-template-columns: repeat(3, 20%);
   grid-template-rows: 1fr;
   place-content: center;
   gap: 10px;

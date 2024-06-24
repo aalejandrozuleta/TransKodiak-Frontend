@@ -5,12 +5,12 @@ import { BlockNotificationsComponent } from '@organisms/block-notifications/bloc
 @Component({
   selector: 'app-notification-company',
   standalone: true,
-  imports: [CommonModule,BlockNotificationsComponent],
+  imports: [CommonModule, BlockNotificationsComponent],
   templateUrl: './notification-company.component.html',
-  styleUrl: './notification-company.component.scss'
+  styleUrl: './notification-company.component.scss',
 })
 export class NotificationCompanyComponent {
-  notificationImg:string = "../../../../assets/icons/notification.png";
+  notificationImg: string = '../../../../assets/icons/notification.png';
 
   showBlockNotifications = false;
 

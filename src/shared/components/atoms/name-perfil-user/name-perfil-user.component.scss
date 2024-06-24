@@ -1,4 +1,4 @@
-@import "inherence/flexCenter";
+@import 'inherence/flexCenter';
 @import 'colors/defaultColor';
 
 #nameUser {
@@ -11,10 +11,10 @@
   &::after {
     content: '';
     display: block;
-    width: 25%; 
-    height: 3px; 
-    background-color: map-get($primary, 'one' );
-    margin: 2px auto; 
+    width: 25%;
+    height: 3px;
+    background-color: map-get($primary, 'one');
+    margin: 2px auto;
     border-radius: 20px;
   }
 }

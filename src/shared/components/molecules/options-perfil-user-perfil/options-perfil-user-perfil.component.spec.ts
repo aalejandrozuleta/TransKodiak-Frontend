@@ -8,10 +8,9 @@ describe('OptionsPerfilUserPerfilComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OptionsPerfilUserPerfilComponent]
-    })
-    .compileComponents();
-    
+      imports: [OptionsPerfilUserPerfilComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(OptionsPerfilUserPerfilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

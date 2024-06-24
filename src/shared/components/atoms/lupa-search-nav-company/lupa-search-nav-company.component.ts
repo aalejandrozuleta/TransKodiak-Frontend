@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './lupa-search-nav-company.component.html',
-  styleUrl: './lupa-search-nav-company.component.scss'
+  styleUrl: './lupa-search-nav-company.component.scss',
 })
 export class LupaSearchNavCompanyComponent {
-  lupaImg:string = '../../../../assets/icons/lupa.png'
+  lupaImg: string = '../../../../assets/icons/lupa.png';
 }

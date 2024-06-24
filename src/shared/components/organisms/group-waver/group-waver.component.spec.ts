@@ -8,10 +8,9 @@ describe('GroupWaverComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GroupWaverComponent]
-    })
-    .compileComponents();
-    
+      imports: [GroupWaverComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(GroupWaverComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

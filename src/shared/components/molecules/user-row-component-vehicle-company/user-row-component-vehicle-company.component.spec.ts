@@ -8,10 +8,9 @@ describe('UserRowComponentVehicleCompanyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UserRowComponentVehicleCompanyComponent]
-    })
-    .compileComponents();
-    
+      imports: [UserRowComponentVehicleCompanyComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(UserRowComponentVehicleCompanyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

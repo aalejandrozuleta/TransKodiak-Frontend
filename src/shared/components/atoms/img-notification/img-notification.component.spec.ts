@@ -8,10 +8,9 @@ describe('ImgNotificationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImgNotificationComponent]
-    })
-    .compileComponents();
-    
+      imports: [ImgNotificationComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ImgNotificationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

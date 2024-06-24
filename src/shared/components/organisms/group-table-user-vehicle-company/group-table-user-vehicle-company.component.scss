@@ -1,5 +1,5 @@
 // @import "colors/defaultColor";
-@import "inherence/_flexCenter";
+@import 'inherence/_flexCenter';
 
 table {
   font-size: 13px;
@@ -10,32 +10,33 @@ table {
   border: rgb(236, 236, 236) 1px solid;
 }
 
-th, td {
+th,
+td {
   padding-left: 35px;
   text-align: left;
   padding-top: 18px;
 }
 
-.items-table{
+.items-table {
   width: 100%;
   text-align: center;
   align-items: center;
-  background-color: #06141B;
+  background-color: #06141b;
   height: 50px;
   color: #fff;
   font-size: 12px;
-  border-radius: 20px 20px 0 0 ;
+  border-radius: 20px 20px 0 0;
 }
 
-.item-user{
+.item-user {
   padding-right: 70px;
 }
-.item-status{
+.item-status {
   padding-right: 90px;
 }
-.item-placa{
+.item-placa {
   padding-right: 80px;
 }
-.item-correo{
+.item-correo {
   padding-right: 120px;
 }

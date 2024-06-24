@@ -8,10 +8,9 @@ describe('BackgroundArrowBackUserPerfilComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BackgroundArrowBackUserPerfilComponent]
-    })
-    .compileComponents();
-    
+      imports: [BackgroundArrowBackUserPerfilComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(BackgroundArrowBackUserPerfilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

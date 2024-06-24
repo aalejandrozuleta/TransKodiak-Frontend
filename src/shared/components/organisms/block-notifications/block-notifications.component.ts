@@ -29,7 +29,7 @@ export class BlockNotificationsComponent {
       ],
       typeTravel: 'Medellin',
     },
-/*     {
+    /*     {
       namUser: 'Alejandro Zuleta',
       imgPerson: '../../../../assets/static/avatar.png',
       iconOption: [
@@ -143,6 +143,5 @@ export class BlockNotificationsComponent {
       ],
       typeTravel: 'Medellin',
     }, */
-
   ];
 }

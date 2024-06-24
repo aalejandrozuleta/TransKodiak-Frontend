@@ -21,6 +21,6 @@ export class InformationUserNavVehicleComponent {
       imgUser: '../../../../assets/static/avatar.png',
       nameUser: 'Alejandro',
       typeCompany: 'empresa vehicular',
-    }
+    },
   ];
 }

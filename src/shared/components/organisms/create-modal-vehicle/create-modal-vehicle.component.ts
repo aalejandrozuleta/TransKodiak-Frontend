@@ -20,7 +20,9 @@ import { ValuesInputsModalsVehicleCompanyService } from '@services/values-inputs
 export class CreateModalVehicleComponent {
   text: string = 'Guardar';
 
-  constructor(private ValuesInputsModalsVehicleCompanyService:ValuesInputsModalsVehicleCompanyService){}
+  constructor(
+    private ValuesInputsModalsVehicleCompanyService: ValuesInputsModalsVehicleCompanyService,
+  ) {}
 
   formData = [
     {
@@ -50,10 +52,10 @@ export class CreateModalVehicleComponent {
       type: 'text',
       placeholder: 'licencia',
       fild: 'licencia',
-    }
+    },
   ];
 
-  onClick(){
+  onClick() {
     this.ValuesInputsModalsVehicleCompanyService.onClick();
   }
 }

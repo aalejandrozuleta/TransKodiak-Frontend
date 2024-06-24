@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './waver-button.component.html',
-  styleUrl: './waver-button.component.scss'
+  styleUrl: './waver-button.component.scss',
 })
 export class WaverButtonComponent {
   ImgPlayIcon: string = '../../../../assets/icons/play-icon.png';

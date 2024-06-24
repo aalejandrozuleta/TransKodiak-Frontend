@@ -5,7 +5,6 @@ import { ImgNotificationComponent } from '@atoms/img-notification/img-notificati
 import { NameUserNotificationComponent } from '@atoms/name-user-notification/name-user-notification.component';
 import { TypeTravelNotificationComponent } from '@atoms/type-travel-notification/type-travel-notification.component';
 
-
 @Component({
   selector: 'app-blocks-information-notification',
   standalone: true,
@@ -20,5 +19,5 @@ import { TypeTravelNotificationComponent } from '@atoms/type-travel-notification
   styleUrl: './blocks-information-notification.component.scss',
 })
 export class BlocksInformationNotificationComponent {
-  @Input() notifications:any = [];
+  @Input() notifications: any = [];
 }

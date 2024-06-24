@@ -8,10 +8,9 @@ describe('WaverBackgroundTextComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [WaverBackgroundTextComponent]
-    })
-    .compileComponents();
-    
+      imports: [WaverBackgroundTextComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(WaverBackgroundTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

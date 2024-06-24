@@ -7,10 +7,13 @@ import { WaverBackgroundTextComponent } from '@molecules/waver-background-text/w
 @Component({
   selector: 'app-group-waver',
   standalone: true,
-  imports: [WaverBackgroundTextComponent,WaverImageComponent,WaverButtonComponent,WaverNumbersComponent],
+  imports: [
+    WaverBackgroundTextComponent,
+    WaverImageComponent,
+    WaverButtonComponent,
+    WaverNumbersComponent,
+  ],
   templateUrl: './group-waver.component.html',
-  styleUrl: './group-waver.component.scss'
+  styleUrl: './group-waver.component.scss',
 })
-export class GroupWaverComponent {
-
-}
+export class GroupWaverComponent {}

@@ -4,6 +4,6 @@ import { VehicleCompanyComponent } from '@feature/vehicle-company/vehicle-compan
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path:'vehicleCompany', component: VehicleCompanyComponent },
+  { path: 'vehicleCompany', component: VehicleCompanyComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];

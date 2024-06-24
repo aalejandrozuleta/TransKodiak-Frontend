@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './background-perfil-user.component.html',
-  styleUrl: './background-perfil-user.component.scss'
+  styleUrl: './background-perfil-user.component.scss',
 })
-export class BackgroundPerfilUserComponent {
-
-}
+export class BackgroundPerfilUserComponent {}

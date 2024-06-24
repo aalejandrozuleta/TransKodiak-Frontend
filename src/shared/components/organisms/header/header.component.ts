@@ -6,10 +6,8 @@ import { NavBarComponent } from '@molecules/nav-bar/nav-bar.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [LogoCompanyComponent,BtnRegisterComponent, NavBarComponent],
+  imports: [LogoCompanyComponent, BtnRegisterComponent, NavBarComponent],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
-
-}
+export class HeaderComponent {}

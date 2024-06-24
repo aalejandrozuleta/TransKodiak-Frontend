@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './state-text.component.html',
-  styleUrl: './state-text.component.scss'
+  styleUrl: './state-text.component.scss',
 })
 export class StateTextComponent {
   @Input() text: string = '';

@@ -9,9 +9,9 @@ import { ImgWelcomeVehicleCompanyComponent } from 'src/shared/components/atoms/i
   imports: [
     CommonModule,
     TitleWelcomeVehicleCompanyComponent,
-    ImgWelcomeVehicleCompanyComponent
+    ImgWelcomeVehicleCompanyComponent,
   ],
   templateUrl: './block-welcome-vehicle-company.component.html',
-  styleUrls: ['./block-welcome-vehicle-company.component.scss']
+  styleUrls: ['./block-welcome-vehicle-company.component.scss'],
 })
-export class BlockWelcomeVehicleCompanyComponent { }
+export class BlockWelcomeVehicleCompanyComponent {}

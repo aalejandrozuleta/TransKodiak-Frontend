@@ -8,10 +8,9 @@ describe('FormButtonsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormButtonsComponent]
-    })
-    .compileComponents();
-    
+      imports: [FormButtonsComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(FormButtonsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

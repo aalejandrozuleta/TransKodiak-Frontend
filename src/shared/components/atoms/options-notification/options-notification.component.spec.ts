@@ -8,10 +8,9 @@ describe('OptionsNotificationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OptionsNotificationComponent]
-    })
-    .compileComponents();
-    
+      imports: [OptionsNotificationComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(OptionsNotificationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

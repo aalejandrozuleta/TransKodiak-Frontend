@@ -8,10 +8,9 @@ describe('EquisCloseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EquisCloseComponent]
-    })
-    .compileComponents();
-    
+      imports: [EquisCloseComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(EquisCloseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

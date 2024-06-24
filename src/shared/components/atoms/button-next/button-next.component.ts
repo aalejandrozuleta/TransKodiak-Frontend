@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit,OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/create-modal-vehicle.component';
 import { ModalsCreateVehicleTransporterService } from '@services/modals-create-vehicle-transporter.service';
 import { Subscription } from 'rxjs';
@@ -16,18 +16,23 @@ export class ButtonNextComponent implements OnInit, OnDestroy {
   text: string = 'Siguiente';
   private subscription: Subscription = Subscription.EMPTY;
 
-  constructor(private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService) {}
+  constructor(
+    private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService,
+  ) {}
 
   ngOnInit() {
-    this.subscription = this.ModalsCreateVehicleTransporterService.showModalCreateTransporter.subscribe(status => {
-      this.modal = status;
-    });
+    this.subscription =
+      this.ModalsCreateVehicleTransporterService.showModalCreateTransporter.subscribe(
+        (status) => {
+          this.modal = status;
+        },
+      );
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
-  
+
   openModal() {
     this.ModalsCreateVehicleTransporterService.next();
   }

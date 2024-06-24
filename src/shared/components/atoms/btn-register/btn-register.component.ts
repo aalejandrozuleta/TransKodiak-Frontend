@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './btn-register.component.html',
-  styleUrl: './btn-register.component.scss'
+  styleUrl: './btn-register.component.scss',
 })
 export class BtnRegisterComponent {
-  register:string = "/register"
+  register: string = '/register';
 }
