@@ -1,14 +1,14 @@
-import { CompleteHeaderFormVehicleComponent } from '@organisms/complete-header-form-vehicle/complete-header-form-vehicle.component';
+
 import { Component, Input, OnInit,OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalsCreateVehicleTransporterService } from '@services/modals-create-vehicle-transporter.service';
 import { Subscription } from 'rxjs';
+import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/create-modal-vehicle.component';
 
 @Component({
   selector: 'app-button-modal-vehicle-company',
   standalone: true,
-  imports: [CompleteHeaderFormVehicleComponent, 
-    CommonModule],
+  imports: [CreateModalVehicleComponent, CommonModule],
   templateUrl: './button-modal-vehicle-company.component.html',
   styleUrl: './button-modal-vehicle-company.component.scss'
 })
