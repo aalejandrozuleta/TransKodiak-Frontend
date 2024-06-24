@@ -16,4 +16,5 @@ export class FormFieldComponent {
   @Input() id: string = '';
   @Input() type: string = 'text';
   @Input() placeholder: string = '';
+  @Input() fild: string = '';
 }

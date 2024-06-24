@@ -5,10 +5,9 @@ table {
   font-size: 13px;
   margin: 0 auto;
   margin-top: 30px;
-  width: 75%;
+  width: 85%;
   height: auto;
   border: rgb(236, 236, 236) 1px solid;
-  border-radius: 20px 20px 20px 20px;
 }
 
 th, td {
@@ -29,11 +28,14 @@ th, td {
 }
 
 .item-user{
-  padding-right: 280px;
+  padding-right: 70px;
+}
+.item-status{
+  padding-right: 90px;
 }
 .item-placa{
   padding-right: 80px;
 }
 .item-correo{
-  padding-right: 140px;
+  padding-right: 120px;
 }

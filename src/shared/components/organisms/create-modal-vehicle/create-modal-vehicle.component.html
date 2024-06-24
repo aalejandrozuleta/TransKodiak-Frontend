@@ -1,15 +1,19 @@
 <div class="container-all">
-  <app-header-form-create-vehicle class="header-form"
-    title="Transportador" 
-    subtitle="Asigna el Transportador.">
+  <app-header-form-create-vehicle
+    class="header-form"
+    title="Transportador"
+    subtitle="Asigna el Transportador."
+  >
   </app-header-form-create-vehicle>
 
-  <form>
-    <app-form-field label="Nombre" id="tipo-vehiculo" type="text" placeholder="Nombre"></app-form-field>
-    <app-form-field label="Email" id="nit" type="text" placeholder="Email"></app-form-field>
-    <app-form-field label="Teléfono" id="placa" type="text" placeholder="Teléfono"></app-form-field>
-    <app-form-field label="Licencia" id="placa" type="text" placeholder="Licencia"></app-form-field>
-    <button> {{ text }} </button>
+  <form *ngFor="let item of formData">
+    <app-form-field
+      [label]="item.label"
+      [id]="item.id"
+      [fild]="item.fild"
+      [placeholder]="item.placeholder"
+      [type]="item.type"
+    ></app-form-field>
   </form>
+  <button (click)="onClick()">{{ text }}</button>
 </div>
-

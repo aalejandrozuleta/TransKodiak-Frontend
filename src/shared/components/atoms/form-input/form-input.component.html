@@ -1,1 +1,8 @@
-<input [id]="id" [type]="type" [placeholder]="placeholder" />
+<input
+  [id]="id"
+  [type]="type"
+  [placeholder]="placeholder"
+  [(ngModel)]="value"
+  (ngModelChange)="onChange()"
+  name="{{ fild }}"
+/>
