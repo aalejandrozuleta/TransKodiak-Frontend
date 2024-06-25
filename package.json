@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "start:api": "json-server --watch api/data.json --port 8000",
     "prettier": "npx prettier --write \"**/*.{js,ts,html,scss}\" --ignore-path .prettierignore",
+    
     "test": "ng test"
   },
   "private": true,

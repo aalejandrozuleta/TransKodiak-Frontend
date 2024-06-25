@@ -1,0 +1,26 @@
+@import 'inherence/flexCenter';
+@import 'inherence/totalSize';
+@import 'colors/modalsConfirmColor';
+
+.modal-actions {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  background-color: map-get($modalsConfirmColor, 'background');
+  width: 450px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 2px 1px 6px map-get($modalsConfirmColor, 'shadow');
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 30% 20% 40%;
+
+  #btns-options-modal {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    @extend %flexCenter;
+    justify-content: space-around;
+  }
+}

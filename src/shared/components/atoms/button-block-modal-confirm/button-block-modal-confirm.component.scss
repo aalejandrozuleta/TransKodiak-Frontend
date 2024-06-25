@@ -1,0 +1,5 @@
+@import 'mixins/btnModalConfirm';
+
+.btn-confirm {
+  @include btnModalConfirm($background: 'confirm', $color: 'textConfirm');
+}

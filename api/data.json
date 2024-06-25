@@ -35,21 +35,6 @@
       "id": "5",
       "placa": "ERG - 897",
       "isChecked": true
-    },
-    {
-      "id": "4df9",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "license": ""
-    },
-    {
-      "id": "d6ab",
-      "name": "Meliza",
-      "email": "Meliza@gmail.com",
-      "phone": "123456789",
-      "license": "",
-      "licencia": "ASD3245"
     }
   ]
 }

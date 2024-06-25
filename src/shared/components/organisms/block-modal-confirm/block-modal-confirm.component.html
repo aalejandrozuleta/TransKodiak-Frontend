@@ -1,0 +1,15 @@
+<div class="modal-actions">
+  <app-button-close-block-modal-confirm></app-button-close-block-modal-confirm>
+  <app-img-block-modal-confirm
+    [imgBlockModal]="imgBlockReference"
+  ></app-img-block-modal-confirm>
+  <app-text-block-modal-confirm
+    [textMessage]="textBlockReference"
+  ></app-text-block-modal-confirm>
+  <div id="btns-options-modal">
+    <app-button-cancel-block-modal></app-button-cancel-block-modal>
+    <app-button-block-modal-confirm
+      [idUser]="idUser"
+    ></app-button-block-modal-confirm>
+  </div>
+</div>

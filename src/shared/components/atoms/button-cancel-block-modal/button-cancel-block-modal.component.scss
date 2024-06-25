@@ -1,0 +1,5 @@
+@import 'mixins/btnModalConfirm';
+
+.btn-cancel {
+  @include btnModalConfirm($background: 'cancel', $color: 'textCancel');
+}

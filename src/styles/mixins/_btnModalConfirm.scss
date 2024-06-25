@@ -1,0 +1,11 @@
+@import 'colors/modalsConfirmColor';
+
+@mixin btnModalConfirm($background, $color) {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: map-get($btnModalConfirmColor, $background);
+  color: map-get($btnModalConfirmColor, $color);
+}

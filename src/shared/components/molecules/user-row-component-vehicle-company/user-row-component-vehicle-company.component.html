@@ -10,10 +10,17 @@
   <td class="item-date">{{ user.date }}</td>
   <img [src]="editar" alt="editar" />
   <img (click)="openModalVehicle()" [src]="asignar" alt="asignar" />
-  <img [src]="delete" (click)="deleteUserHandler(user.id)" alt="Eliminar" />
-  <!-- <td><button (click)="deleteUserHandler(user.id)">Eliminar</button></td> -->
+  <img [src]="delete" (click)="openModalConfirm()" alt="Eliminar" />
 </section>
 
 <app-complete-header-form-vehicle
-  *ngIf="showModal1"
+  *ngIf="showModal"
 ></app-complete-header-form-vehicle>
+
+<app-block-modal-confirm
+  *ngIf="showModalConfirm"
+  [imgBlockReference]="deleteModal"
+  [textBlockReference]="messageDelete"
+  [idUser]="idUser"
+>
+</app-block-modal-confirm>

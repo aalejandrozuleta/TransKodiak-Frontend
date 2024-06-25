@@ -7,10 +7,13 @@ import { BehaviorSubject } from 'rxjs';
 export class ModalsCreateVehicleTransporterService {
   private _showModalCreateVehicle = new BehaviorSubject<boolean>(false);
   private _showModalCreateTransporter = new BehaviorSubject<boolean>(false);
+  private _showModalDeleteTransporter = new BehaviorSubject<boolean>(false);
 
   showModalCreateVehicle = this._showModalCreateVehicle.asObservable();
   showModalCreateTransporter = this._showModalCreateTransporter.asObservable();
+  showModalDeleteTransporter = this._showModalDeleteTransporter.asObservable();
 
+  // Modales para abrir los registros
   openModalCreateVehicle() {
     this._showModalCreateVehicle.next(true);
   }
@@ -23,6 +26,19 @@ export class ModalsCreateVehicleTransporterService {
   closeModalCreateTransporter() {
     this._showModalCreateTransporter.next(false);
   }
+
+  //** */
+
+  // Mensaje de confirmacion para eliminar
+  openModalDeleteTransporter() {
+    this._showModalDeleteTransporter.next(true);
+  }
+
+  closeModalDeleteTransporter() {
+    this._showModalDeleteTransporter.next(false);
+  }
+
+  //** */
   next() {
     this.closeModalCreateVehicle();
     this.openModalCreateTransporter();

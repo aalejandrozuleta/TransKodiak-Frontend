@@ -1,0 +1,7 @@
+@import 'inherence/totalSize';
+@import 'inherence/flexCenter';
+
+.img-logo {
+  @extend %totalSize;
+  @extend %flexCenter;
+}
