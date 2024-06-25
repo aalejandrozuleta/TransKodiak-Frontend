@@ -1,0 +1,8 @@
+<div *ngIf="hasContent; else emptyStateTemplate">
+    <!-- Aquí va el contenido cuando sí hay contenido -->
+    <p>Este es el contenido de la feature</p>
+  </div>
+  <ng-template #emptyStateTemplate>
+    <app-empty-state [imgSrc]="imgSrc" [mainText]="mainText" [secondaryText]="secondaryText"></app-empty-state>
+  </ng-template>
+  
