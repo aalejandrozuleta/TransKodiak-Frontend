@@ -15,6 +15,7 @@ import { Subscription } from 'rxjs';
     UserAvatarComponentVehicleCompanyComponent,
     CompleteHeaderFormVehicleComponent,
     BlockModalConfirmComponent,
+    CompleteHeaderFormVehicleComponent,
   ],
   templateUrl: './user-row-component-vehicle-company.component.html',
   styleUrls: ['./user-row-component-vehicle-company.component.scss'],
@@ -47,10 +48,20 @@ export class UserRowComponentVehicleCompanyComponent
           this.showModalConfirm = status;
         },
       );
+
+    this.ModalsCreateVehicleTransporterService.watchCreateVehicle().subscribe(
+      (state: 'open' | 'close') => {
+        this.showModal = state === 'open';
+      },
+    );
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+
+  openModalVehicle() {
+    this.ModalsCreateVehicleTransporterService.openCreateVehicle();
   }
 
   openModalConfirm() {

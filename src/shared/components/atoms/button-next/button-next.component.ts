@@ -10,5 +10,5 @@ import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/cre
   styleUrls: ['./button-next.component.scss'],
 })
 export class ButtonNextComponent {
-  text: string = 'Siguiente';
+  text: string = 'Guardar';
 }

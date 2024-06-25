@@ -9,7 +9,7 @@
   <td class="item-email">{{ user.email }}</td>
   <td class="item-date">{{ user.date }}</td>
   <img [src]="editar" alt="editar" />
-  <img [src]="asignar" alt="asignar" />
+  <img [src]="asignar" (click)="openModalVehicle()" alt="asignar" />
   <img [src]="delete" (click)="openModalConfirm()" alt="Eliminar" />
 </section>
 
@@ -24,3 +24,9 @@
   [idUser]="idUser"
 >
 </app-block-modal-confirm>
+
+<app-complete-header-form-vehicle
+  *ngIf="showModal"
+>
+
+</app-complete-header-form-vehicle>

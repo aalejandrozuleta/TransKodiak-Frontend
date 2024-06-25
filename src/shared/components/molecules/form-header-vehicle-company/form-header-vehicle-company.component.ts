@@ -30,6 +30,6 @@ export class HeaderFormCreateVehicleComponent {
   ) {}
 
   closeModal() {
-    this.ModalsCreateVehicleTransporterService.closeCreateTransporter();
+    this.ModalsCreateVehicleTransporterService.closeCreateVehicle();
   }
 }
