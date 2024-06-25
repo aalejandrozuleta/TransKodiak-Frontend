@@ -1,30 +1,42 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ModalsCreateVehicleTransporterService {
-  private _showModalCreateVehicle = new BehaviorSubject<boolean>(false);
-  private _showModalCreateTransporter = new BehaviorSubject<boolean>(false);
-  private _showModalDeleteTransporter = new BehaviorSubject<boolean>(false);
 
-  showModalCreateVehicle = this._showModalCreateVehicle.asObservable();
-  showModalCreateTransporter = this._showModalCreateTransporter.asObservable();
+  private showModalCreateVehicle: BehaviorSubject <'open' | 'close'> = new BehaviorSubject<'open' | 'close'>('close');
+  private showModalCreateTransporter: BehaviorSubject <'open' | 'close'> = new BehaviorSubject<'open' | 'close'>('close');
+
+
+  private _showModalDeleteTransporter = new BehaviorSubject<boolean>(false);
   showModalDeleteTransporter = this._showModalDeleteTransporter.asObservable();
 
-  // Modales para abrir los registros
-  openModalCreateVehicle() {
-    this._showModalCreateVehicle.next(true);
+  watchCreateVehicle(): Observable<'open' | 'close'> {
+    return this.showModalCreateVehicle.asObservable();
   }
-  openModalCreateTransporter() {
-    this._showModalCreateTransporter.next(true);
+
+  openCreateVehicle() {
+    console.log('openCreateVehicle - Emitiendo open');
+    this.showModalCreateVehicle.next('open');
   }
-  closeModalCreateVehicle() {
-    this._showModalCreateVehicle.next(false);
+
+  closeCreateVehicle() {
+    this.showModalCreateVehicle.next('close');
   }
-  closeModalCreateTransporter() {
-    this._showModalCreateTransporter.next(false);
+
+  watchCreateTransporter(): Observable<'open' | 'close'> {
+    return this.showModalCreateTransporter.asObservable();
+  }
+
+  openCreateTransporter() {
+    console.log('openCreateTransporter - Emitiendo open');
+    this.showModalCreateTransporter.next('open');
+  }
+
+  closeCreateTransporter() {
+    this.showModalCreateTransporter.next('close');
   }
 
   //** */
@@ -39,8 +51,4 @@ export class ModalsCreateVehicleTransporterService {
   }
 
   //** */
-  next() {
-    this.closeModalCreateVehicle();
-    this.openModalCreateTransporter();
-  }
 }

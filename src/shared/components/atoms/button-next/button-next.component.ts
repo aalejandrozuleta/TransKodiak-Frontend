@@ -14,7 +14,7 @@ import { Subscription } from 'rxjs';
 export class ButtonNextComponent implements OnInit, OnDestroy {
   modal = false;
   text: string = 'Siguiente';
-  private subscription: Subscription = Subscription.EMPTY;
+  subscription: Subscription = Subscription.EMPTY;
 
   constructor(
     private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService,
@@ -22,18 +22,19 @@ export class ButtonNextComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.subscription =
-      this.ModalsCreateVehicleTransporterService.showModalCreateTransporter.subscribe(
-        (status) => {
-          this.modal = status;
+      this.ModalsCreateVehicleTransporterService.watchCreateVehicle().subscribe(
+        (state: 'open' | 'close') => {
+          this.modal = state === 'open';
         },
       );
   }
 
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
+  openModal()  {
+    console.log('hola');
+     this.ModalsCreateVehicleTransporterService.openCreateVehicle();
   }
 
-  openModal() {
-    this.ModalsCreateVehicleTransporterService.next();
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }
