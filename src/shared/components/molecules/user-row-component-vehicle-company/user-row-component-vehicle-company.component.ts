@@ -41,7 +41,6 @@ export class UserRowComponentVehicleCompanyComponent
   messageDelete = `¿Estás seguro de que deseas borrara este usuario?, Esta acción no se puede deshacer.`;
 
   ngOnInit() {
-
     this.subscription =
       this.ModalsCreateVehicleTransporterService.showModalDeleteTransporter.subscribe(
         (status) => {

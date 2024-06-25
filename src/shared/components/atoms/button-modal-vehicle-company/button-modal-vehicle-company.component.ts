@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ModalsCreateVehicleTransporterService } from '@services/modals-create-vehicle-transporter.service';
 import { Subscription } from 'rxjs';
@@ -14,24 +14,24 @@ import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/cre
 export class ButtonModalVehicleCompanyComponent implements OnInit, OnDestroy {
   img = '../../../../assets/imagenes/agregar-usuario (1).png';
 
-  //************************************************************************************************
   showModal = false;
   subscription: Subscription = Subscription.EMPTY;
-  //************************************************************************************************
 
   constructor(
-    private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService) {}
+    private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService,
+  ) {}
 
   ngOnInit() {
-    this.subscription = this.ModalsCreateVehicleTransporterService.watchCreateVehicle().subscribe((state: 'open' | 'close') => {
-      this.showModal = state === 'close';
-    });
+    this.subscription =
+      this.ModalsCreateVehicleTransporterService.watchCreateTransporter().subscribe(
+        (state: 'open' | 'close') => {
+          this.showModal = state === 'open';
+        },
+      );
   }
 
   openModal() {
-    console.log('Estado actual antes de abrir:', this.showModal);
     this.ModalsCreateVehicleTransporterService.openCreateTransporter();
-    console.log('Estado actual después de abrir:', this.showModal);
   }
 
   ngOnDestroy() {

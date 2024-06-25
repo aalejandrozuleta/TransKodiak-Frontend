@@ -6,8 +6,9 @@
   >
   </app-header-form-create-vehicle>
 
-  <form *ngFor="let item of formData">
+  <form>
     <app-form-field
+      *ngFor="let item of formData"
       [label]="item.label"
       [id]="item.id"
       [fild]="item.fild"
@@ -15,5 +16,5 @@
       [type]="item.type"
     ></app-form-field>
   </form>
-  <button (click)="onClick()">{{ text }}</button>
+  <button (click)="saveDate()">{{ text }}</button>
 </div>

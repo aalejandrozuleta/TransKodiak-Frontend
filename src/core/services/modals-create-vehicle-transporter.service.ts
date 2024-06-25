@@ -5,10 +5,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ModalsCreateVehicleTransporterService {
-
-  private showModalCreateVehicle: BehaviorSubject <'open' | 'close'> = new BehaviorSubject<'open' | 'close'>('close');
-  private showModalCreateTransporter: BehaviorSubject <'open' | 'close'> = new BehaviorSubject<'open' | 'close'>('close');
-
+  private showModalCreateVehicle: BehaviorSubject<'open' | 'close'> =
+    new BehaviorSubject<'open' | 'close'>('close');
+  private showModalCreateTransporter: BehaviorSubject<'open' | 'close'> =
+    new BehaviorSubject<'open' | 'close'>('close');
 
   private _showModalDeleteTransporter = new BehaviorSubject<boolean>(false);
   showModalDeleteTransporter = this._showModalDeleteTransporter.asObservable();
@@ -36,6 +36,7 @@ export class ModalsCreateVehicleTransporterService {
   }
 
   closeCreateTransporter() {
+    console.log('closeCreateTransporter - Emitiendo open');
     this.showModalCreateTransporter.next('close');
   }
 

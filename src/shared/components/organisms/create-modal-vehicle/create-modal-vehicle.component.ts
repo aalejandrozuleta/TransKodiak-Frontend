@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormFieldComponent } from '@molecules/form-field/form-field.component';
 import { FormButtonsComponent } from '@molecules/form-buttons/form-buttons.component';
 import { HeaderFormCreateVehicleComponent } from '@molecules/form-header-vehicle-company/form-header-vehicle-company.component';
 import { ValuesInputsModalsVehicleCompanyService } from '@services/values-inputs-modals-vehicle-company.service';
+import { ModalsCreateVehicleTransporterService } from '@services/modals-create-vehicle-transporter.service';
 
 @Component({
   selector: 'app-create-modal-vehicle',
@@ -22,6 +23,7 @@ export class CreateModalVehicleComponent {
 
   constructor(
     private ValuesInputsModalsVehicleCompanyService: ValuesInputsModalsVehicleCompanyService,
+    private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService,
   ) {}
 
   formData = [
@@ -55,7 +57,8 @@ export class CreateModalVehicleComponent {
     },
   ];
 
-  onClick() {
+  saveDate() {
     this.ValuesInputsModalsVehicleCompanyService.onClick();
+    this.ModalsCreateVehicleTransporterService.closeCreateTransporter();
   }
 }
