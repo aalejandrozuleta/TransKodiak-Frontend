@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "start:api": "json-server --watch api/data.json --port 8000",
     "prettier": "npx prettier --write \"**/*.{js,ts,html,scss}\" --ignore-path .prettierignore",
-    
+    "lint": "ng lint --fix",
     "test": "ng test"
   },
   "private": true,
@@ -28,9 +28,19 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.0.3",
+    "@angular-eslint/builder": "18.0.1",
+    "@angular-eslint/eslint-plugin": "18.0.1",
+    "@angular-eslint/eslint-plugin-template": "18.0.1",
+    "@angular-eslint/schematics": "18.0.1",
+    "@angular-eslint/template-parser": "18.0.1",
     "@angular/cli": "^18.0.3",
     "@angular/compiler-cli": "^18.0.0",
     "@types/jasmine": "~5.1.0",
+    "@typescript-eslint/eslint-plugin": "7.11.0",
+    "@typescript-eslint/parser": "7.11.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
