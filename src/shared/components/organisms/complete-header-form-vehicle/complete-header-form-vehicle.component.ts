@@ -24,28 +24,24 @@ export class CompleteHeaderFormVehicleComponent {
       id: 'tipo-vehiculo',
       type: 'text',
       placeholder: 'Tipo',
-      fild: 'typeVehicle',
     },
     {
       label: 'Placa',
       id: 'placa',
       type: 'text',
       placeholder: 'Placa',
-      fild: 'plate',
     },
     {
       label: 'Capacidad',
       id: 'capacidad',
       type: 'text',
       placeholder: 'Capacidad',
-      fild: 'capacity',
     },
     {
       label: 'Tipo de Carga',
       id: 'tipo-carga',
       type: 'text',
       placeholder: 'Carga',
-      fild: 'typeLoad',
     },
   ];
 }
