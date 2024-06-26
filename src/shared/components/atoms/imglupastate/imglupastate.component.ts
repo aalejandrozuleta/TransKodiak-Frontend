@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-imglupastate',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './imglupastate.component.scss',
 })
 export class ImglupastateComponent {
-  imglupastate = '../../../../assets/imagenes/lupastate.png';
+  @Input() imgSrc: string = '';
 }

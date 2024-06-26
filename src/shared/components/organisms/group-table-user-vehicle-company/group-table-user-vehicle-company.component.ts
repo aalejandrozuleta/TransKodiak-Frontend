@@ -20,12 +20,10 @@ export class GroupTableUserVehicleCompanyComponent implements OnInit {
   public users: userTableVehicle[] = [];
   @Input() isEmptyState: boolean = false;
 
-  constructor(
-    private SeekerVehicleCompanyService: SeekerVehicleCompanyService,
-  ) {}
+  constructor(private seekerVehicleCompanyService: SeekerVehicleCompanyService) {}
 
   ngOnInit() {
-    this.SeekerVehicleCompanyService.filteredDates.subscribe((data) => {
+    this.seekerVehicleCompanyService.filteredDates.subscribe((data) => {
       this.users = data;
       this.isEmptyState = this.users.length === 0;
     });
