@@ -10,13 +10,13 @@ import { Subscription } from 'rxjs';
   templateUrl: './button-cancel.component.html',
   styleUrl: './button-cancel.component.scss',
 })
-export class ButtonCancelComponent  implements  OnDestroy {
+export class ButtonCancelComponent implements OnDestroy {
   text: string = 'Cancel';
   subscription: Subscription = Subscription.EMPTY;
 
   constructor(
-    private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService
-  ) { }
+    private ModalsCreateVehicleTransporterService: ModalsCreateVehicleTransporterService,
+  ) {}
 
   closeModal() {
     this.ModalsCreateVehicleTransporterService.closeCreateVehicle();

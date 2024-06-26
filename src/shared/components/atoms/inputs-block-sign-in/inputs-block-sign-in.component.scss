@@ -1,0 +1,29 @@
+@import 'inherence/totalSize';
+
+.block-input-sing-in {
+  width: 80%;
+  margin: 5px auto;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 50px;
+  background-color: #ebebebbd;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+
+  .img-input {
+    height: 50%;
+    margin: auto;
+  }
+
+  .input-sign-in {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

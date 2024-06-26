@@ -1,0 +1,9 @@
+@import 'mixins/colorBlocksForms';
+
+.white {
+  @include colorBlocksForms($color: 'blockWhite');
+}
+
+.blue {
+  @include colorBlocksForms($color: 'blockBlue');
+}

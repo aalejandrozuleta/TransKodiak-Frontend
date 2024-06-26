@@ -8,11 +8,11 @@
 
   <form>
     <app-form-field
-    *ngFor="let item of dataform"
-      label="{{item.label}}"
-      id="{{item.id}}"
-      type="{{item.type}}"
-      placeholder="{{item.placeholder}}"
+      *ngFor="let item of dataform"
+      label="{{ item.label }}"
+      id="{{ item.id }}"
+      type="{{ item.type }}"
+      placeholder="{{ item.placeholder }}"
     ></app-form-field>
     <app-form-buttons></app-form-buttons>
   </form>
