@@ -1,0 +1,12 @@
+@import 'inherence/totalSize';
+@import 'inherence/flexCenter';
+
+#title-form {
+  @extend %totalSize;
+  @extend %flexCenter;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inter;
+  text-shadow: 2px 0px 2px #000;
+  font-style: italic;
+}

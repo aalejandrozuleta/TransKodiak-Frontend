@@ -1,0 +1,22 @@
+<div id="block-form">
+  <app-title-sign-in [titleForm]="titleForm"> </app-title-sign-in>
+
+  <app-nav-options-sign-in></app-nav-options-sign-in>
+
+  <form action="" method="post" id="form-sign-in">
+    <app-inputs-block-sign-in
+      *ngFor="let item of formInputs"
+      [img]="item.img"
+      [type]="item.type"
+      [placeholder]="item.placeholder"
+      [name]="item.name"
+    >
+    </app-inputs-block-sign-in>
+  </form>
+
+  <app-options-user-sign-in></app-options-user-sign-in>
+  <app-btn-login-sign-in
+    id="btn-option"
+    [btnOption]="optionBtn"
+  ></app-btn-login-sign-in>
+</div>

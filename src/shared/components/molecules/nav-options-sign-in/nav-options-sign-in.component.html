@@ -1,0 +1,7 @@
+<div id="nav-options">
+  <app-options-nav-sign-in
+    *ngFor="let item of optionsNav"
+    [options]="item.name"
+    [path]="item.link"
+  ></app-options-nav-sign-in>
+</div>

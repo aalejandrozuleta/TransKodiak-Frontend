@@ -1,0 +1,28 @@
+.options-nav-sing-in {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+
+  &:focus:after,
+  &:hover:after {
+    left: 0%;
+    width: 100%;
+  }
+
+  &:after {
+    content: '';
+    pointer-events: none;
+    bottom: -3px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #000;
+    transition: width, left, cubic-bezier(0.25, 0.8, 0.25, 1), 400ms;
+  }
+}

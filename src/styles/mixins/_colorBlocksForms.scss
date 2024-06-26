@@ -1,0 +1,7 @@
+@import 'colors/formsSingInColor';
+@import 'inherence/totalSize';
+
+@mixin colorBlocksForms($color) {
+  background-color: map-get($formSingIn, $color);
+  @extend %totalSize;
+}

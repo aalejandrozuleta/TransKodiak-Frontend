@@ -1,0 +1,22 @@
+@import 'inherence/totalSize';
+
+#background-sign-up {
+  background: url(../../../../assets/imagenes/truck-sing-up.jpg) center center
+    no-repeat;
+  @extend %totalSize;
+
+  .text {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  #title-text {
+    top: 40%;
+  }
+
+  #text-text {
+    top: 80%;
+  }
+}
