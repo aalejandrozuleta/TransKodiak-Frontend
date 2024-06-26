@@ -1,5 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, OnDestroy} from '@angular/core';
+import { ModalsCreateVehicleTransporterService } from '@services/modals-create-vehicle-transporter.service';
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-equis-close',
@@ -8,10 +11,17 @@ import { Component, Output, EventEmitter } from '@angular/core';
   templateUrl: './equis-close.component.html',
   styleUrl: './equis-close.component.scss',
 })
-export class EquisCloseComponent {
-  @Output() close = new EventEmitter<void>();
+export class EquisCloseComponent implements OnDestroy {
+  subscription: Subscription = Subscription.EMPTY;
+  constructor (private ModalsCreateVehicleTransporterService:ModalsCreateVehicleTransporterService){
+
+  }
 
   closeModal() {
-    this.close.emit();
+    this.ModalsCreateVehicleTransporterService.closeCreateTransporter();
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 }

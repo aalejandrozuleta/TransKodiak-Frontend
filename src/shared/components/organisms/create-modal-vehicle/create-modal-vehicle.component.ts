@@ -6,6 +6,7 @@ import { HeaderFormCreateVehicleComponent } from '@molecules/form-header-vehicle
 import { ValuesInputsModalsVehicleCompanyService } from '@services/values-inputs-modals-vehicle-company.service';
 import { ModalsCreateVehicleTransporterService } from '@services/modals-create-vehicle-transporter.service';
 
+
 @Component({
   selector: 'app-create-modal-vehicle',
   standalone: true,
@@ -32,28 +33,28 @@ export class CreateModalVehicleComponent {
       id: 'name',
       type: 'text',
       placeholder: 'Nombre',
-      fild: 'name',
+      field: 'name',
     },
     {
       label: 'email',
       id: 'email',
       type: 'email',
       placeholder: 'email',
-      fild: 'email',
+      field: 'email',
     },
     {
       label: 'phone',
       id: 'phone',
       type: 'text',
       placeholder: 'phone',
-      fild: 'phone',
+      field: 'phone',
     },
     {
       label: 'licencia',
       id: 'licencia',
       type: 'text',
       placeholder: 'licencia',
-      fild: 'licencia',
+      field: 'licencia',
     },
   ];
 

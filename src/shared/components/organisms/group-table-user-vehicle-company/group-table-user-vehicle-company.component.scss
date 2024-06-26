@@ -1,42 +1,24 @@
-// @import "colors/defaultColor";
+@import "colors/defaultColor";
 @import 'inherence/_flexCenter';
 
 table {
   font-size: 13px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto;
   width: 85%;
   height: auto;
   border: rgb(236, 236, 236) 1px solid;
 }
 
-th,
-td {
-  padding-left: 35px;
-  text-align: left;
-  padding-top: 18px;
-}
+
 
 .items-table {
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  background-color: #06141b;
-  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(5,20%);
+  grid-template-rows: 60px;
+  place-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: map-get($primary, 'two' );
   color: #fff;
-  font-size: 12px;
-  border-radius: 20px 20px 0 0;
 }
 
-.item-user {
-  padding-right: 70px;
-}
-.item-status {
-  padding-right: 90px;
-}
-.item-placa {
-  padding-right: 80px;
-}
-.item-correo {
-  padding-right: 120px;
-}
