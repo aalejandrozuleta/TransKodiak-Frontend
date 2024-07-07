@@ -1,0 +1,20 @@
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: 14%;
+  justify-content: space-around;
+}
+
+.text{
+  color: #06141B;
+  font-size: 13px;
+
+  a{
+    color: #1A517C;
+    text-decoration: none;
+    font-size: 13px;
+  }
+}

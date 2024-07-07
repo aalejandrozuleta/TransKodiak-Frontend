@@ -1,0 +1,24 @@
+div{
+  width: 100%;
+  display: flex;
+}
+
+.group-form{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+}
+
+.section-form{
+  
+}
+.section-img{
+  width: 40%;
+  height: 100vh;
+  img{
+    height: 100vh;
+  }
+}

@@ -1,0 +1,19 @@
+<section class="section-form">
+
+  <div class="content-all">
+    <app-tittle-form-register-company></app-tittle-form-register-company>
+    <app-inputs-form-register-company
+      *ngFor="let item of dataform2"
+      label="{{item.label}}"
+      id="{{item.id}}"
+      type="{{item.type}}"
+      placeholder="{{item.placeholder}}">
+    </app-inputs-form-register-company>
+    <app-text-form-register-company></app-text-form-register-company>
+    <app-buttons-form-register-company></app-buttons-form-register-company>
+  </div> 
+   
+  <app-img-form-register-company class="item-img"></app-img-form-register-company>
+</section>
+
+
