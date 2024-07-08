@@ -1,29 +1,27 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ImgFormRegisterCompanyComponent } from '@atoms/img-form-register-company/img-form-register-company.component';
 import { ButtonsFormRegisterCompanyComponent } from '@molecules/buttons-form-register-company/buttons-form-register-company.component';
 import { InputsFormRegisterCompanyComponent } from '@molecules/inputs-form-register-company/inputs-form-register-company.component';
 import { userRegister } from '@models/userRegister';
-import { TittleFormRegisterCompanyComponent } from '@atoms/tittle-form-register-company/tittle-form-register-company.component';
 import { TextFormRegisterCompanyComponent } from '@atoms/text-form-register-company/text-form-register-company.component';
-import { VehicleCompanyComponent } from '@feature/vehicle-company/vehicle-company.component';
+import { TitleFormRegisterIntermediaryComponent } from '@atoms/title-form-register-intermediary/title-form-register-intermediary.component';
 
 
 @Component({
-  selector: 'app-group-form-register-company',
+  selector: 'app-group-form-register-intermediary',
   standalone: true,
   imports: [CommonModule, 
     ImgFormRegisterCompanyComponent,
     ButtonsFormRegisterCompanyComponent,
     InputsFormRegisterCompanyComponent,
-    TittleFormRegisterCompanyComponent,
-    VehicleCompanyComponent,
+    TitleFormRegisterIntermediaryComponent,
     TextFormRegisterCompanyComponent
   ],
-  templateUrl: './group-form-register-company.component.html',
-  styleUrl: './group-form-register-company.component.scss'
+  templateUrl: './group-form-register-intermediary.component.html',
+  styleUrl: './group-form-register-intermediary.component.scss'
 })
-export class GroupFormRegisterCompanyComponent {
+export class GroupFormRegisterIntermediaryComponent {
   dataform2: userRegister[] = [
     {
       label: 'Nombre',
