@@ -26,7 +26,7 @@ export class UserRowComponentVehicleCompanyComponent
   delete = '../../../../assets/imagenes/borrar.png';
   editar = '../../../../assets/imagenes/editar.png';
   asignar = '../../../../assets/imagenes/entrega.png';
-  deleteModal = '../../../../assets/icons/basura.png';
+  deleteModal = '../../../../assets/imagenes/imgEliminar.png';
   idUser: number = 0;
 
   @Input() user!: userTableVehicle;
@@ -39,7 +39,8 @@ export class UserRowComponentVehicleCompanyComponent
   showModalConfirm = true;
   private subscription: Subscription = Subscription.EMPTY;
 
-  messageDelete = `¿Estás seguro de que deseas borrara este usuario?, Esta acción no se puede deshacer.`;
+  messageDelete = `Estas seguro de que deseas eliminar a tu Transportador?`;
+  tittleText = `Oops!`;
 
   ngOnInit() {
     this.subscription =
