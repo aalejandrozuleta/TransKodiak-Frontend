@@ -3,4 +3,5 @@ export interface userRegister {
   id: string;
   type: string;
   placeholder: string;
+  fild: string;
 }

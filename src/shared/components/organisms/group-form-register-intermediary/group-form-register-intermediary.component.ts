@@ -25,39 +25,38 @@ export class GroupFormRegisterIntermediaryComponent {
   dataform2: userRegister[] = [
     {
       label: 'Nombre',
-      id: 'nombre',
+      id: 'name',
       type: 'text',
       placeholder: 'Nombre',
+      fild: 'name'
     },
     {
       label: 'Email',
       id: 'email',
       type: 'email',
       placeholder: 'Email',
-    },
-    {
-      label: 'Nit',
-      id: 'nit',
-      type: 'text',
-      placeholder: 'Nit',
+      fild: 'email'
     },
     {
       label: 'telefono',
-      id: 'telefono',
+      id: 'phone',
       type: 'text',
       placeholder: 'Telefono',
+      fild: 'phone'
     },
     {
       label: 'direccion',
-      id: 'direccion',
+      id: 'address',
       type: 'text',
       placeholder: 'Direccion',
+      fild: 'address'
     },
     {
       label: 'contraseña',
-      id: 'contraseña',
+      id: 'password',
       type: 'text',
       placeholder: 'Contraseña',
+      fild: 'password' 
     },
   ];
 }
