@@ -4,37 +4,39 @@ import { Injectable } from '@angular/core';
 import { userTableVehicle } from '@models/user-table-vehicle-company';
 import { HttpClient } from '@angular/common/http';
 import { editUserVehicleCompany } from '@models/editUserVehicleCompany';
+import { environment } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root',
 })
-export class UserVehicleCompanyService {
+export class UserVehicleCompanyService {  
+  private url = environment.API_URL;
   constructor(private http: HttpClient) {}
 
   getTransporters() {
     return this.http.get<userTableVehicle[]>(
-      'http://localhost:8000/transporter',
+      `${this.url}transporter`,
     );
   }
 
   deleteUser(id: number) {
-    return this.http.delete(`http://localhost:8000/transporter/${id}`);
+    return this.http.delete(`${this.url}${id}`);
   }
 
   createUserTransporter(user: userTransporterCreate) {
-    return this.http.post('http://localhost:8000/transporter', user);
+    return this.http.post(`${this.url}transporter`, user);
   }
 
   createVehicle(vehicle: registerVehicle) {
-    return this.http.post('http://localhost:8000/vehicle', vehicle);
+    return this.http.post(`${this.url}transporter`,vehicle);
   }
 
   getUserById(id: number) {
     return this.http.get<userTableVehicle>(
-      `http://localhost:8000/transporter/${id}`,
+      `${this.url}${id}`,
     );
   }
   editUserVehicleCompany(user: editUserVehicleCompany) {
-    return this.http.put('http://localhost:8000/transporter', user);
+    return this.http.put(`${this.url}`,user);
   }
 }
