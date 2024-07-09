@@ -3,6 +3,7 @@ import { userTransporterCreate } from './../models/userTransporter';
 import { Injectable } from '@angular/core';
 import { UserVehicleCompanyService } from './user-vehicle-company.service';
 import { editUserVehicleCompany } from '@models/editUserVehicleCompany';
+import { registerCompanies } from '@models/registerCompanies';
 
 @Injectable({
   providedIn: 'root',
@@ -28,6 +29,12 @@ export class AdministrationUserVehicleCompanyService {
     });
   }
 
+  registerCompanyVehicle(user: registerCompanies){
+  }
+
+  registerCompanyIntermediary(user: registerCompanies){
+  }
+  
   editUserVehicleCompany(user: editUserVehicleCompany) {
     const existingUser = this.userVehicleCompanyService.getUserById(user.id);
 
