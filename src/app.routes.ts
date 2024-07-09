@@ -5,11 +5,13 @@ import { VehicleCompanyComponent } from '@feature/vehicle-company/vehicle-compan
 import { NosotrosComponent } from '@feature/nosotros/nosotros.component';
 import { StatisticComponent } from '@feature/statistic/statistic.component'
 import { RegisterIntermediaryComponent } from '@feature/register-intermediary/register-intermediary.component';
+import { IntermediaryCompanyComponent } from '@feature/intermediary-company/intermediary-company.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'vehicleCompany', component: VehicleCompanyComponent },
   { path: 'registerVehicle', component: RegisterFormCompanyComponent},
   { path: 'registerIntermediary', component: RegisterIntermediaryComponent},
+  { path: 'intermediaryCompany', component: IntermediaryCompanyComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
