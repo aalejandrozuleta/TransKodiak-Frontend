@@ -8,9 +8,8 @@ import { TittleFormRegisterCompanyComponent } from '@atoms/tittle-form-register-
 import { TextFormRegisterCompanyComponent } from '@atoms/text-form-register-company/text-form-register-company.component';
 import { VehicleCompanyComponent } from '@feature/vehicle-company/vehicle-company.component';
 
-
 @Component({
-  selector: 'app-group-form-register-company',
+  selector: 'app-group-form-register-inetrmediary',
   standalone: true,
   imports: [CommonModule, 
     ImgFormRegisterCompanyComponent,
@@ -20,11 +19,11 @@ import { VehicleCompanyComponent } from '@feature/vehicle-company/vehicle-compan
     VehicleCompanyComponent,
     TextFormRegisterCompanyComponent
   ],
-  templateUrl: './group-form-register-company.component.html',
-  styleUrl: './group-form-register-company.component.scss'
+  templateUrl: './group-form-register-inetrmediary.component.html',
+  styleUrl: './group-form-register-inetrmediary.component.scss'
 })
-export class GroupFormRegisterCompanyComponent {
-  
+export class GroupFormRegisterInetrmediaryComponent {
+   
   dataform2 = [
     {
       label: 'Nombre',
@@ -39,13 +38,6 @@ export class GroupFormRegisterCompanyComponent {
       type: 'email',
       placeholder: 'Email', 
       fild: 'email'
-    },
-    {
-      label: 'Nit',
-      id: 'nit',
-      type: 'text',
-      placeholder: 'Nit',
-      fild: 'nit'
     },
     {
       label: 'telefono',

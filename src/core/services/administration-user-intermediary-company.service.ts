@@ -10,7 +10,10 @@ export class AdministrationUserIntermediaryCompanyService {
 
   constructor(private userVehicleCompanyService: UserVehicleCompanyService) {}
 
-  registerCompanyIntermediary(user: registerCompanies){
+  registerCompanyVehicleUser(user: registerCompanies){
+    this.userVehicleCompanyService.createUserIntermediaryCompany(user).subscribe(() => {
+      console.log('Usuario registrado');
+    });
   }
   
 }

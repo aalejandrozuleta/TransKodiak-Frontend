@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { AdministrationUserVehicleCompanyService } from './administration-user-vehicle-company.service';
 import { registerCompanies } from '../models/registerCompanies';
+import { AdministrationUserIntermediaryCompanyService } from './administration-user-intermediary-company.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import { registerCompanies } from '../models/registerCompanies';
 export class ValuesRegisterIntermediaryCompanyService {
 
   constructor(
-    private administrationUserVehicleCompanyService: AdministrationUserVehicleCompanyService,
+    private AdministrationUserIntermediaryCompanyService:AdministrationUserIntermediaryCompanyService,
   ) {}
 
   newUser: registerCompanies = {
@@ -24,7 +24,7 @@ export class ValuesRegisterIntermediaryCompanyService {
   }
 
   onClick() {
-    this.administrationUserVehicleCompanyService.registerCompanyIntermediary(
+    this.AdministrationUserIntermediaryCompanyService.registerCompanyVehicleUser(
       this.newUser,
     );
   }
