@@ -25,7 +25,7 @@ export class ValuesRegisterVehicleCompanyService {
   }
 
   onClick() {
-    this.administrationUserVehicleCompanyService.registerCompanyVehicle(
+    this.administrationUserVehicleCompanyService.registerCompanyVehicleUser(
       this.newUser,
     );
   }

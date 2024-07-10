@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ButtonFormRegisterCompanyComponent } from '@atoms/button-form-register-company/button-form-register-company.component';
 import { TextFormRegisterCompanyComponent } from '@atoms/text-form-register-company/text-form-register-company.component';
+import { ValuesRegisterVehicleCompanyService } from '@services/values-register-vehicle-company.service';
 
 @Component({
   selector: 'app-buttons-form-register-company',
@@ -12,4 +13,11 @@ import { TextFormRegisterCompanyComponent } from '@atoms/text-form-register-comp
 })
 export class ButtonsFormRegisterCompanyComponent {
 
+  constructor(
+    private ValuesRegisterVehicleCompanyService: ValuesRegisterVehicleCompanyService,
+  ) {}
+  saveDateRegister() {
+    this.ValuesRegisterVehicleCompanyService.onClick();
+    console.log("hola perra");
+  }
 }
