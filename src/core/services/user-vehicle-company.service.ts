@@ -21,7 +21,7 @@ export class UserVehicleCompanyService {
 
   createUserVehicleCompany(user: registerCompanies){
     console.log(user)
-    return this.http.post(`${this.url}${this.vehicleCompany}register`, user, { withCredentials: true })
+    return this.http.post(`${this.url}${this.vehicleCompany}register`, user)
   }
 
   getTransporters() {
