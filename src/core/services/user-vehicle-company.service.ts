@@ -13,14 +13,15 @@ import { registerCompanies } from '@models/registerCompanies';
 export class UserVehicleCompanyService {  
   private url = environment.API_URL;
   private vehicleCompany = "api/vehicleCompany/"
-  private intermediaryCompany = "api/intermediary"
-  private transporter = "api/transporter"
+  private intermediaryCompany = "api/intermediary/"
+  private transporter = "api/transporter/"
   constructor(private http: HttpClient) {}
 
   //vehicle Company
 
-  createUservehicleCompany(user: registerCompanies){
-    return this.http.post(`${this.url}${this.vehicleCompany}/register`, user);
+  createUserVehicleCompany(user: registerCompanies){
+    console.log(user)
+    return this.http.post(`${this.url}${this.vehicleCompany}register`, user, { withCredentials: true })
   }
 
   getTransporters() {
@@ -30,23 +31,23 @@ export class UserVehicleCompanyService {
   }
 
   createVehicle(vehicle: registerVehicle) {
-    return this.http.post(`${this.url}${this.vehicleCompany}/createVehicle`,vehicle);
+    return this.http.post(`${this.url}${this.vehicleCompany}createVehicle`,vehicle);
   }
 
   editUserVehicleCompany(user: editUserVehicleCompany) {
-    return this.http.put(`${this.url}${this.vehicleCompany}/editVehicle`,user);
+    return this.http.put(`${this.url}${this.vehicleCompany}editVehicle`,user);
   }
 
   // Empresa Intermediaria
 
   createUserIntermediaryCompany(user: registerCompanies){
-    return this.http.post(`${this.url}${this.intermediaryCompany}/register`, user);
+    return this.http.post(`${this.url}${this.intermediaryCompany}register`, user);
   }
 
   // Tranportador
 
   createUserTransporter(user: userTransporterCreate) {
-    return this.http.post(`${this.url}${this.transporter}/createTransporter`, user);
+    return this.http.post(`${this.url}${this.transporter}createTransporter`, user);
   }
 
   deleteUser(id: number) {

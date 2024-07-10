@@ -17,5 +17,8 @@ export class AdministrationUserVehicleCompanyService {
   }
   
   registerCompanyVehicleUser(user: registerCompanies){
+    this.userVehicleCompanyService.createUserVehicleCompany(user).subscribe(() => {
+      console.log('Usuario registrado');
+    });
   }
 }

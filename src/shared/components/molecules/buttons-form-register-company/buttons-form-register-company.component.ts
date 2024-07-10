@@ -18,6 +18,5 @@ export class ButtonsFormRegisterCompanyComponent {
   ) {}
   saveDateRegister() {
     this.ValuesRegisterVehicleCompanyService.onClick();
-    console.log("hola perra");
   }
 }
