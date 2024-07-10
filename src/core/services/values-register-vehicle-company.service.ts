@@ -28,5 +28,6 @@ export class ValuesRegisterVehicleCompanyService {
     this.administrationUserVehicleCompanyService.registerCompanyVehicleUser(
       this.newUser,
     );
+    console.log(this.newUser);
   }
 }

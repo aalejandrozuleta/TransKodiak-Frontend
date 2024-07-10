@@ -26,7 +26,7 @@ import { VehicleCompanyComponent } from '@feature/vehicle-company/vehicle-compan
 })
 export class GroupFormRegisterCompanyComponent {
   
-  dataform2: userRegister[] = [
+  dataform2 = [
     {
       label: 'Nombre',
       id: 'name',
