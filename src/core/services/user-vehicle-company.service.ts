@@ -13,22 +13,32 @@ export class UserVehicleCompanyService {
   private url = environment.API_URL;
   constructor(private http: HttpClient) {}
 
+  //vehicle Company
+
   getTransporters() {
     return this.http.get<userTableVehicle[]>(
       `${this.url}transporter`,
     );
   }
 
-  deleteUser(id: number) {
-    return this.http.delete(`${this.url}${id}`);
+  createVehicle(vehicle: registerVehicle) {
+    return this.http.post(`${this.url}transporter`,vehicle);
   }
+
+  editUserVehicleCompany(user: editUserVehicleCompany) {
+    return this.http.put(`${this.url}`,user);
+  }
+
+  // Empresa Intermediaria
+
+  // Tranportador
 
   createUserTransporter(user: userTransporterCreate) {
     return this.http.post(`${this.url}transporter`, user);
   }
 
-  createVehicle(vehicle: registerVehicle) {
-    return this.http.post(`${this.url}transporter`,vehicle);
+  deleteUser(id: number) {
+    return this.http.delete(`${this.url}${id}`);
   }
 
   getUserById(id: number) {
@@ -36,7 +46,5 @@ export class UserVehicleCompanyService {
       `${this.url}${id}`,
     );
   }
-  editUserVehicleCompany(user: editUserVehicleCompany) {
-    return this.http.put(`${this.url}`,user);
-  }
+
 }

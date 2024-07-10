@@ -1,4 +1,4 @@
-import { AdministrationUserVehicleCompanyService } from '@services/administration-user-vehicle-company.service';
+//import {AdministrationUserTransporterService} from '@services/administr'
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -10,6 +10,6 @@ export class ModalsConfirmService {
   ) {}
 
   deleteTransporter(id: number) {
-    this.AdministrationUserVehicleCompanyService.deleteUser(id);
+    this.AdministrationUserVehicleCompanyService.deleteUserTransporter(id);
   }
 }
