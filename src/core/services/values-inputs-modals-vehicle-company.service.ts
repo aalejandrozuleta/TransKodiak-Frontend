@@ -1,13 +1,13 @@
-import { AdministrationUserVehicleCompanyService } from '@services/administration-user-vehicle-company.service';
 import { userTransporterCreate } from '@models/userTransporter';
 import { Injectable } from '@angular/core';
+import { AdministrationUserTransporterService } from './administration-user-transporter.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ValuesInputsModalsVehicleCompanyService {
   constructor(
-    private administrationUserVehicleCompanyService: AdministrationUserVehicleCompanyService,
+    private AdministrationUserTransporterService:AdministrationUserTransporterService,
   ) {}
 
   newUser: userTransporterCreate = {
@@ -22,7 +22,7 @@ export class ValuesInputsModalsVehicleCompanyService {
   }
 
   onClick() {
-    this.administrationUserVehicleCompanyService.registerTransporter(
+    this.AdministrationUserTransporterService.registerUserTransporter(
       this.newUser,
     );
   }

@@ -35,6 +35,14 @@
       "id": "5",
       "placa": "ERG - 897",
       "isChecked": true
+    },
+    {
+      "id": "50a0",
+      "name": "camila arias",
+      "email": "camilaarias@gmail.com",
+      "phone": "12345678",
+      "license": "",
+      "licencia": "AJSJS3434"
     }
   ]
 }

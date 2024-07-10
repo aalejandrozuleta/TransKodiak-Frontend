@@ -5,45 +5,57 @@ import { userTableVehicle } from '@models/user-table-vehicle-company';
 import { HttpClient } from '@angular/common/http';
 import { editUserVehicleCompany } from '@models/editUserVehicleCompany';
 import { environment } from 'src/environment/environment';
+import { registerCompanies } from '@models/registerCompanies';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserVehicleCompanyService {  
   private url = environment.API_URL;
+  private vehicleCompany = "api/vehicleCompany/"
+  private intermediaryCompany = "api/intermediary"
+  private transporter = "api/transporter"
   constructor(private http: HttpClient) {}
 
   //vehicle Company
 
+  createUservehicleCompany(user: registerCompanies){
+    return this.http.post(`${this.url}${this.vehicleCompany}/register`, user);
+  }
+
   getTransporters() {
     return this.http.get<userTableVehicle[]>(
-      `${this.url}transporter`,
+      `${this.url}${this.vehicleCompany}/getUser`,
     );
   }
 
   createVehicle(vehicle: registerVehicle) {
-    return this.http.post(`${this.url}transporter`,vehicle);
+    return this.http.post(`${this.url}${this.vehicleCompany}/createVehicle`,vehicle);
   }
 
   editUserVehicleCompany(user: editUserVehicleCompany) {
-    return this.http.put(`${this.url}`,user);
+    return this.http.put(`${this.url}${this.vehicleCompany}/editVehicle`,user);
   }
 
   // Empresa Intermediaria
 
+  createUserIntermediaryCompany(user: registerCompanies){
+    return this.http.post(`${this.url}${this.intermediaryCompany}/register`, user);
+  }
+
   // Tranportador
 
   createUserTransporter(user: userTransporterCreate) {
-    return this.http.post(`${this.url}transporter`, user);
+    return this.http.post(`${this.url}${this.transporter}/createTransporter`, user);
   }
 
   deleteUser(id: number) {
-    return this.http.delete(`${this.url}${id}`);
+    return this.http.delete(`${this.url}${this.transporter}${id}`);
   }
 
   getUserById(id: number) {
     return this.http.get<userTableVehicle>(
-      `${this.url}${id}`,
+      `${this.url}${this.transporter}${id}`,
     );
   }
 
