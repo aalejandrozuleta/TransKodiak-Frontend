@@ -6,7 +6,7 @@
     "start": "ng serve --watch --configuration development",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "start:api": "json-server --watch api/data.json --port 8000",
+    "start:api": "json-server --watch api/data.json --port 9000",
     "prettier": "npx prettier --write \"**/*.{js,ts,html,scss}\" --ignore-path .prettierignore",
     "lint": "ng lint --fix",
     "test": "ng test",
