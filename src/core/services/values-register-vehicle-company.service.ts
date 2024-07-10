@@ -12,26 +12,20 @@ export class ValuesRegisterVehicleCompanyService {
   ) {}
 
   newUser: registerCompanies = {
-    name: 'alejandro',
-    nit: '21424124242',
-    address: 'el placer',
-    password: 'sfasfsfA/',
-    phone: '3218957375',
-    email: 'jhoitan266@gmail.com'
+    name: '',
+    nit: '',
+    address: '',
+    password: '',
+    phone: '',
+    email: ''
   };
   createUser(field: keyof registerCompanies, value: string) {
-    console.log('error');
-
-    console.log(field);
-    console.log(this.newUser[field] = value);
     this.newUser[field] = value;
-    console.log(this.newUser);
   }
 
   onClick() {
     this.administrationUserVehicleCompanyService.registerCompanyVehicleUser(
       this.newUser,
     );
-    console.log(this.newUser);
   }
 }

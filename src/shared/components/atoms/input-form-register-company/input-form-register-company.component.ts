@@ -20,12 +20,9 @@ export class InputFormRegisterCompanyComponent {
 
   constructor (private ValuesRegisterVehicleCompanyService:ValuesRegisterVehicleCompanyService){}
 
-  onChange() {
-    console.log({
-      ms: 'hola',
-      error: this.fild
-    });
-    
-    this.ValuesRegisterVehicleCompanyService.createUser(this.fild as keyof registerCompanies, this.value);
+  onChange() {  
+    this.ValuesRegisterVehicleCompanyService.createUser(
+      this.fild as keyof registerCompanies,
+       this.value);
   }
 }
