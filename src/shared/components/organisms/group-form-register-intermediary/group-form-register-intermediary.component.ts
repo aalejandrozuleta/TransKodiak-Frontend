@@ -54,7 +54,7 @@ export class GroupFormRegisterIntermediaryComponent {
     {
       label: 'contraseña',
       id: 'password',
-      type: 'text',
+      type: 'password',
       placeholder: 'Contraseña',
       fild: 'password' 
     },
