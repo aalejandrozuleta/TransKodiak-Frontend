@@ -4,9 +4,8 @@
 #title-form {
   @extend %totalSize;
   @extend %flexCenter;
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: 600;
-  font-family: inter;
-  text-shadow: 2px 0px 2px #000;
-  font-style: italic;
+  text-shadow: 1px 0px 2px #000;
+  padding-top: 10px;
 }

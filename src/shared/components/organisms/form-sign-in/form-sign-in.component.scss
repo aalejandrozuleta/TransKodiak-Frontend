@@ -3,13 +3,13 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 20% 10% 40% 10% 20%;
+  padding-left: 40px;
 
   #form-sign-in {
     margin: auto 0;
     height: 80%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 50%);
     align-items: center;
   }
 

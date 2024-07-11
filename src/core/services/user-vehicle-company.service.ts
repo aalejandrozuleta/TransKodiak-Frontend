@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { editUserVehicleCompany } from '@models/editUserVehicleCompany';
 import { environment } from 'src/environment/environment';
 import { registerCompanies } from '@models/registerCompanies';
+import { authUser } from '@models/authUser';
 
 @Injectable({
   providedIn: 'root',
@@ -16,6 +17,13 @@ export class UserVehicleCompanyService {
   private intermediaryCompany = "api/intermediary/"
   private transporter = "api/transporter/"
   constructor(private http: HttpClient) {}
+
+
+  //auth 
+  authUser(user: authUser){
+    return this.http.post(`${this.url}signIn`, user);
+  }
+
 
   //vehicle Company
 
@@ -43,6 +51,7 @@ export class UserVehicleCompanyService {
   createUserIntermediaryCompany(user: registerCompanies){
     return this.http.post(`${this.url}${this.intermediaryCompany}register`, user);
   }
+
 
   // Tranportador
 

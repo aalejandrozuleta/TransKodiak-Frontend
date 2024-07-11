@@ -10,6 +10,7 @@ import { TextImgSignInComponent } from '@atoms/text-img-sign-in/text-img-sign-in
   styleUrl: './img-text-sign-in.component.scss',
 })
 export class ImgTextSignInComponent {
-  title: string = 'T R A N S K O D I AK';
-  text: string = 'Conectando Rutas, impulsado oportunidades';
+  title: string = 'T R A N S K O D I A K';
+  text: string =
+   'Conectando Rutas impulsado oportunidades';
 }

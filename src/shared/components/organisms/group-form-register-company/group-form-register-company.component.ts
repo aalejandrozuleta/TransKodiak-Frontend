@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Input } from '@angular/core';
 import { ImgFormRegisterCompanyComponent } from '@atoms/img-form-register-company/img-form-register-company.component';
 import { ButtonsFormRegisterCompanyComponent } from '@molecules/buttons-form-register-company/buttons-form-register-company.component';
 import { InputsFormRegisterCompanyComponent } from '@molecules/inputs-form-register-company/inputs-form-register-company.component';
@@ -24,6 +25,11 @@ import { VehicleCompanyComponent } from '@feature/vehicle-company/vehicle-compan
   styleUrl: './group-form-register-company.component.scss'
 })
 export class GroupFormRegisterCompanyComponent {
+  @Input() label: string = '';
+  @Input() id: string = '';
+  @Input() type: string = 'text';
+  @Input() placeholder: string = '';
+  @Input() fild: string = '';
   
   dataform2 = [
     {

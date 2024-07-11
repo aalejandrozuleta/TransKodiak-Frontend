@@ -21,7 +21,7 @@ export class NavBarComponent {
     },
     {
       name: 'Acceder',
-      link: '/signIn',
+      link: '/iniciarSesion',
     },
   ];
 }

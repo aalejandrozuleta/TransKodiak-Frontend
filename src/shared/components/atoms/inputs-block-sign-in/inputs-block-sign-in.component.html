@@ -1,9 +1,13 @@
 <div class="block-input-sing-in">
   <img [src]="img" alt="error" class="img-input" />
   <input
+    [id]="id"
     [type]="type"
     [placeholder]="placeholder"
     [name]="name"
     class="input-sign-in"
+    name="{{ fild }}"
+    [(ngModel)]="value"
+    (ngModelChange)="onChange()"
   />
 </div>
