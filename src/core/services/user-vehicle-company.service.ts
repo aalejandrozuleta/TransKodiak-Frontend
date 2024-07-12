@@ -21,7 +21,7 @@ export class UserVehicleCompanyService {
 
   //auth 
   authUser(user: authUser){
-    return this.http.post(`${this.url}signIn`, user);
+    return this.http.post(`${this.url}${this.vehicleCompany}auth`, user);
   }
 
 
