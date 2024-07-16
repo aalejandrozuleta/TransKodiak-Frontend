@@ -20,11 +20,10 @@ export class ValuesRegisterIntermediaryCompanyService {
   };
   createUser(field: keyof registerCompanies, value: string) {
     this.newUser[field] = value;
-    console.log(this.newUser);
   }
 
   onClick() {
-    this.AdministrationUserIntermediaryCompanyService.registerCompanyVehicleUser(
+    this.AdministrationUserIntermediaryCompanyService.registerIntermediaryUser(
       this.newUser,
     );
   }

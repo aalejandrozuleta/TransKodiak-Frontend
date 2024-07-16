@@ -2,15 +2,21 @@
 
   <div class="content-all">
     <app-title-form-register-intermediary></app-title-form-register-intermediary>
-    <app-inputs-form-register-company
-      *ngFor="let item of dataform2"
-      label="{{item.label}}"
-      id="{{item.id}}"
-      type="{{item.type}}"
-      placeholder="{{item.placeholder}}">
-    </app-inputs-form-register-company>
+
+    <div>
+        <app-inputs-form-register-intermediary
+        *ngFor="let item of dataform1"
+        label="{{item.label}}"
+        id="{{item.id}}"
+        type="{{item.type}}"
+        placeholder="{{item.placeholder}}"
+        fild="{{item.fild}}"
+        >
+        </app-inputs-form-register-intermediary>
+    </div>
+  
     <app-text-form-register-company></app-text-form-register-company>
-    <app-buttons-form-register-company></app-buttons-form-register-company>
+    <app-buttons-form-register-intermediary></app-buttons-form-register-intermediary>
   </div> 
    
   <app-img-form-register-company class="item-img"></app-img-form-register-company>

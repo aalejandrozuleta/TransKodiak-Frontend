@@ -20,10 +20,11 @@ export class InputFormRegisterIntermediaryComponent {
 
   constructor (private ValuesRegisterIntermediaryCompanyService:ValuesRegisterIntermediaryCompanyService){}
 
-  onChange() {  
+  onChange1() {  
+    console.log(this.fild);
     this.ValuesRegisterIntermediaryCompanyService.createUser(
       this.fild as keyof registerCompanies,
-       this.value);
+       this.value); 
   }
 }
 

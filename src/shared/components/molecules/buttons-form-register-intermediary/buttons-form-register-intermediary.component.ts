@@ -14,9 +14,9 @@ import { ValuesRegisterIntermediaryCompanyService } from '@services/values-regis
 export class ButtonsFormRegisterIntermediaryComponent {
 
   constructor(
-    private ValuesRegisterIntermediaryCompanyService:ValuesRegisterIntermediaryCompanyService,
+    private valuesRegisterIntermediaryCompanyService:ValuesRegisterIntermediaryCompanyService,
   ) {}
   saveDateRegister() {
-    this.ValuesRegisterIntermediaryCompanyService.onClick();
+    this.valuesRegisterIntermediaryCompanyService.onClick();
   }
 }

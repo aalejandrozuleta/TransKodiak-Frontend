@@ -1,28 +1,34 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ImgFormRegisterCompanyComponent } from '@atoms/img-form-register-company/img-form-register-company.component';
-import { ButtonsFormRegisterCompanyComponent } from '@molecules/buttons-form-register-company/buttons-form-register-company.component';
-import { InputsFormRegisterCompanyComponent } from '@molecules/inputs-form-register-company/inputs-form-register-company.component';
 import { userRegister } from '@models/userRegister';
 import { TextFormRegisterCompanyComponent } from '@atoms/text-form-register-company/text-form-register-company.component';
 import { TitleFormRegisterIntermediaryComponent } from '@atoms/title-form-register-intermediary/title-form-register-intermediary.component';
+import { ButtonsFormRegisterIntermediaryComponent } from '@molecules/buttons-form-register-intermediary/buttons-form-register-intermediary.component';
+import { InputsFormRegisterIntermediaryComponent } from '@molecules/inputs-form-register-intermediary/inputs-form-register-intermediary.component';
+import { InputFormRegisterIntermediaryComponent } from "../../atoms/input-form-register-intermediary/input-form-register-intermediary.component";
 
 
 @Component({
   selector: 'app-group-form-register-intermediary',
   standalone: true,
-  imports: [CommonModule, 
+  imports: [CommonModule,
     ImgFormRegisterCompanyComponent,
-    ButtonsFormRegisterCompanyComponent,
-    InputsFormRegisterCompanyComponent,
+    ButtonsFormRegisterIntermediaryComponent,
+    InputsFormRegisterIntermediaryComponent,
     TitleFormRegisterIntermediaryComponent,
-    TextFormRegisterCompanyComponent
-  ],
+    TextFormRegisterCompanyComponent, InputFormRegisterIntermediaryComponent],
   templateUrl: './group-form-register-intermediary.component.html',
   styleUrl: './group-form-register-intermediary.component.scss'
 })
 export class GroupFormRegisterIntermediaryComponent {
-  dataform2: userRegister[] = [
+  @Input() label: string = '';
+  @Input() id: string = '';
+  @Input() type: string = 'text';
+  @Input() placeholder: string = '';
+  @Input() fild: string = '';
+
+  dataform1 = [
     {
       label: 'Nombre',
       id: 'name',
@@ -54,7 +60,7 @@ export class GroupFormRegisterIntermediaryComponent {
     {
       label: 'contraseña',
       id: 'password',
-      type: 'text',
+      type: 'password',
       placeholder: 'Contraseña',
       fild: 'password' 
     },
