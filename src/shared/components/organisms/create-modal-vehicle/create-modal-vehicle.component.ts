@@ -74,6 +74,6 @@ export class CreateModalVehicleComponent {
 
   saveDate() {
     this.ValuesInputsModalsVehicleCompanyService.onClick();
-    // this.ModalsCreateVehicleTransporterService.closeCreateTransporter();
+    this.ModalsCreateVehicleTransporterService.closeCreateTransporter();
   }
 }
