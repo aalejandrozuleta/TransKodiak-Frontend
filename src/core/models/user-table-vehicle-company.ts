@@ -1,8 +1,9 @@
 export interface userTableVehicle {
-  id: number;
-  avatar: string;
-  name: string;
-  placa: string;
-  email: string;
-  date: string;
+  id: number,
+  avatar?:string;
+  placa?:string;
+  name:string,
+  email:string;
+  statusTransporter:string;
+  date:string;
 }

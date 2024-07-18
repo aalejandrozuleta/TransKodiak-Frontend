@@ -2,11 +2,11 @@ import { registerVehicle } from './../models/registerVehicle';
 import { userTransporterCreate } from './../models/userTransporter';
 import { Injectable } from '@angular/core';
 import { userTableVehicle } from '@models/user-table-vehicle-company';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { editUserVehicleCompany } from '@models/editUserVehicleCompany';
 import { environment } from 'src/environment/environment';
 import { registerCompanies } from '@models/registerCompanies';
-import { Observable, tap } from 'rxjs';
+import { map, Observable, tap, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -40,10 +40,35 @@ export class UserVehicleCompanyService {
     return this.http.post(`${this.url}${this.vehicleCompany}register`, user);
   }
 
-  getTransporters() {
-    return this.http.get<userTableVehicle[]>(
-      `${this.url}${this.vehicleCompany}getUser`,
-    );
+  getTransporters(): Observable<userTableVehicle[]> {
+    // Obtener el token almacenado en localStorage
+    const token = localStorage.getItem('token');
+
+    // Verificar si el token está presente
+    if (token) {
+      // Configurar los encabezados para incluir el token
+      const headers = new HttpHeaders({
+        Authorization: `Bearer ${token}`,
+      });
+
+      // Realizar la solicitud HTTP con los encabezados configurados
+      return this.http
+        .get<{
+          message: string;
+          transporters: userTableVehicle[];
+        }>(`${this.url}${this.transporter}listTransporters`, { headers })
+        .pipe(
+          tap((response) => {
+            console.log('Datos recibidos:');
+          }),
+          map((response) => response.transporters), // Mapear la respuesta para extraer solo el array de transportadores
+        );
+    } else {
+      // Manejar el caso donde no se encuentre el token en localStorage
+      console.error('No se encontró el token en localStorage.');
+      // Puedes retornar un Observable con un error o manejarlo de otra manera
+      return throwError('No se encontró el token en localStorage.');
+    }
   }
 
   createVehicle(vehicle: registerVehicle) {
@@ -69,15 +94,46 @@ export class UserVehicleCompanyService {
   // Tranportador
 
   createUserTransporter(user: userTransporterCreate) {
-    console.log(user);
-    return this.http.post(
-      `${this.url}${this.transporter}register`,
-      user,
-    );
+    // Obtener el token almacenado en localStorage
+    const token = localStorage.getItem('token');
+
+    // Verificar si el token está presente
+    if (token) {
+      // Configurar los encabezados para incluir el token
+      const headers = new HttpHeaders({
+        Authorization: `Bearer ${token}`,
+      });
+
+      // Realizar la solicitud HTTP con los encabezados configurados
+      return this.http.post(`${this.url}${this.transporter}register`, user, {
+        headers,
+      });
+    } else {
+      // Manejar el caso donde no se encuentre el token en localStorage
+      console.error('No se encontró el token en localStorage.');
+      // Puedes retornar un Observable con un error o manejarlo de otra manera
+      return throwError('No se encontró el token en localStorage.');
+    }
   }
 
   deleteUser(id: number) {
-    return this.http.delete(`${this.url}${this.transporter}${id}`);
+    const url = `${this.url}${this.transporter}disable/${id}`;
+
+    // Obtener el token almacenado en localStorage
+    const token = localStorage.getItem('token');
+
+    // Verificar si el token está presente
+    if (token) {
+      // Configurar los encabezados para incluir el token
+      const headers = new HttpHeaders({
+        Authorization: `Bearer ${token}`,
+      });
+
+      // Realizar la solicitud HTTP con los encabezados configurados
+      return this.http.put(url, null, { headers });
+    } else {
+      return throwError('No se encontró el token en localStorage.');
+    }
   }
 
   getUserById(id: number) {

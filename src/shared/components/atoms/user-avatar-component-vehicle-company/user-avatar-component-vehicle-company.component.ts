@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './user-avatar-component-vehicle-company.component.scss',
 })
 export class UserAvatarComponentVehicleCompanyComponent {
-  @Input() avatar: string = '';
+  @Input() avatar:any;
 }

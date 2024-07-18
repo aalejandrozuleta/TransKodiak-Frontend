@@ -16,7 +16,6 @@ export class ValuesAuthCompaniesService {
     email: ''
   };
   
-  
   authUser(field: keyof authUser, value: string) {
     this.auth[field] = value;
   }
@@ -25,6 +24,5 @@ export class ValuesAuthCompaniesService {
     this.AdministrationAuthCompaniesService.authUser(
       this.auth,
     );
-    console.log(this.auth);
   }
 }

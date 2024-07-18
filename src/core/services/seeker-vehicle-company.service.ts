@@ -7,8 +7,8 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class SeekerVehicleCompanyService {
-  dates: userTableVehicle[] = [];
-  datesCopy: userTableVehicle[] = [];
+  dates: userTableVehicle[] = []; // Arreglo para almacenar los datos de transportadores
+  datesCopy: userTableVehicle[] = []; // Copia de los datos originales
   filteredDates: BehaviorSubject<userTableVehicle[]> = new BehaviorSubject<
     userTableVehicle[]
   >([]);
@@ -16,12 +16,12 @@ export class SeekerVehicleCompanyService {
   constructor(private userVehicleCompanyService: UserVehicleCompanyService) {
     this.userVehicleCompanyService.getTransporters().subscribe((data) => {
       this.dates = data;
-      // Hacemos la copia aquí, después de que los datos se hayan cargado
       this.datesCopy = [...data];
       this.filteredDates.next([...data]);
     });
   }
 
+  // Método para filtrar los usuarios según la búsqueda
   getFilteredUsers(search: string) {
     let filteredDates: userTableVehicle[] = [];
     if (search) {
@@ -29,7 +29,6 @@ export class SeekerVehicleCompanyService {
         user.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()),
       );
     } else {
-      // Cuando el buscador está vacío, restablecemos los datos a su estado original
       filteredDates = [...this.datesCopy];
     }
     this.filteredDates.next(filteredDates);
