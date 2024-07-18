@@ -12,9 +12,11 @@ export class ValuesInputsModalsVehicleCompanyService {
 
   newUser: userTransporterCreate = {
     name: '',
-    email: '',
+    idNumber: '',
     phone: '',
+    email: '',
     license: '',
+    password: '',
   };
   createUser(field: keyof userTransporterCreate, value: string) {
     this.newUser[field] = value;

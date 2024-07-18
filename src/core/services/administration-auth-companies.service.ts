@@ -14,8 +14,8 @@ export class AdministrationAuthCompaniesService {
   authUser(user: authUser ) {
     this.UserVehicleCompanyService.authUser(user).subscribe(() => {
       console.log('ingreso exitoso');
-      console.log(user);
     });
   }
-
+  
 }
+ 

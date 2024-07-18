@@ -6,57 +6,74 @@ import { HttpClient } from '@angular/common/http';
 import { editUserVehicleCompany } from '@models/editUserVehicleCompany';
 import { environment } from 'src/environment/environment';
 import { registerCompanies } from '@models/registerCompanies';
-import { authUser } from '@models/authUser';
+import { Observable, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class UserVehicleCompanyService {  
+export class UserVehicleCompanyService {
   private url = environment.API_URL;
-  private vehicleCompany = "api/vehicleCompany/"
-  private intermediaryCompany = "api/intermediary/"
-  private transporter = "api/transporter/"
+  private vehicleCompany = 'api/vehicleCompany/';
+  private intermediaryCompany = 'api/intermediary/';
+  private transporter = 'api/transporter/';
+  private general = 'api/general/';
   constructor(private http: HttpClient) {}
 
-
-  //auth 
-  authUser(user: authUser){
-    return this.http.post(`${this.url}${this.vehicleCompany}auth`, user);
+  //auth
+  authUser(user: any): Observable<any> {
+    return this.http.post<any>(`${this.url}${this.general}auth`, user).pipe(
+      tap((response) => {
+        if (response && response.token) {
+          localStorage.setItem('token', response.token);
+        } else {
+          // Manejo de errores o casos donde no se recibe el token
+          console.error('Token no recibido en la respuesta del servidor.');
+        }
+      }),
+    );
   }
-
 
   //vehicle Company
 
-  createUserVehicleCompany(user: registerCompanies){
-    console.log(user)
-    return this.http.post(`${this.url}${this.vehicleCompany}register`, user)
+  createUserVehicleCompany(user: registerCompanies) {
+    console.log(user);
+    return this.http.post(`${this.url}${this.vehicleCompany}register`, user);
   }
 
   getTransporters() {
     return this.http.get<userTableVehicle[]>(
-      `${this.url}${this.vehicleCompany}/getUser`,
+      `${this.url}${this.vehicleCompany}getUser`,
     );
   }
 
   createVehicle(vehicle: registerVehicle) {
-    return this.http.post(`${this.url}${this.vehicleCompany}createVehicle`,vehicle);
+    return this.http.post(
+      `${this.url}${this.vehicleCompany}createVehicle`,
+      vehicle,
+    );
   }
 
   editUserVehicleCompany(user: editUserVehicleCompany) {
-    return this.http.put(`${this.url}${this.vehicleCompany}editVehicle`,user);
+    return this.http.put(`${this.url}${this.vehicleCompany}editVehicle`, user);
   }
 
   // Empresa Intermediaria
 
-  createUserIntermediaryCompany(user: registerCompanies){
-    return this.http.post(`${this.url}${this.intermediaryCompany}register`, user);
+  createUserIntermediaryCompany(user: registerCompanies) {
+    return this.http.post(
+      `${this.url}${this.intermediaryCompany}register`,
+      user,
+    );
   }
-
 
   // Tranportador
 
   createUserTransporter(user: userTransporterCreate) {
-    return this.http.post(`${this.url}${this.transporter}createTransporter`, user);
+    console.log(user);
+    return this.http.post(
+      `${this.url}${this.transporter}register`,
+      user,
+    );
   }
 
   deleteUser(id: number) {
@@ -68,5 +85,4 @@ export class UserVehicleCompanyService {
       `${this.url}${this.transporter}${id}`,
     );
   }
-
 }

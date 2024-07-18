@@ -36,6 +36,13 @@ export class CreateModalVehicleComponent {
       field: 'name',
     },
     {
+      label: 'Cédula',
+      id: 'idNumber',
+      type: 'text',
+      placeholder: 'cédula',
+      field: 'idNumber',
+    },
+    {
       label: 'email',
       id: 'email',
       type: 'email',
@@ -54,12 +61,19 @@ export class CreateModalVehicleComponent {
       id: 'licencia',
       type: 'text',
       placeholder: 'licencia',
-      field: 'licencia',
+      field: 'license',
     },
+    {
+      label: 'Contraseña',
+      id: 'password',
+      type: 'password',
+      placeholder: 'contraseña',
+      field: 'password',
+    }
   ];
 
   saveDate() {
     this.ValuesInputsModalsVehicleCompanyService.onClick();
-    this.ModalsCreateVehicleTransporterService.closeCreateTransporter();
+    // this.ModalsCreateVehicleTransporterService.closeCreateTransporter();
   }
 }
