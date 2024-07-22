@@ -6,8 +6,8 @@
   @extend %flexCenter;
 
   img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
   }
 }

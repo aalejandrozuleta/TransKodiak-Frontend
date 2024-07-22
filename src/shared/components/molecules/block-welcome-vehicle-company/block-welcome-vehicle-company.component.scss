@@ -2,9 +2,10 @@
 
 .block-welcome-vehicle-company {
   @extend %flexCenter;
-  height: 180px;
+  height: 150px;
   display: flex;
   line-height: 25px;
   justify-content: space-around;
   border-radius: 8px;
+  margin: 8% 0 11% 0;
 }

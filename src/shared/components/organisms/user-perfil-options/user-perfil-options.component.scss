@@ -12,6 +12,7 @@
   grid-template-columns: 1fr;
   grid-template-areas: 'background' 'nameUser' 'options' 'footer';
   grid-template-rows: 25% 20% 50% 5%;
+  z-index: 100;
 
   #background {
     grid-area: background;
