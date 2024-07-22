@@ -1,14 +1,12 @@
 //Styles Modal
 .container-all {
-  position: absolute;
   top: 40%;
   left: 35%;
   background-color: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(87, 43, 43, 0.3);
   border-radius: 8px;
   padding: 20px 0;
 }
-
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -17,13 +15,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .header-form {
   height: 10%;
   width: 300px;
   margin: 0 auto;
 }
-
 form {
   width: 500px;
   margin: 0 auto;
@@ -44,4 +40,16 @@ button {
   align-content: center;
   justify-content: center;
   cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(164, 161, 161, 0.5); // Fondo opaco
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; // Asegura que esté sobre el contenido normal
 }
