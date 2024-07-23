@@ -6,6 +6,8 @@ import { NosotrosComponent } from '@feature/nosotros/nosotros.component';
 import { StatisticComponent } from '@feature/statistic/statistic.component'
 import { RegisterIntermediaryComponent } from '@feature/register-intermediary/register-intermediary.component';
 import { SignInComponent } from '@feature/sign-in/sign-in.component';
+import { ForgetPasswordComponent } from '@feature/forget-password/forget-password.component';
+import { ForgetPasswordCodeComponent } from '@feature/forget-password-code/forget-password-code.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,5 +15,7 @@ export const routes: Routes = [
   { path: 'registerVehicle', component: RegisterFormCompanyComponent},
   { path: 'registerIntermediary', component: RegisterIntermediaryComponent},
   { path: 'iniciarSesion', component: SignInComponent },
+  { path: 'forgetPassword', component: ForgetPasswordComponent },
+  { path: 'forgetPasswordCode', component: ForgetPasswordCodeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];

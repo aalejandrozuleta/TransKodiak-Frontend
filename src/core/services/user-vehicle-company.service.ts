@@ -1,3 +1,4 @@
+import { recoveryPassword } from './../models/recoveryPassword';
 import { registerVehicle } from './../models/registerVehicle';
 import { userTransporterCreate } from './../models/userTransporter';
 import { Injectable } from '@angular/core';
@@ -31,6 +32,18 @@ export class UserVehicleCompanyService {
         }
       }),
     );
+  }
+
+  //Recovery Password (email-number)
+  recoveryPasswords(user: recoveryPassword) {
+    console.log(user);
+    return this.http.post(`${this.url}${this.general}validationUser`, user);
+  }
+
+  //Recovery Password (email-code)
+  recoveryPasswordsCode(user: recoveryPassword) {
+    console.log(user);
+    return this.http.post(`${this.url}${this.general}forgetPassword`, user);
   }
 
   //vehicle Company
