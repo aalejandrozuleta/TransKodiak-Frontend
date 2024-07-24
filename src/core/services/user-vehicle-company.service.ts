@@ -37,13 +37,13 @@ export class UserVehicleCompanyService {
   //Recovery Password (email-number)
   recoveryPasswords(user: recoveryPassword) {
     console.log(user);
-    return this.http.post(`${this.url}${this.general}validationUser`, user);
+    return this.http.post(`${this.url}${this.general}getCode`, user);
   }
 
   //Recovery Password (email-code)
   recoveryPasswordsCode(user: recoveryPassword) {
     console.log(user);
-    return this.http.post(`${this.url}${this.general}forgetPassword`, user);
+    return this.http.put(`${this.url}${this.general}forgetPassword`, user);
   }
 
   //vehicle Company

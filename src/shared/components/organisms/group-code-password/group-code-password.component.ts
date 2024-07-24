@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { InputCodePasswordComponent } from '@atoms/input-code-password/input-code-password.component';
 import { TittleRecoveryPasswordComponent } from '@atoms/tittle-recovery-password/tittle-recovery-password.component';
-import { MenuItem } from '@models/menu-item';
 import { BlockFormCodePasswordComponent } from '@molecules/block-form-code-password/block-form-code-password.component';
 
 @Component({
@@ -34,11 +33,18 @@ export class GroupCodePasswordComponent {
       fild: 'email'
     },
     {
-      label: 'number',
-      id: 'number',
+      label: 'Nueva Cntraseña',
+      id: 'password',
+      type: 'text',
+      placeholder: 'Nueva Contraseña', 
+      fild: 'password'
+    },
+    {
+      label: 'code',
+      id: 'code',
       type: 'text',
       placeholder: 'Ingresa el codigo', 
-      fild: 'number'
+      fild: 'code'
     },
   ];
 }

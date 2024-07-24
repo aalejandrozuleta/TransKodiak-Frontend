@@ -36,10 +36,10 @@ export class GroupRecoveryPasswordComponent {
     },
     {
       label: 'number',
-      id: 'number',
+      id: 'phone',
       type: 'text',
       placeholder: 'Numero de Celular', 
-      fild: 'number'
+      fild: 'phone'
     },
   ];
 }
