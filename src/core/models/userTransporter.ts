@@ -7,4 +7,5 @@ export interface userTransporterCreate {
   license: string;
   password: string;
   status?: string;
+  idVehicle: string;
 }
