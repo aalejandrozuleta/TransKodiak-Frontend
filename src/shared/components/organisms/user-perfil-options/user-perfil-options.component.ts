@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FooterPerfilUserComponent } from '@atoms/footer-perfil-user/footer-perfil-user.component';
 import { BackgroundArrowBackUserPerfilComponent } from '@molecules/background-arrow-back-user-perfil/background-arrow-back-user-perfil.component';
@@ -12,8 +13,10 @@ import { OptionsPerfilUserPerfilComponent } from '@molecules/options-perfil-user
     OptionsPerfilUserPerfilComponent,
     FooterPerfilUserComponent,
     BackgroundArrowBackUserPerfilComponent,
+    CommonModule
   ],
   templateUrl: './user-perfil-options.component.html',
   styleUrl: './user-perfil-options.component.scss',
 })
-export class UserPerfilOptionsComponent {}
+export class UserPerfilOptionsComponent {
+}

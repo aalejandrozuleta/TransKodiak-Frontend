@@ -19,7 +19,7 @@ export class InformationUserNavVehicleComponent {
   dataInformation: informationUserVehicle[] = [
     {
       imgUser: '../../../../assets/static/avatar.png',
-      nameUser: 'Alejandro',
+      nameUser: 'Empresa',
       typeCompany: 'Empresa Vehicular',
     },
   ];
