@@ -20,7 +20,7 @@ import { UserOptionsPerfilService } from '@services/user-options-perfil.service'
   styleUrl: './user-perfil-options.component.scss',
 })
 export class UserPerfilOptionsComponent {
-  imgBack: string = '../../../../assets/icons/bx-left-arrow-alt.svg';
+  imgBack: string = '../../../../assets/imagenes/cerrarModal.png';
   constructor(private UserOptionsPerfilService: UserOptionsPerfilService) {}
 
   closeModal() {

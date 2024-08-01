@@ -29,45 +29,44 @@ export class CreateModalVehicleComponent {
 
   formData = [
     {
-      label: 'Nombre',
       id: 'name',
       type: 'text',
       placeholder: 'Nombre',
       field: 'name',
     },
     {
-      label: 'Cédula',
+      
       id: 'idNumber',
       type: 'text',
-      placeholder: 'cédula',
+      placeholder: 'Cédula',
       field: 'idNumber',
     },
     {
-      label: 'email',
+      
       id: 'email',
       type: 'email',
-      placeholder: 'email',
+      placeholder: 'Email',
       field: 'email',
     },
     {
-      label: 'phone',
+      
       id: 'phone',
       type: 'text',
-      placeholder: 'phone',
+      placeholder: 'Telefono',
       field: 'phone',
     },
     {
-      label: 'licencia',
+      
       id: 'licencia',
       type: 'text',
-      placeholder: 'licencia',
+      placeholder: 'Licencia',
       field: 'license',
     },
     {
-      label: 'Contraseña',
+      
       id: 'password',
       type: 'password',
-      placeholder: 'contraseña',
+      placeholder: 'Contraseña',
       field: 'password',
     }
   ];

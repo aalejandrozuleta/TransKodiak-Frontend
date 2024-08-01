@@ -12,7 +12,7 @@ import { CreateModalVehicleComponent } from '@organisms/create-modal-vehicle/cre
   styleUrl: './button-modal-vehicle-company.component.scss',
 })
 export class ButtonModalVehicleCompanyComponent implements OnInit, OnDestroy {
-  img = '../../../../assets/imagenes/agregar-usuario (1).png';
+  img = '../../../../assets/imagenes/anadir (1).png';
 
   showModal = false;
   subscription: Subscription = Subscription.EMPTY;

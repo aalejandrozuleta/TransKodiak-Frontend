@@ -2,11 +2,12 @@
 
 #templateTotal {
   display: grid;
-  grid-template-columns: 130px 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 170px 1fr;
+  height: 100vh;
+  background-color: rgba(235, 232, 232, 0.568);
+  grid-template-rows: 160px auto auto;
   grid-template-areas:
     'aside navBar'
-    'aside welcome'
     'aside navOptions'
     'aside table';
 

@@ -3,10 +3,10 @@
 
 #blockSearch {
   display: grid;
-  grid-template-columns: 18% auto;
-  width: 50%;
-  height: 30px;
-  background-color: map-get($primary, 'one');
-  border-radius: 10px;
-  border: none;
+  grid-template-columns: 10% 40%;
+  width: 80%;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(88, 88, 88, 0.207); /* Agrega el borde de sombra */
 }

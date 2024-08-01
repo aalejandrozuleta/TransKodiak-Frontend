@@ -14,3 +14,39 @@
     gap: 0 10px;
   }
 }
+h2{
+  color: #06141b;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btn-status{
+  width: 125px;
+  height: 40px;
+  background-color: #06141b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right:20px ;
+  cursor: pointer;
+  font-size: 11px;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+
+  img{
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    margin-right:8px;
+    padding-left: 5px;
+  }
+}
+
+

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './lupa-search-nav-company.component.scss',
 })
 export class LupaSearchNavCompanyComponent {
-  lupaImg: string = '../../../../assets/icons/lupa.png';
+  lupaImg: string = '../../../../assets/imagenes/lupa (4).png';
 }

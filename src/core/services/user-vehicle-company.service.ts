@@ -1,3 +1,4 @@
+import { Router} from '@angular/router';
 import { recoveryPassword } from './../models/recoveryPassword';
 import { registerVehicle } from './../models/registerVehicle';
 import { userTransporterCreate } from './../models/userTransporter';
@@ -7,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { editUserVehicleCompany } from '@models/editUserVehicleCompany';
 import { environment } from 'src/environment/environment';
 import { registerCompanies } from '@models/registerCompanies';
-import { map, Observable, tap, throwError } from 'rxjs';
+import { catchError, map, Observable, tap, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -18,21 +19,31 @@ export class UserVehicleCompanyService {
   private intermediaryCompany = 'api/intermediary/';
   private transporter = 'api/transporter/';
   private general = 'api/general/';
-  constructor(private http: HttpClient) {}
+  
+  
+  constructor(
+    private http: HttpClient,
+    private router: Router // Asegúrate de inyectar Router aquí
+  ) {}
 
-  //auth
-  authUser(user: any): Observable<any> {
-    return this.http.post<any>(`${this.url}${this.general}auth`, user).pipe(
-      tap((response) => {
-        if (response && response.token) {
-          localStorage.setItem('token', response.token);
-        } else {
-          // Manejo de errores o casos donde no se recibe el token
-          console.error('Token no recibido en la respuesta del servidor.');
-        }
-      }),
-    );
-  }
+  //auth/
+authUser(user: any): Observable<any> {
+  return this.http.post<any>(`${this.url}${this.general}auth`, user).pipe(
+    tap((response) => {
+      if (response && response.token) {
+        localStorage.setItem('token', response.token);
+        this.router.navigate(['/vehicleCompany']);
+      } else {
+        // Manejo de errores o casos donde no se recibe el token
+        console.error('Token no recibido en la respuesta del servidor.');
+      }
+    }),
+    catchError((error) => {
+      console.error('Error en la solicitud HTTP:', error);
+      return throwError(error);
+    })
+  );
+}
 
   //Recovery Password (email-number)
   recoveryPasswords(user: recoveryPassword) {

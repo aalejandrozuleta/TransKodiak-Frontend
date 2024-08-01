@@ -4,6 +4,8 @@
 
 #navBar {
   @extend %totalSize;
+  padding: 30px 0 0 110px;
+
   #menu {
     @extend %totalSize;
     display: grid;
@@ -14,7 +16,7 @@
       @extend %gridCenter;
       a {
         text-decoration: none;
-        color: map-get($nav, 'btnColor');
+        color: #fff;
         position: relative;
         background: none;
         transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);

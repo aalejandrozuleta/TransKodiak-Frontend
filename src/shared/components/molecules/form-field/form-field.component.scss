@@ -3,7 +3,8 @@
 .form-field {
   margin-bottom: 1.5rem;
   width: 450px;
-  height: 55px;
+  margin-top: 10px;
+  height: 30px;
 }
 .container-all {
   @extend %flexCenter;

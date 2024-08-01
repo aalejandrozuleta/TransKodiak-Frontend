@@ -1,56 +1,67 @@
 @import 'colors/defaultColor';
 
 #blockUserSettingsOptions {
-  position: fixed;
-  top: 20%;
+  position: absolute;
   right: 5%;
-  width: 250px;
-  height: 40vh;
+  width: 220px;
+  height: 48vh;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
+  z-index: 100;
+  box-shadow: 5px 5px 20px  #2f2f2f7c; /* shadow-sm */
+  color: #000000; /* text-gray-700 */
+  transition: background-color 0.2s;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% 15% 15% 15%;
-  z-index: 100;
-
-  border-radius: 0.375rem; /* rounded-md */
-  box-shadow: 2px 4px 4px 0 #0000000d; /* shadow-sm */
-    color: #000000; /* text-gray-700 */
-    transition: background-color 0.2s;
+  grid-template-rows: 14% 15%;
 }
 
 button{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background-color: #fff;
   border: none;
   cursor: pointer;
   text-align: left;
-  border-bottom: 1px solid rgb(226, 224, 224);
   padding-top: 20px;
-  padding-bottom: 10px;  
-  
+  padding-bottom: 12px;  
+  padding-left: 25px;
 
-  button:hover{
-    background-color: #ddd;
+  a{
+    color: #000000; /* text-gray-700 */
+    text-decoration: none;
   }
 }
-
-.backImgRow {
-  position: absolute;
-  top: 5%;
-  left: 20px;
-  filter: invert(100%);
-  display: block;
-  object-fit: cover;
-  cursor: pointer;
+button:hover{
+  background-color: #b0b0b070;
 }
 .backImgRow {
-  position: absolute;
-  top: 5%;
-  left: 20px;
-  filter: invert(100%);
-  display: block;
-  object-fit: cover;
   cursor: pointer;
+  width: 12px;
+  height: 11px;
+
+}
+
+.close{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.ayuda{
+  padding-left: 5px;
+  width: 12px;
+  height: 12px;
+}
+.btn-botom{
+  width: 100%;
+  margin-top: 25px;
+  height: 20px;
+  padding-bottom: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+figure{
+  height: 10px;
+  padding-left: 85%;
+  padding-top: 20px;
 }

@@ -2,7 +2,9 @@
 
 #nameUser {
   @extend %totalSize;
-  font-weight: bold;
   display: flex;
   align-items: flex-end;
+  font-size: 14px;
+  color: #06141b;
+  font-weight: bold;
 }
